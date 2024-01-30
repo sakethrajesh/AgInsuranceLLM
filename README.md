@@ -6,6 +6,8 @@ https://discord.gg/BPry2Ygh
 
 - [Ollama on Docker Container](https://noted.lol/ollama/)
 - [Ollama Adapter](https://github.com/lgrammel/modelfusion-ollama-nextjs-starter?tab=readme-ov-file)
+- [Ollama RAG](https://mer.vin/2024/01/ollama-rag/)
+- [Langchain Docs](https://python.langchain.com/docs/get_started/introduction)
 
 
 ### Expectations 
@@ -21,7 +23,6 @@ https://discord.gg/BPry2Ygh
 - [ ] Chat UI page 
 - [ ] Login page, support for users
 - [ ] Updates page for adding a modifying documents for website owner (depends on time)
-- [ ] 
 
 
 ### Insurance Resource 
