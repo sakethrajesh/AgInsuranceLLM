@@ -25,6 +25,15 @@ https://discord.gg/BPry2Ygh
 - [ ] Updates page for adding a modifying documents for website owner (depends on time)
 
 
+### Deadlines 
+
+- [ ] Presentation 1 due 2/14
+- [ ] Interim Report due 3/1
+- [ ] Presentation 2 due 3/22
+- [ ] Final Presentations start 4/18
+
+
+
 ### Insurance Resource 
 - [USDA site for insurance computation](https://public-rma.fpac.usda.gov/apps/PRF#)
 - Problem with this also lacks significant functionality to support potential   policyholders in quickly predicting the impacts of their choices.
