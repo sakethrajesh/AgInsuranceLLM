@@ -6,3 +6,28 @@ https://discord.gg/BPry2Ygh
 
 - [Ollama on Docker Container](https://noted.lol/ollama/)
 - [Ollama Adapter](https://github.com/lgrammel/modelfusion-ollama-nextjs-starter?tab=readme-ov-file)
+
+
+### Expectations 
+
+- [ ] Support and host the underlying language model for the site 
+- [ ] Getting documents and source material for Agricultural Insurance 
+- [ ] Development of the chatbot site 
+
+
+#### Frontend
+
+- [ ] Home page 
+- [ ] Chat UI page 
+- [ ] Login page, support for users
+- [ ] Updates page for adding a modifying documents for website owner (depends on time)
+- [ ] 
+
+
+### Insurance Resource 
+- [USDA site for insurance computation](https://public-rma.fpac.usda.gov/apps/PRF#)
+- Problem with this also lacks significant functionality to support potential   policyholders in quickly predicting the impacts of their choices.
+- [Insurance Programs](https://www.rma.usda.gov/en/Policy-and-Procedure/Insurance-Plans/Pasture-Rangeland-Forage)
+
+
+
