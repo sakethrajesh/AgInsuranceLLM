@@ -1,4 +1,4 @@
-# AgInsureanceLLM
+# AgInsuranceLLM
 https://discord.gg/BPry2Ygh
 
 
