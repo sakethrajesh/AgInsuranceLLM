@@ -9,7 +9,7 @@ from langchain_community.document_loaders import PyPDFLoader
 
 url= 'https://www.rma.usda.gov/Policy-and-Procedure/Insurance-Plans/Livestock-Insurance-Plans'
 
-file_path = '/Users/saketh/Documents/vt/Spring2024/AgInsuranceLLM/LLM/Apple-Tree-Crop-Provisions-21-APT.ashx'
+file_path = './InsuranceContext/Apple-Tree-Crop-Provisions-21-APT.ashx'
 
 
 loader = PyPDFLoader(file_path)
@@ -33,7 +33,7 @@ def format_docs(docs):
 # Define the Ollama LLM function
 def ollama_llm(question, context):
     formatted_prompt = f"Question: {question}\n\nContext: {context}"
-    response = ollama.chat(model='mistral', messages=[{'role': 'user', 'content': formatted_prompt}])
+    response = ollama.chat(model='llama2:chat', messages=[{'role': 'user', 'content': formatted_prompt}])
     return response['message']['content']
 
 # Define the RAG chain
@@ -43,6 +43,7 @@ def rag_chain(question):
     return ollama_llm(question, formatted_context) + "\n\n" + formatted_context
 
 # Use the RAG chain
+print('> what is the apple tree crop provisions? \n')
 result = rag_chain("what is the apple tree crop provisions?")
 print(result)
 
