@@ -36,8 +36,8 @@ https://discord.gg/BPry2Ygh
 
 ### Insurance Resource 
 - [USDA site for insurance computation](https://public-rma.fpac.usda.gov/apps/PRF#)
-- Problem with this also lacks significant functionality to support potential   policyholders in quickly predicting the impacts of their choices.
+- Problem with this also lacks significant functionality to support potential policyholders in quickly predicting the impacts of their choices.
 - [Insurance Programs](https://www.rma.usda.gov/en/Policy-and-Procedure/Insurance-Plans/Pasture-Rangeland-Forage)
-
+- [Insurance documentation](https://www.rma.usda.gov/-/media/RMA/Handbooks/Coverage-Plans---18000/Rainfall-and-Vegetation-Index---18150/2024-18150-1-Rainfall-Index-Handbook.ashx?la=en)
 
 
