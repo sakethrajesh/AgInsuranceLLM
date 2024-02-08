@@ -1,21 +1,22 @@
-import ollama
-import bs4
+from ollama import Client
+# import ollama
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
 from langchain_community.document_loaders import PyPDFLoader
+import os
+
+OLLAMA_URL = "https://ollamaaginsurance.endeavour.cs.vt.edu/"
+
+client = Client(host=OLLAMA_URL)
 
 url= 'https://www.rma.usda.gov/Policy-and-Procedure/Insurance-Plans/Livestock-Insurance-Plans'
 
-file_path = './InsuranceContext/Apple-Tree-Crop-Provisions-21-APT.ashx'
+file_path = './InsuranceContext/2024-18150-1-Rainfall-Index-Handbook.pdf'
 
 
 loader = PyPDFLoader(file_path)
 docs = loader.load_and_split()
-
-# docs = loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 splits = text_splitter.split_documents(docs)
@@ -33,7 +34,7 @@ def format_docs(docs):
 # Define the Ollama LLM function
 def ollama_llm(question, context):
     formatted_prompt = f"Question: {question}\n\nContext: {context}"
-    response = ollama.chat(model='llama2:chat', messages=[{'role': 'user', 'content': formatted_prompt}])
+    response = client.chat(model='llama2:chat', messages=[{'role': 'user', 'content': formatted_prompt}])
     return response['message']['content']
 
 # Define the RAG chain
@@ -42,14 +43,10 @@ def rag_chain(question):
     formatted_context = format_docs(retrieved_docs)
     return ollama_llm(question, formatted_context) + "\n\n" + formatted_context
 
-# Use the RAG chain
-print('> what is the apple tree crop provisions? \n')
-result = rag_chain("what is the apple tree crop provisions?")
-print(result)
 
 # Continuously ask the user for input
 while True:
-    question = input("Enter your question (or 'q' to quit): ")
+    question = input("Enter your question (or 'q' to quit): \n  >   ")
     if question.lower() == 'q':
         break
 

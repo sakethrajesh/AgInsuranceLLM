@@ -1,4 +1,4 @@
-import ollama
+from ollama import Client
 import bs4
 import asyncio 
 from flask import Flask, request, jsonify, stream_with_context
@@ -9,11 +9,14 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_community.document_loaders import PyPDFLoader
 import requests
+import os
 
 app = Flask(__name__)
 
-docker_url = ""
-client = Client(host=docker_url)
+# get OLLAMA_URL from environment
+OLLAMA_URL = " https://ollamaaginsurance.endeavour.cs.vt.edu/"
+
+client = Client(host=OLLAMA_URL)
 
 @app.route('/api/chat', methods=['POST'])
 async def chat():

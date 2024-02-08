@@ -1,0 +1,53 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    field.cattle.io/publicEndpoints: >-
+      [{"addresses":["192.168.50.53","192.168.50.56","192.168.50.57"],"port":80,"protocol":"HTTP","serviceName":"llama:ollama-new","ingressName":"llama:ollama-ingress","hostname":"ollamaaginsurance.endeavour.cs.vt.edu","path":"/","allNodes":false}]
+  creationTimestamp: '2024-02-07T23:41:18Z'
+  generation: 6
+  managedFields:
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:loadBalancer:
+            f:ingress: {}
+      manager: nginx-ingress-controller
+      operation: Update
+      subresource: status
+      time: '2024-02-07T23:42:09Z'
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:field.cattle.io/publicEndpoints: {}
+        f:spec:
+          f:rules: {}
+      manager: agent
+      operation: Update
+      time: '2024-02-07T23:55:07Z'
+  name: ollama-ingress
+  namespace: llama
+  resourceVersion: '265019277'
+  uid: c190df36-76d7-49db-9c50-8b1cde192bc5
+spec:
+  rules:
+    - host: ollamaaginsurance.endeavour.cs.vt.edu
+      http:
+        paths:
+          - backend:
+              service:
+                name: ollama-new
+                port:
+                  number: 11434
+            path: /
+            pathType: Prefix
+status:
+  loadBalancer:
+    ingress:
+      - ip: 192.168.50.53
+      - ip: 192.168.50.56
+      - ip: 192.168.50.57
