@@ -1,5 +1,6 @@
 import NextAuth, { type DefaultSession } from 'next-auth'
-import GitHub from 'next-auth/providers/github'
+import Google from 'next-auth/providers/google'
+import Github from 'next-auth/providers/github'
 
 declare module 'next-auth' {
   interface Session {
@@ -14,12 +15,12 @@ export const {
   handlers: { GET, POST },
   auth
 } = NextAuth({
-  providers: [GitHub],
+  providers: [Google],
   callbacks: {
     jwt({ token, profile }) {
       if (profile) {
-        token.id = profile.id
-        token.image = profile.avatar_url || profile.picture
+        token.id = profile.id || profile.email
+        token.image = profile.picture || profile.avatar_url
       }
       return token
     },
