@@ -1,31 +1,40 @@
 from ollama import Client
 import bs4
 import asyncio 
-from flask import Flask, request, jsonify, stream_with_context
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OllamaEmbeddings
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough
-from langchain_community.document_loaders import PyPDFLoader
 import requests
 import os
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
 # get OLLAMA_URL from environment
 OLLAMA_URL = " https://ollamaaginsurance.endeavour.cs.vt.edu/"
 
-client = Client(host=OLLAMA_URL)
-
 @app.route('/api/chat', methods=['POST'])
-async def chat():
-    data = request.get_json()
+def chat():
+    data = request.json
     text = data['messages']
-    def generate():
-        response = client.chat(model='llama2', messages=[{'role': 'user', 'content': messages}], stream=True)
+    data = {
+        "model": "llama2",
+        "messages": [
+            {
+            "role": "user",
+            "content": text
+            }
+        ],
+        "stream": False
+    }
 
-    return app.response_class(stream_with_context(generate()))
+    try:
+        response = requests.post(f"{OLLAMA_URL}api/chat", json=data)
+        response.raise_for_status()
+
+        res = response.json()
+        text_content = res["message"]["content"]
+
+        return jsonify({"text": text_content})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
     
