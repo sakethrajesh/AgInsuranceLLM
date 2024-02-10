@@ -7,6 +7,31 @@ import { nanoid } from '@/lib/utils'
 
 export const runtime = 'edge'
 
+export async function POST(req: Request) {
+
+  const json = await req.json()
+
+  const URL = process.env.URL
+  
+  const response = await fetch(`${URL}/api/chat`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ messages: json["messages"] })
+  });
+
+  if (response.ok) {
+    const data = await response.json();
+    return new Response(data["text"], { status: 200 })
+
+  } else {
+    return new Response("There was an error", { status: 500 })
+
+  }
+
+}
+
 // const openai = new OpenAI({
 //   apiKey: process.env.OPENAI_API_KEY
 // })
@@ -62,8 +87,3 @@ export const runtime = 'edge'
 
 // }
 
-export async function POST(req: Request) {
-  
-  const stream = 'hi'
-  return new Response('hi', { status: 200 })
-}
