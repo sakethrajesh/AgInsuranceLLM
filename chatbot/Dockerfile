@@ -1,5 +1,4 @@
 FROM node:18-alpine AS base
-LABEL org.opencontainers.image.source https://github.com/sakethrajesh/AgInsuranceLLM
 
 # Install dependencies only when needed
 FROM base AS deps
