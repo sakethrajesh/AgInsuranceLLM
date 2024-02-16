@@ -1,17 +1,13 @@
 import { kv } from '@vercel/kv'
-// import { OpenAIStream, StreamingTextResponse } from 'ai'
-import OpenAI from 'openai'
-
+import { Message, StreamingTextResponse } from "ai";
 import { auth } from '@/auth'
 import { nanoid } from '@/lib/utils'
 
-export const runtime = 'edge'
 
-export async function POST(req: Request) {
+export async function POST2(req: Request) {
 
   const json = await req.json()
-
-  const URL = process.env.URL
+  const URL = process.env.URL;
   
   const response = await fetch(`${URL}/api/chat`, {
     method: 'POST',
@@ -32,6 +28,53 @@ export async function POST(req: Request) {
 
 }
 
+export async function POST(req: Request) {
+  const { messages }: { messages: Message[] } = await req.json();
+  const URL = process.env.URL;
+  const response = await fetch(`${URL}/api/stream_chat`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ messages: messages })
+  }); 
+
+    if (response.ok && response.body) {
+      let reader = response.body.getReader();
+      let decoder = new TextDecoder();
+
+      return new Response(new ReadableStream({
+        async start(controller) {
+          let buffer = '';
+          while (true) {
+              const { done, value } = await reader.read();
+              if (done) break;
+              let chunk = decoder.decode(value, { stream: true });
+              try {
+                  const json = JSON.parse(chunk);
+                  if (json.text.trim().length > 0) {
+                      buffer += json.text; 
+                  }
+              } catch (error) {
+                  console.error('Error parsing JSON chunk', error);
+              }
+              if (buffer.length > 20) { // Threshold can adjusted for more responsiveness
+                  controller.enqueue(buffer);
+                  buffer = '';
+              }
+          }
+          if (buffer.length > 0) {
+              controller.enqueue(buffer); // complete leftover buffer
+          }
+          controller.close();
+          reader.releaseLock();
+      } 
+      }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+  } else {
+      return new Response("Error:", { status: 500 });
+  }
+
+}
 // const openai = new OpenAI({
 //   apiKey: process.env.OPENAI_API_KEY
 // })
