@@ -12,9 +12,13 @@ RUN pip install langchain_community
 RUN pip install chromadb
 RUN pip install pypdf
 RUN pip install flask
+# RUN pip install pysqlite3-binary
 
 COPY api.py .
+COPY InsuranceContext ./
+COPY InsuranceContext/handbook.pdf .
+COPY api_unstable.py .
 
-ENV OLLAMA_URL=https://ollamaaginsurance.endeavour.cs.vt.edu/
+ENV OLLAMA_URL=https://ollamaaginsurance.endeavour.cs.vt.edu
 
-ENTRYPOINT ["python", "api.py"]
+ENTRYPOINT ["python3", "api_unstable.py"]
