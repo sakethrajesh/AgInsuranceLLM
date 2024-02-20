@@ -52,7 +52,7 @@ export async function POST(req: Request) {
               let chunk = decoder.decode(value, { stream: true });
               try {
                   const json = JSON.parse(chunk);
-                  if (json.text.trim().length > 0) {
+                  if (json.text.length > 0) {
                       buffer += json.text; 
                   }
               } catch (error) {
