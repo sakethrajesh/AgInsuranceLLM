@@ -53,12 +53,12 @@ export function UserMenu({ user }: UserMenuProps) {
           <DropdownMenuSeparator />
           <DropdownMenuItem asChild>
             <a
-              href="https://vercel.com"
+              href="https://www.rma.usda.gov/en/Policy-and-Procedure/Insurance-Plans/Pasture-Rangeland-Forage/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-between w-full text-xs"
             >
-              Vercel Homepage
+              PRF-RI Program Website
               <IconExternalLink className="size-3 ml-auto" />
             </a>
           </DropdownMenuItem>
