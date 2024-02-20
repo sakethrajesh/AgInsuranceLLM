@@ -7,15 +7,15 @@ import { IconArrowRight } from '@/components/ui/icons'
 const exampleMessages = [
   {
     heading: 'See if you are eligible for insurance',
-    message: `Am I qualified if I am a not a US citizen "?`
+    message: 'Am I qualified if I am a not a US citizen?'
   },
   {
     heading: 'Find requirements for your person type',
-    message: 'What do I need as an LLC? \n'
+    message: 'What do I need as an LLC?'
   },
   {
     heading: 'Look up definitions for terms',
-    message: `What does final area revenue mean? \n`
+    message: `What does final area revenue mean?`
   }
 ]
 
