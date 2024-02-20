@@ -52,13 +52,20 @@ export async function POST(req: Request) {
               if (done) break;
               let chunk = decoder.decode(value, { stream: true });
               try {
-                  const json = JSON.parse(JSON.stringify(chunk));
-                  if (json.text && json.text.length > 0) {
-                      buffer += json.text; 
-                  }
+                    //console.log("Chunk:", chunk);
+                    chunk.split("\n").forEach((line) => {
+                      if(line.trim().length > 0)
+                      {
+                        //console.log("Line:", line);
+                        const json = JSON.parse(line);
+                        if (json && json.text && json.text.length > 0) {
+                            buffer += json.text; 
+                        }
+                      }
+                    });
                 
               } catch (error) {
-                  //console.log("Buffer", buffer);
+                  //console.log("Error Chunk:", chunk);
                   console.error('Error parsing JSON chunk', error);
               }
               if (buffer.length > 20) { // Threshold can adjusted for more responsiveness
