@@ -1,6 +1,7 @@
 from ollama import Client
 import os
-from flask import Flask, request, jsonify
+import json
+from flask import Flask, Response, request, jsonify, stream_with_context
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
@@ -35,12 +36,19 @@ def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
 # Define the Ollama LLM function
-def ollama_llm(convo, context):
+def ollama_llm(convo, context, stream=False):
     question = convo[-1]['content']
     formatted_prompt = f"Question: {question}\n\nContext: {context}"
     convo[-1]['content'] = formatted_prompt
-    response = client.chat(model='llama2:chat', messages=convo)
+    response = client.chat(model='llama2:chat', messages=convo, stream=stream)  
     return response['message']['content']
+
+# Define the Ollama LLM function
+def ollama_stream(convo, context, stream=False):
+    question = convo[-1]['content']
+    formatted_prompt = f"Question: {question}\n\nContext: {context}"
+    convo[-1]['content'] = formatted_prompt
+    return client.chat(model='llama2:chat', messages=convo, stream=stream)  
 
 # Define the RAG chain
 def rag_chain(question):
@@ -69,6 +77,23 @@ def chat():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
-    
+@app.route('/api/stream_chat', methods=['POST'])
+def stream_chat():
+    data = request.json
+    messages = data['messages']
+    def generate(stream):  
+        for chunk in stream:
+            if chunk:
+                yield (json.dumps({"text": chunk["message"]["content"]}) + "\n").encode()
+    try:
+        question = messages[-1]['content']
+        retrieved_docs = retriever.invoke(question)
+        formatted_context = format_docs(retrieved_docs)
+
+        return Response(stream_with_context(generate(ollama_stream(messages, formatted_context, stream=True))),content_type='application/json')    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500 
+
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=5001, debug=True)
