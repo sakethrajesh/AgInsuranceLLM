@@ -1,8 +1,16 @@
+import { useEffect, useState } from 'react'
 import { UseChatHelpers } from 'ai/react'
 
 import { Button } from '@/components/ui/button'
 import { ExternalLink } from '@/components/external-link'
-import { IconArrowRight } from '@/components/ui/icons'
+import { IconArrowRight, IconExternalLink } from '@/components/ui/icons'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger
+} from '@/components/ui/dropdown-menu'
 
 const exampleMessages = [
   {
@@ -20,6 +28,20 @@ const exampleMessages = [
 ]
 
 export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
+  const [models, setModels] = useState([])
+
+  useEffect(() => {
+    const fetchModels = async () => {
+      const response = await fetch(
+        'https://ollamaaginsurance.endeavour.cs.vt.edu/api/tags'
+      )
+      const data = await response.json()
+      setModels(data.models)
+    }
+
+    fetchModels()
+  }, [])
+
   return (
     <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
@@ -45,6 +67,28 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
               {message.heading}
             </Button>
           ))}
+        </div>
+        <div className="mt-4 flex items-center justify-between">
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="pl-0">
+                <h2 className="mb-2 text-lg font-semibold">Choose a model:</h2>
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              sideOffset={8}
+              align="start"
+              className="w-[180px]"
+            >
+              {models.map((model, index) => (
+                <DropdownMenuItem key={index}>
+                  <div className="text-xs font-medium">
+                    <p>{model.name}</p>
+                  </div>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </div>
