@@ -12,7 +12,11 @@ export function FooterText({ className, ...props }: React.ComponentProps<'p'>) {
       )}
       {...props}
     >
-      An interactive conversational assistant to improve agricultural insurance selection.
+      LLMs can make mistakes. Verify important information.
+      Data is pulled from {''}
+      <ExternalLink href="https://www.rma.usda.gov/-/media/RMA/Handbooks/Coverage-Plans---18000/Rainfall-and-Vegetation-Index---18150/2024-18150-1-Rainfall-Index-Handbook.ashx?la=en">
+        Insurance Handbook
+      </ExternalLink>
     </p>
   )
 }
