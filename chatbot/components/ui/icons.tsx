@@ -137,6 +137,34 @@ function IconGitHub({ className, ...props }: React.ComponentProps<'svg'>) {
   )
 }
 
+function IconGoogle({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="url(#rainbowGradient)"
+      className={cn('size-4', className)}
+      {...props}
+    >
+      <defs>
+        <linearGradient id="rainbowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#ff0000" />
+          <stop offset="16.67%" stopColor="#ff8000" />
+          <stop offset="33.33%" stopColor="#ffff00" />
+          <stop offset="50%" stopColor="#00ff00" />
+          <stop offset="66.67%" stopColor="#0000ff" />
+          <stop offset="83.33%" stopColor="#8000ff" />
+          <stop offset="100%" stopColor="#ff00ff" />
+        </linearGradient>
+      </defs>
+      <title>Google</title>
+      {/* Add the path for the Google icon */}
+      <path d="M 16 7 C 14 3 10 3 10 3 C 2 3 2 9 2 11 L 2 13 C 2 15 2 21 10 21 C 18 21 18 15 18 13 L 10 13 L 10 11 L 19 11 C 20 11.6667 20 12.3333 20 13 C 20 15 20 23 10 23 C 0 23 0 15 0 13 L 0 11 C 0 9 0 1 10 1 C 10 1 16 1 18 7"/>
+    </svg>
+  )
+}
+
 function IconSeparator({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
     <svg
@@ -482,6 +510,7 @@ export {
   IconOpenAI,
   IconVercel,
   IconGitHub,
+  IconGoogle,
   IconSeparator,
   IconArrowDown,
   IconArrowRight,
