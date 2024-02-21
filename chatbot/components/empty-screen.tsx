@@ -72,7 +72,10 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="pl-0">
-                <h2 className="mb-2 text-lg font-semibold">Choose a model:</h2>
+                <h2 className="mb-2 text-lg font-semibold">
+                  Choose a model: {' '}
+                  {models.length > 0 ? models[0].name : 'Default Model'}
+                </h2>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
