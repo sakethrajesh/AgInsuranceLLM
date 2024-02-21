@@ -4,7 +4,7 @@ import { auth } from '@/auth'
 import { nanoid } from '@/lib/utils'
 
 
-export async function POST2(req: Request) {
+async function POST2(req: Request) {
 
   const json = await req.json()
   const URL = process.env.URL;

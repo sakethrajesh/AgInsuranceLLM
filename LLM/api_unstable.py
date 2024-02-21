@@ -36,25 +36,19 @@ def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
 # Define the Ollama LLM function
-def ollama_llm(convo, context, stream=False):
+def ollama_llm(convo, context, stream=False, model='llama2:chat'):
     question = convo[-1]['content']
     formatted_prompt = f"Question: {question}\n\nContext: {context}"
     convo[-1]['content'] = formatted_prompt
-    response = client.chat(model='llama2:chat', messages=convo, stream=stream)  
+    response = client.chat(model=model, messages=convo, stream=stream)  
     return response['message']['content']
 
 # Define the Ollama LLM function
-def ollama_stream(convo, context, stream=False):
+def ollama_stream(convo, context, stream=False, model='llama2:chat'):
     question = convo[-1]['content']
     formatted_prompt = f"Question: {question}\n\nContext: {context}"
     convo[-1]['content'] = formatted_prompt
-    return client.chat(model='llama2:chat', messages=convo, stream=stream)  
-
-# Define the RAG chain
-def rag_chain(question):
-    retrieved_docs = retriever.invoke(question)
-    formatted_context = format_docs(retrieved_docs)
-    return ollama_llm(question, formatted_context)
+    return client.chat(model=model, messages=convo, stream=stream)  
 
 ############################################################################################################################################################
 
@@ -63,6 +57,7 @@ def rag_chain(question):
 def chat():
     data = request.json
     messages = data['messages']
+    model = request.json.get('model', default='llama2:chat')
 
     try:        
         # res = client.chat(model='llama2:chat', messages=messages)
@@ -79,8 +74,9 @@ def chat():
     
 @app.route('/api/stream_chat', methods=['POST'])
 def stream_chat():
-    data = request.json
-    messages = data['messages']
+    messages = request.json['messages']
+    model = request.json.get('model', default='llama2:chat')
+
     def generate(stream):  
         for chunk in stream:
             if chunk:
@@ -90,7 +86,7 @@ def stream_chat():
         retrieved_docs = retriever.invoke(question)
         formatted_context = format_docs(retrieved_docs)
 
-        return Response(stream_with_context(generate(ollama_stream(messages, formatted_context, stream=True))),content_type='application/json')    
+        return Response(stream_with_context(generate(ollama_stream(messages, formatted_context, stream=True, model=model))),content_type='application/json')    
     except Exception as e:
         return jsonify({"error": str(e)}), 500 
 
