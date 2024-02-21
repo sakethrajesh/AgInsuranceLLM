@@ -39,23 +39,33 @@ export async function POST(req: Request) {
     body: JSON.stringify({ messages: messages })
   }); 
 
-    if (response.ok && response.body) {
-      let reader = response.body.getReader();
+    if (response.ok) {
+      let reader = response.body?.getReader();
+    
       let decoder = new TextDecoder();
 
       return new Response(new ReadableStream({
         async start(controller) {
           let buffer = '';
-          while (true) {
+          while (true && reader !== undefined) {
               const { done, value } = await reader.read();
               if (done) break;
               let chunk = decoder.decode(value, { stream: true });
               try {
-                  const json = JSON.parse(chunk);
-                  if (json.text.length > 0) {
-                      buffer += json.text; 
-                  }
+                    //console.log("Chunk:", chunk);
+                    chunk.split("\n").forEach((line) => {
+                      if(line.trim().length > 0)
+                      {
+                        //console.log("Line:", line);
+                        const json = JSON.parse(line);
+                        if (json && json.text && json.text.length > 0) {
+                            buffer += json.text; 
+                        }
+                      }
+                    });
+                
               } catch (error) {
+                  //console.log("Error Chunk:", chunk);
                   console.error('Error parsing JSON chunk', error);
               }
               if (buffer.length > 20) { // Threshold can adjusted for more responsiveness
@@ -67,7 +77,7 @@ export async function POST(req: Request) {
               controller.enqueue(buffer); // complete leftover buffer
           }
           controller.close();
-          reader.releaseLock();
+          reader?.releaseLock();
       } 
       }), { status: 200, headers: { 'Content-Type': 'application/json' } });
   } else {
