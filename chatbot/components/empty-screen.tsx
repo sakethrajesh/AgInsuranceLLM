@@ -11,6 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from './ui/select'
 
 const exampleMessages = [
   {
@@ -27,14 +28,12 @@ const exampleMessages = [
   }
 ]
 
-export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
-  const [models, setModels] = useState([])
+export function EmptyScreen({ setModel, setInput }: { setModel: any, setInput: any }) {
+  const [models, setModels] = useState<{ name: string }[]>([]);
 
   useEffect(() => {
     const fetchModels = async () => {
-      const response = await fetch(
-        'https://ollamaaginsurance.endeavour.cs.vt.edu/api/tags'
-      )
+      const response = await fetch('/api/tags')
       const data = await response.json()
       setModels(data.models)
     }
@@ -69,6 +68,21 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
           ))}
         </div>
         <div className="mt-4 flex items-center justify-between">
+          <Select onValueChange={(value) => {setModel(value)}} defaultValue={'llama2:chat'}>
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Select a model" />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectLabel>Models</SelectLabel>
+                {models.map((model, index) => (
+                    <SelectItem  key={index} value={model.name}>{model.name}</SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+        </div>
+        {/* <div className="mt-4 flex items-center justify-between">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="pl-0">
@@ -92,7 +106,7 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
-        </div>
+        </div> */}
       </div>
     </div>
   )

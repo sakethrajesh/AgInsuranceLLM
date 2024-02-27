@@ -29,14 +29,18 @@ async function POST2(req: Request) {
 }
 
 export async function POST(req: Request) {
-  const { messages }: { messages: Message[] } = await req.json();
+  const body = await req.json();
+
+  const messages = body['messages'];
+  const model = body['model'];
+  
   const URL = process.env.URL;
   const response = await fetch(`${URL}/api/stream_chat`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ messages: messages })
+    body: JSON.stringify({ messages: messages, model: model})
   }); 
 
     if (response.ok) {

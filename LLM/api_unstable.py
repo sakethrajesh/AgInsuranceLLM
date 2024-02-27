@@ -75,7 +75,9 @@ def chat():
 @app.route('/api/stream_chat', methods=['POST'])
 def stream_chat():
     messages = request.json['messages']
-    model = request.json.get('model', default='llama2:chat')
+    model = request.json.get('model')
+
+    print('model:', model)
 
     def generate(stream):  
         for chunk in stream:
@@ -92,4 +94,4 @@ def stream_chat():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=5001)
