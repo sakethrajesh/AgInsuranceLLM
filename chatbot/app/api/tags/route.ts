@@ -1,8 +1,11 @@
 export async function GET() {
 
   const response = await fetch(
-    'https://ollamaaginsurance.endeavour.cs.vt.edu/api/tags'
+    'https://ollamaaginsurance.endeavour.cs.vt.edu/api/tags', 
+    { cache: 'no-store' }
   )
 
-  return response
+  const data = await response
+
+  return data
 }
