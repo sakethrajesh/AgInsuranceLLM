@@ -48,6 +48,27 @@ export async function POST(req: Request) {
     
       let decoder = new TextDecoder();
 
+      // const payload = {
+      //   id,
+      //   title,
+      //   userId,
+      //   createdAt,
+      //   path,
+      //   messages: [
+      //     ...messages,
+      //     {
+      //       content: completion,
+      //       role: 'assistant'
+      //     }
+      //   ]
+      // }
+
+      // await kv.hmset(`chat:${id}`, payload)
+      // await kv.zadd(`user:chat:${userId}`, {
+      //   score: createdAt,
+      //   member: `chat:${id}`
+      // }) 
+
       return new Response(new ReadableStream({
         async start(controller) {
           let buffer = '';
@@ -120,27 +141,8 @@ export async function POST(req: Request) {
 //         messages,
 //       }));
 
-//       const payload = {
-//         id,
-//         title,
-//         userId,
-//         createdAt,
-//         path,
-//         messages: [
-//           ...messages,
-//           {
-//             content: completion,
-//             role: 'assistant'
-//           }
-//         ]
-//       }
-//       await kv.hmset(`chat:${id}`, payload)
-//       await kv.zadd(`user:chat:${userId}`, {
-//         score: createdAt,
-//         member: `chat:${id}`
-//       })
-//     }
-//   })  
+
+
 
 // }
 

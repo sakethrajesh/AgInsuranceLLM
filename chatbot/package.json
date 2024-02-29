@@ -25,6 +25,7 @@
     "@vercel/kv": "^1.0.1",
     "@vercel/og": "^0.6.2",
     "ai": "^2.2.31",
+    "axios": "^1.6.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "focus-trap-react": "^10.2.3",
@@ -65,5 +66,14 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.3.3"
   },
-  "packageManager": "pnpm@8.6.3"
+  "packageManager": "pnpm@8.6.3",
+  "name": "chatbot",
+  "description": "<a href=\"https://chat.vercel.ai/\">   <img alt=\"Next.js 14 and App Router-ready AI chatbot.\" src=\"https://chat.vercel.ai/opengraph-image.png\">   <h1 align=\"center\">Next.js AI Chatbot</h1> </a>",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
 }
