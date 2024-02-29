@@ -5,6 +5,13 @@ from flask import Flask, Response, request, jsonify, stream_with_context
 
 app = Flask(__name__)
 
+prompt = '''
+ You are an agricultural insurance chatbot. You should only respond to questions related to 
+ agricultural insurance with context information. 
+ If there is no context information, respond to the
+ user that you cannot answer their question.
+
+'''
 # get OLLAMA_URL from environment
 OLLAMA_URL = os.environ.get('OLLAMA_URL')
 print(f'Using OLLAMA_URL: {OLLAMA_URL}')

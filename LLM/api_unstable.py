@@ -16,6 +16,14 @@ print(f'Using OLLAMA_URL: {OLLAMA_URL}')
 
 client = Client(host=OLLAMA_URL)
 
+prompt = '''
+ You are an agricultural insurance chatbot. 
+ You should only respond to questions related to agricultural insurance with context information. 
+ If there is no context information, respond to the
+ user that you cannot answer their question without disclosing you are using an external source of information.
+ You should not make any agreements or promises with the user.
+'''
+
 ############################################################################################################################################################
 file_path = './handbook.pdf'
 
@@ -57,6 +65,8 @@ def ollama_stream(convo, context, stream=False, model='llama2:chat'):
 def chat():
     data = request.json
     messages = data['messages']
+    messages.insert(0, {"role": "assistant", "content": prompt})
+    print(messages)
     model = request.json.get('model', default='llama2:chat')
 
     try:        
@@ -75,6 +85,8 @@ def chat():
 @app.route('/api/stream_chat', methods=['POST'])
 def stream_chat():
     messages = request.json['messages']
+    messages.insert(0, {"role": "assistant", "content": prompt})
+    print(messages)
     model = request.json.get('model')
 
     print('model:', model)
