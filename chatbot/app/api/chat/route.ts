@@ -33,6 +33,14 @@ export async function POST(req: Request) {
 
   const messages = body['messages'];
   const model = body['model'];
+
+  const userId = (await auth())?.user.id
+
+  if (!userId) {
+    return new Response('Unauthorized', {
+      status: 401
+    })
+  }
   
   const URL = process.env.URL;
   const response = await fetch(`${URL}/api/stream_chat`, {
@@ -43,106 +51,77 @@ export async function POST(req: Request) {
     body: JSON.stringify({ messages: messages, model: model})
   }); 
 
-    if (response.ok) {
-      let reader = response.body?.getReader();
-    
-      let decoder = new TextDecoder();
+  
+  try {
+        if (response.ok) {
+          let reader = response.body?.getReader();
+        
+          let decoder = new TextDecoder();
 
-      // const payload = {
-      //   id,
-      //   title,
-      //   userId,
-      //   createdAt,
-      //   path,
-      //   messages: [
-      //     ...messages,
-      //     {
-      //       content: completion,
-      //       role: 'assistant'
-      //     }
-      //   ]
-      // }
-
-      // await kv.hmset(`chat:${id}`, payload)
-      // await kv.zadd(`user:chat:${userId}`, {
-      //   score: createdAt,
-      //   member: `chat:${id}`
-      // }) 
-
-      return new Response(new ReadableStream({
-        async start(controller) {
-          let buffer = '';
-          while (true && reader !== undefined) {
-              const { done, value } = await reader.read();
-              if (done) break;
-              let chunk = decoder.decode(value, { stream: true });
-              try {
-                    //console.log("Chunk:", chunk);
-                    chunk.split("\n").forEach((line) => {
-                      if(line.trim().length > 0)
-                      {
-                        //console.log("Line:", line);
-                        const json = JSON.parse(line);
-                        if (json && json.text && json.text.length > 0) {
-                            buffer += json.text; 
-                        }
-                      }
-                    });
-                
-              } catch (error) {
-                  //console.log("Error Chunk:", chunk);
-                  console.error('Error parsing JSON chunk', error);
+          return new Response(new ReadableStream({
+            async start(controller) {
+              let buffer = '';
+              while (true && reader !== undefined) {
+                  const { done, value } = await reader.read();
+                  if (done) break;
+                  let chunk = decoder.decode(value, { stream: true });
+                  try {
+                        //console.log("Chunk:", chunk);
+                        chunk.split("\n").forEach((line) => {
+                          if(line.trim().length > 0)
+                          {
+                            //console.log("Line:", line);
+                            const json = JSON.parse(line);
+                            if (json && json.text && json.text.length > 0) {
+                                buffer += json.text; 
+                            }
+                          }
+                        });
+                    
+                  } catch (error) {
+                      //console.log("Error Chunk:", chunk);
+                      console.error('Error parsing JSON chunk', error);
+                  }
+                  if (buffer.length > 20) { // Threshold can adjusted for more responsiveness
+                      controller.enqueue(buffer);
+                      buffer = '';
+                  }
               }
-              if (buffer.length > 20) { // Threshold can adjusted for more responsiveness
-                  controller.enqueue(buffer);
-                  buffer = '';
+              if (buffer.length > 0) {
+                  controller.enqueue(buffer); // complete leftover buffer
               }
-          }
-          if (buffer.length > 0) {
-              controller.enqueue(buffer); // complete leftover buffer
-          }
-          controller.close();
-          reader?.releaseLock();
-      } 
-      }), { status: 200, headers: { 'Content-Type': 'application/json' } });
-  } else {
-      return new Response("Error:", { status: 500 });
-  }
+              controller.close();
+              reader?.releaseLock();
+          } 
+          }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+      } else {
+          return new Response("Error:", { status: 500 });
+      }
+  } finally {
 
-}
-// const openai = new OpenAI({
-//   apiKey: process.env.OPENAI_API_KEY
-// })
-
-// export async function POST2 (req: Request) {
-//   const json = await req.json()
-//   const { messages, previewToken } = json
-//   const userId = (await auth())?.user.id
-
-//   if (!userId) {
-//     return new Response('Unauthorized', {
-//       status: 401
-//     })
-//   }
-
-//   const stream = OllamaStream(res, {
-//     async onCompletion(completion) {
-//       const title = json.messages[0].content.substring(0, 100)
-//       const id = json.id ?? nanoid()
-//       const createdAt = Date.now()
-//       const path = `/chat/${id}`
-//       const headers = {
-//         'Content-Type': 'application/json'
-//       };
-//       const res = fetch('https://api.openai.com/v1/engines/davinci-codex/completions', 
-      
-//       body: JSON.stringify({
-//         model: 'gpt-3.5-turbo',
-//         messages,
-//       }));
+    const title = body.messages[0].content.substring(0, 100)
+      const id = body.id ?? nanoid()
+      const createdAt = Date.now()
+      const path = `/chat/${id}`
+      const payload = {
+        id,
+        title,
+        userId,
+        createdAt,
+        path,
+        messages: [
+          ...messages,
+          // {
+          //   content: completion,
+          //   role: 'assistant'
+          // }
+        ]
+      }
+      await kv.hmset(`chat:${id}`, payload)
+      await kv.zadd(`user:chat:${userId}`, {
+        score: createdAt,
+        member: `chat:${id}`
+      })
 
 
-
-
-// }
-
+  }}
