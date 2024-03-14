@@ -11,30 +11,45 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from './ui/select'
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue
+} from './ui/select'
 
 const exampleMessages = [
   {
-    heading: 'See if you are eligible for insurance',
-    message: 'Am I qualified if I am a not a US citizen?'
+    heading: 'See how you can enroll',
+    message: 'How can I enroll in the PRF insurance program for my land?'
   },
   {
-    heading: 'Find requirements for your person type',
-    message: 'What do I need as an LLC?'
+    heading: 'Find upcoming deadlines',
+    message:
+      'What is the deadline for purchasing PRF insurance for the upcoming season?'
   },
   {
     heading: 'Look up definitions for terms',
-    message: `What does final area revenue mean?`
+    message: `What does the acronym PRF-RI mean?`
   }
 ]
 
-export function EmptyScreen({ setModel, setInput }: { setModel: any, setInput: any }) {
-  const [models, setModels] = useState<{ name: string }[]>([]);
+export function EmptyScreen({
+  setModel,
+  setInput
+}: {
+  setModel: any
+  setInput: any
+}) {
+  const [models, setModels] = useState<{ name: string }[]>([])
 
   useEffect(() => {
     const fetchModels = async () => {
       const response = await fetch('/api/tags')
-      const data = await response.json(); // Parse the response as JSON
+      const data = await response.json() // Parse the response as JSON
       setModels(data.models) // Access the 'models' property from the parsed JSON
       console.log(data.models)
     }
@@ -69,7 +84,12 @@ export function EmptyScreen({ setModel, setInput }: { setModel: any, setInput: a
           ))}
         </div>
         <div className="mt-4 flex items-center justify-between">
-          <Select onValueChange={(value) => {setModel(value)}} defaultValue={'llama2:chat'}>
+          <Select
+            onValueChange={value => {
+              setModel(value)
+            }}
+            defaultValue={'llama2:chat'}
+          >
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Select a model" />
             </SelectTrigger>
@@ -77,7 +97,9 @@ export function EmptyScreen({ setModel, setInput }: { setModel: any, setInput: a
               <SelectGroup>
                 <SelectLabel>Models</SelectLabel>
                 {models.map((model, index) => (
-                    <SelectItem  key={index} value={model.name}>{model.name}</SelectItem>
+                  <SelectItem key={index} value={model.name}>
+                    {model.name}
+                  </SelectItem>
                 ))}
               </SelectGroup>
             </SelectContent>
