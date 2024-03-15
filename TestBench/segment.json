@@ -1,17 +1,102 @@
 [
-    {
-        "id": 1,
-       "documnet": "",
-       "metadata" : {"chapter": "3", "verse": "16"}
-    },
-    {
-        "id": 2,
-       "documnet": "stuff2",
-       "metadata" : {"chapter": "3", "verse": "17"}
-    },
-    {
-        "id": 3,
-       "documnet": "stuff3",
-       "metadata" : {"chapter": "3", "verse": "18"}
-    }
+  {
+    "id": 1,
+    "document": "RAINFALL INDEX INSURANCE STANDARDS HANDBOOK",
+    "metadata": { "page": "title", "section": "1" }
+  },
+  {
+    "id": 2,
+    "document": "2024 and Succeeding Crop Years",
+    "metadata": { "page": "title", "section": "2" }
+  },
+  {
+    "id": 3,
+    "document": "United States Department of Agriculture",
+    "metadata": { "page": "title", "section": "3" }
+  },
+  {
+    "id": 4,
+    "document": "Federal Crop Insurance Corporation",
+    "metadata": { "page": "title", "section": "4" }
+  },
+  {
+    "id": 5,
+    "document": "FCIC-18150-1 (11-2023)",
+    "metadata": { "page": "title", "section": "5" }
+  },
+  {
+    "id": 6,
+    "document": "UNITED STATES DEPARTMENT OF AGRICULTURE FARM PRODUCTION AND CONSERVATION RISK MANAGEMENT AGENCY",
+    "metadata": { "page": "TP 1", "section": "1" }
+  },
+  {
+    "id": 7,
+    "document": "TITLE: Rainfall Index Insurance Standards Handbook",
+    "metadata": { "page": "TP 1", "section": "2" }
+  },
+  {
+    "id": 8,
+    "document": "NUMBER: FCIC-18150-1 OPI: Product Administration and Standards Division",
+    "metadata": { "page": "TP 1", "section": "3" }
+  },
+  {
+    "id": 9,
+    "document": "EFFECTIVE DATE: 2024 and Succeeding Crop Years",
+    "metadata": { "page": "TP 1", "section": "4" }
+  },
+  {
+    "id": 10,
+    "document": "ISSUE DATE: November 30, 2023",
+    "metadata": { "page": "TP 1", "section": "5" }
+  },
+  {
+    "id": 11,
+    "document": "SUBJECT: Provides the insurance standards for the Rainfall Index Plans of Insurance",
+    "metadata": { "page": "TP 1", "section": "6" }
+  },
+  {
+    "id": 12,
+    "document": "APPROVED: /s/ John W. Underwood for Deputy Administrator for Product Management",
+    "metadata": { "page": "TP 1", "section": "7" }
+  },
+  {
+    "id": 13,
+    "document": "REASON FOR ISSUANCE This handbook provides the official FCIC-approved underwriting, administration, and review standards for the Rainfall Index plans of insurance for the 2024 and succeeding crop years for crops with a contract change date on or after the issue date. This handbook replaces the FCIC-18150 Rainfall Index Insurance Standards Handbook issued in April 2023. This handbook is effective for the 2024 and succeeding crop years and is not retroactive to any prior crop year determinations.",
+    "metadata": { "page": "TP 1", "section": "8" }
+  },
+  {
+    "id": 14,
+    "document": "SUMMARY OF CHANGES Listed below are the changes to the 2024 FCIC-18150 Rainfall Index Insurance Standards Handbook with significant content change. All changes, and additions are highlighted. Minor changes and corrections are not included in this listing. *** used throughout the handbook indicate where major deletions occurred. ",
+    "metadata": { "page": "TP 1", "section": "9" }
+  },
+  {
+    "id": 15,
+    "document": "Reference: Part 5, Description of Change: Moved Annual Forage from Exhibit 8 to make it Part 5 and deleted Exhibit 8.",
+    "metadata": { "page": "TP 1", "section": "10" }
+  },
+  {
+    "id": 16,
+    "document": "Reference: Exhibit 3, Description of Change: Added landowner contact information to include landowner address and phone number.",
+    "metadata": { "page": "TP 1", "section": "11" }
+  },
+  {
+    "id": 17,
+    "document": "Reference: Exhibit 6A, Description of Change: Added clarification that livestock disposition records when destocking due to natural causes is an acceptable record when verifying insurable interest in livestock.",
+    "metadata": { "page": "TP 1", "section": "12" }
+  },
+  {
+    "id": 18,
+    "document": "Reference: Exhibit 6E, Description of Change: Clarified that when determining shares on BLM acreage Active Use AUMs should be utilized.",
+    "metadata": { "page": "TP 1", "section": "13" }
+  },
+  {
+    "id": 19,
+    "document": "Reference: Exhibit 8, Description of Change: Added Exhibit 8 to provide procedures on Annual Forage growing seasons and double cropping rules.",
+    "metadata": { "page": "TP 1", "section": "14" }
+  },
+  {
+    "id": 20,
+    "document": "Directive #: 18150-1, 18150-1, 18150-1, 18150-1, 18150",
+    "metadata": { "page": "TP 1", "section": "15" }
+  }
 ]
