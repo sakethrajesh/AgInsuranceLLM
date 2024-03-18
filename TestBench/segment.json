@@ -1,457 +1,152 @@
 [
   {
     "id": 1,
-    "document": "RAINFALL INDEX INSURANCE STANDARDS HANDBOOK",
-    "metadata": { "page": "title", "section": "1" }
+    "document": "Purpose and Objective This handbook provides procedures and information for administering the Rainfall Index plans of insurance. If there is a conflict between this handbook and the CIH or other FCIC approved handbook, this handbook controls. If there is a conflict between this handbook and the policy, the policy controls.",
+    "metadata": {
+      "page": "1",
+      "section": "1",
+      "subsection": "A",
+      "type": "paragraph"
+    }
   },
   {
     "id": 2,
-    "document": "2024 and Succeeding Crop Years",
-    "metadata": { "page": "title", "section": "2" }
+    "document": "Source of Authority The RI plans of insurance are authorized under Section 522(c) of the Federal Crop Insurance Act. Initially the only crop covered was PRF. However, other products that utilize the provisions of the RI plans of insurance were approved by the FCIC Board of Directors under Section 508(h) of the Federal Crop Insurance Act. The PRF program is an RMA developed product approved by the FCIC Board of Directors under Section 522(c) of the Federal Crop Insurance Act. The apiculture and the AF programs are privately developed products approved by the FCIC Board of Directors under Section 508(h) of the Federal Crop Insurance Act. ",
+    "metadata": {
+      "page": "1",
+      "section": "1",
+      "subsection": "B",
+      "type": "paragraph"
+    }
   },
   {
     "id": 3,
-    "document": "United States Department of Agriculture",
-    "metadata": { "page": "title", "section": "3" }
+    "document": "Title VI of the Civil Rights Act of 1964 The USDA prohibits discrimination against its customers. Title VI of the Civil Rights Act of 1964 provides that 'No person in the United States shall on the ground of race, color, or national origin be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.' Therefore, programs and activities that receive Federal financial assistance must operate in a non-discriminatory manner. Also, a recipient of RMA funding may not retaliate against any person because they opposed an unlawful practice or policy or made charges, testified, or participated in a complaint under Title VI. It is the AIPs' responsibility to ensure that standards, procedures, methods, and instructions as authorized by FCIC in the sale and service of crop insurance contracts are implemented in a manner compliant with Title VI. Information regarding Title VI of the Civil Rights Act of 1964 and the program discrimination complaint process is available on the USDA public website at www.ascr.usda.gov. For more information on the RMA Non-Discrimination Statement, see the DSSH.",
+    "metadata": {
+      "page": "1",
+      "section": "1",
+      "subsection": "C",
+      "type": "paragraph"
+    }
   },
   {
     "id": 4,
-    "document": "Federal Crop Insurance Corporation",
-    "metadata": { "page": "title", "section": "4" }
+    "document": "Duration The Apiculture, AF, and PRF programs will continue until cancelled by FCIC or no premium rate is filed for the crop.",
+    "metadata": {
+      "page": "2",
+      "section": "1",
+      "subsection": "D",
+      "type": "paragraph"
+    }
   },
   {
     "id": 5,
-    "document": "FCIC-18150-1 (11-2023)",
-    "metadata": { "page": "title", "section": "5" }
+    "document": "AIP Option to Offer Because apiculture and the AF programs are privately developed products, AIPs are not required to offer them. Accordingly, each AIP must determine whether they will offer the apiculture or the AF program. AIPs that elect to offer the apiculture or the AF program must offer it to all eligible producers and must administer the program according to the Rainfall Index plans of insurance, apiculture or AF CP, and the procedures in this handbook. Because the PRF program is an RMA developed product, AIPs are required to offer it to all eligible producers and must administer it according to the Rainfall Index plans of insurance, PRF CP, and the procedures in this handbook.",
+    "metadata": {
+      "page": "2",
+      "section": "1",
+      "subsection": "E",
+      "type": "paragraph"
+    }
   },
   {
     "id": 6,
-    "document": "UNITED STATES DEPARTMENT OF AGRICULTURE FARM PRODUCTION AND CONSERVATION RISK MANAGEMENT AGENCY",
-    "metadata": { "page": "TP 1", "section": "1" }
+    "document": "Handbook Relation/Purpose DSSH This handbook provides the official FCIC-approved form standards and procedures for use in the sale and service of any eligible Federal crop insurance policy; required statements and disclosures; and the standards for submission and review of non-reinsured supplemental policies in accordance with the SRA. GSH This handbook provides the official FCIC-approved standards for policies administered by AIPs under the General Administrative Regulations, Common Crop Insurance Policy Regulations Basic Provisions, including the Catastrophic Risk Protection Endorsement; the Area Risk Protection Insurance Regulations Basic Provisions; the Stacked Income Protection Plan of Insurance; the Rainfall Index Plan; and the Whole Farm Revenue Protection Pilot Policy.",
+    "metadata": {
+      "page": "2",
+      "section": "1",
+      "subsection": "F",
+      "type": "table"
+    }
   },
   {
     "id": 7,
-    "document": "TITLE: Rainfall Index Insurance Standards Handbook",
-    "metadata": { "page": "TP 1", "section": "2" }
+    "document": "AIPs and Agents AIP’s may authorize agents to perform all functions and actions provided in this handbook except for: (1) determining whether to offer the Apiculture or AF according to subparagraph D; (2) reviews; and (3) developing forms and certification statements.",
+    "metadata": {
+      "page": "2",
+      "section": "1",
+      "subsection": "G",
+      "type": "paragraph"
+    }
   },
   {
     "id": 8,
-    "document": "NUMBER: FCIC-18150-1 OPI: Product Administration and Standards Division",
-    "metadata": { "page": "TP 1", "section": "3" }
+    "document": "Terminology for Apiculture For ease in the administration of the terms and to avoid the duplication of this handbook or parts of this handbook when referring to apiculture or the apiculture CP in this handbook the term “acre” is replaced with “colony” and “acres” and “acreage” are replaced with “colonies.” Exception: When referring to “contiguous acreage” the term “acreage” is not replaced with “colonies.” Exception: When referring to “located on acreage” the term “acreage” is not replaced with “colonies.”",
+    "metadata": {
+      "page": "2",
+      "section": "2",
+      "subsection": "",
+      "type": "paragraph"
+    }
   },
   {
     "id": 9,
-    "document": "EFFECTIVE DATE: 2024 and Succeeding Crop Years",
-    "metadata": { "page": "TP 1", "section": "4" }
+    "document": "Disclaimer Statements Insureds must sign and be provided a copy of the applicable disclaimer statement provided in exhibit 4. The disclaimer statements provide general information about how the Rainfall Index plans of insurance work and certain aspects of the plans the insured needs to understand. AIPs must not modify the disclaimers statements provided in exhibit 4.",
+    "metadata": {
+      "page": "3",
+      "section": "3",
+      "subsection": "",
+      "type": "paragraph"
+    }
   },
   {
     "id": 10,
-    "document": "ISSUE DATE: November 30, 2023",
-    "metadata": { "page": "TP 1", "section": "5" }
+    "document": "AIP’s Responsibilities (1) must provide persons insured under the Rainfall Index plans of insurance a copy of the Rainfall Index Plan Common Policy and the applicable crop policy; (2) must report any program issues or concerns related to the Rainfall Index plans of insurance or associated crop policies to RMA Director of PASD; (3) electing to offer the apiculture or AF programs must offer the program(s) to all eligible producers in the area where the program is offered; (4) must offer the PRF program to all producers where the program is offered; and (5) must report the latitude and longitude of the point of reference on the acreage report. This can be obtained from the grid locator map from the RMA website or an AIP’s mapping software.",
+    "metadata": {
+      "page": "3",
+      "section": "4",
+      "subsection": "A",
+      "type": "paragraph"
+    }
   },
   {
     "id": 11,
-    "document": "SUBJECT: Provides the insurance standards for the Rainfall Index Plans of Insurance",
-    "metadata": { "page": "TP 1", "section": "6" }
+    "document": "Insured’s Responsibilities To be insured under the Rainfall Index plans of insurance an insured must: (1) comply with all terms and conditions of the policy; and (2) when completing their application sign applicable disclaimer statement in exhibit 4.",
+    "metadata": {
+      "page": "4",
+      "section": "4",
+      "subsection": "B",
+      "type": "paragraph"
+    }
   },
   {
     "id": 12,
-    "document": "APPROVED: /s/ John W. Underwood for Deputy Administrator for Product Management",
-    "metadata": { "page": "TP 1", "section": "7" }
+    "document": "Reserved",
+    "metadata": {
+      "page": "4",
+      "section": "5-10",
+      "subsection": "",
+      "type": "paragraph"
+    }
   },
   {
     "id": 13,
-    "document": "REASON FOR ISSUANCE This handbook provides the official FCIC-approved underwriting, administration, and review standards for the Rainfall Index plans of insurance for the 2024 and succeeding crop years for crops with a contract change date on or after the issue date. This handbook replaces the FCIC-18150 Rainfall Index Insurance Standards Handbook issued in April 2023. This handbook is effective for the 2024 and succeeding crop years and is not retroactive to any prior crop year determinations.",
-    "metadata": { "page": "TP 1", "section": "8" }
+    "document": "Overview This part provides procedures that are common to the Rainfall Index plans of insurance.",
+    "metadata": {
+      "page": "5",
+      "section": "11",
+      "subsection": "",
+      "type": "paragraph"
+    }
   },
   {
     "id": 14,
-    "document": "SUMMARY OF CHANGES Listed below are the changes to the 2024 FCIC-18150 Rainfall Index Insurance Standards Handbook with significant content change. All changes, and additions are highlighted. Minor changes and corrections are not included in this listing. *** used throughout the handbook indicate where major deletions occurred. ",
-    "metadata": { "page": "TP 1", "section": "9" }
+    "document": "Provisions Not Applicable to Rainfall Index Plans The following are not applicable to the Rainfall Index plans of insurance. (1) Hail and fire exclusion provisions. (2) High-risk land exclusion option/provisions. (3) Late planting provisions. (4) Replant provisions except as they apply to first and second crop provisions. (5) Replanting payment provisions. (6) Prevented planting provisions. (7) Experience adjustment factors. (8) Production reporting. (9) Optional units. (10) Enterprise units. (11) Whole farm units.",
+    "metadata": {
+      "page": "5",
+      "section": "12",
+      "subsection": "",
+      "type": "paragraph"
+    }
   },
   {
     "id": 15,
-    "document": "Reference: Part 5, Description of Change: Moved Annual Forage from Exhibit 8 to make it Part 5 and deleted Exhibit 8.",
-    "metadata": { "page": "TP 1", "section": "10" }
-  },
-  {
-    "id": 16,
-    "document": "Reference: Exhibit 3, Description of Change: Added landowner contact information to include landowner address and phone number.",
-    "metadata": { "page": "TP 1", "section": "11" }
-  },
-  {
-    "id": 17,
-    "document": "Reference: Exhibit 6A, Description of Change: Added clarification that livestock disposition records when destocking due to natural causes is an acceptable record when verifying insurable interest in livestock.",
-    "metadata": { "page": "TP 1", "section": "12" }
-  },
-  {
-    "id": 18,
-    "document": "Reference: Exhibit 6E, Description of Change: Clarified that when determining shares on BLM acreage Active Use AUMs should be utilized.",
-    "metadata": { "page": "TP 1", "section": "13" }
-  },
-  {
-    "id": 19,
-    "document": "Reference: Exhibit 8, Description of Change: Added Exhibit 8 to provide procedures on Annual Forage growing seasons and double cropping rules.",
-    "metadata": { "page": "TP 1", "section": "14" }
-  },
-  {
-    "id": 20,
-    "document": "Directive #: 18150-1, 18150-1, 18150-1, 18150-1, 18150",
-    "metadata": { "page": "TP 1", "section": "15" }
-  },
-  {
-    "id": 21,
-    "document": "PART 1: GENERAL INFORMATION AND RESPONSIBILITIES Page 1",
-    "metadata": { "page": "TC 1", "section": "1" }
-  },
-  {
-    "id": 22,
-    "document": "1 General Information Page 1",
-    "metadata": { "page": "TC 1", "section": "2" }
-  },
-  {
-    "id": 23,
-    "document": "2 Terminology for Apiculture Page 3",
-    "metadata": { "page": "TC 1", "section": "3" }
-  },
-  {
-    "id": 24,
-    "document": "3 Disclaimer Statements Page 3",
-    "metadata": { "page": "TC 1", "section": "4" }
-  },
-  {
-    "id": 25,
-    "document": "4 Responsibilities Page 3",
-    "metadata": { "page": "TC 1", "section": "5" }
-  },
-  {
-    "id": 26,
-    "document": "5-10 Reserved Page 4",
-    "metadata": { "page": "TC 1", "section": "6" }
-  },
-  {
-    "id": 27,
-    "document": "PART 2: RAINFALL INDEX COMMON PROCEDURES Page 5",
-    "metadata": { "page": "TC 1", "section": "7" }
-  },
-  {
-    "id": 28,
-    "document": "11 Overview Page 5",
-    "metadata": { "page": "TC 1", "section": "8" }
-  },
-  {
-    "id": 29,
-    "document": "12 Provisions Not Applicable to Rainfall Index Plans Page 5",
-    "metadata": { "page": "TC 1", "section": "9" }
-  },
-  {
-    "id": 30,
-    "document": "13 Productivity Factor Page 5",
-    "metadata": { "page": "TC 1", "section": "10" }
-  },
-  {
-    "id": 31,
-    "document": "14 Percent of Value Page 6",
-    "metadata": { "page": "TC 1", "section": "11" }
-  },
-  {
-    "id": 32,
-    "document": "15 Selecting a Grid Page 6",
-    "metadata": { "page": "TC 1", "section": "12" }
-  },
-  {
-    "id": 33,
-    "document": "16 Intended Use Page 6",
-    "metadata": { "page": "TC 1", "section": "13" }
-  },
-  {
-    "id": 34,
-    "document": "17 Forms and Statements Page 7",
-    "metadata": { "page": "TC 1", "section": "14" }
-  },
-  {
-    "id": 35,
-    "document": "18 Acreage Reports Page 7",
-    "metadata": { "page": "TC 1", "section": "15" }
-  },
-  {
-    "id": 36,
-    "document": "19 Quality Control Reviews Page 8",
-    "metadata": { "page": "TC 1", "section": "16" }
-  },
-  {
-    "id": 37,
-    "document": "20 Loss Adjustment Page 8",
-    "metadata": { "page": "TC 1", "section": "17" }
-  },
-  {
-    "id": 38,
-    "document": "21-30 (Reserved) Page 8",
-    "metadata": { "page": "TC 1", "section": "18" }
-  },
-  {
-    "id": 39,
-    "document": "PART 3: RAINFALL INDEX Page 9",
-    "metadata": { "page": "TC 1", "section": "19" }
-  },
-  {
-    "id": 40,
-    "document": "31 Rainfall Index Design Page 9",
-    "metadata": { "page": "TC 1", "section": "20" }
-  },
-  {
-    "id": 41,
-    "document": "32 Grid Area and Index Intervals Page 9",
-    "metadata": { "page": "TC 1", "section": "21" }
-  },
-  {
-    "id": 42,
-    "document": "33 Precipitation Data Page 11",
-    "metadata": { "page": "TC 1", "section": "22" }
-  },
-  {
-    "id": 43,
-    "document": "34 Cause of Loss and Indemnity Payments Page 12",
-    "metadata": { "page": "TC 1", "section": "23" }
-  },
-  {
-    "id": 44,
-    "document": "35-70 (Reserved) Page 12",
-    "metadata": { "page": "TC 1", "section": "24" }
-  },
-  {
-    "id": 45,
-    "document": "PART 4: IDENTIFYING ACREAGE AND GRID ID Page 13",
-    "metadata": { "page": "TC 1", "section": "25" }
-  },
-  {
-    "id": 46,
-    "document": "71 Use of RMA Website Page 13",
-    "metadata": { "page": "TC 1", "section": "26" }
-  },
-  {
-    "id": 47,
-    "document": "72 Grid Locator Page 13",
-    "metadata": { "page": "TC 1", "section": "27" }
-  },
-  {
-    "id": 48,
-    "document": "73 Identifying Acreage Page 14",
-    "metadata": { "page": "TC 1", "section": "28" }
-  },
-  {
-    "id": 49,
-    "document": "74 Point of Reference Page 17",
-    "metadata": { "page": "TC 1", "section": "29" }
-  },
-  {
-    "id": 50,
-    "document": "75 Noncontiguous Acreage - Point of Reference Page 20",
-    "metadata": { "page": "TC 1", "section": "30" }
-  },
-  {
-    "id": 51,
-    "document": "76 Contiguous Acreage - Point of Reference Page 25",
-    "metadata": { "page": "TC 1", "section": "31" }
-  },
-  {
-    "id": 52,
-    "document": "77-80 (Reserved) Page 32",
-    "metadata": { "page": "TC 1", "section": "32" }
-  },
-  {
-    "id": 53,
-    "document": "PART 5: ANNUAL FORAGE Page 33",
-    "metadata": { "page": "TC 2", "section": "1" }
-  },
-  {
-    "id": 54,
-    "document": "81 Growing Seasons Page 33",
-    "metadata": { "page": "TC 2", "section": "2" }
-  },
-  {
-    "id": 55,
-    "document": "82 Planting Periods Associated Index Intervals and Growing Seasons Page 33",
-    "metadata": { "page": "TC 2", "section": "3" }
-  },
-  {
-    "id": 56,
-    "document": "83 Information at Sales Closing Date Page 33",
-    "metadata": { "page": "TC 2", "section": "4" }
-  },
-  {
-    "id": 57,
-    "document": "84 Acreage Reporting Page 34",
-    "metadata": { "page": "TC 2", "section": "5" }
-  },
-  {
-    "id": 58,
-    "document": "85 Eligibility of Second Annual Forage Crop Planting Page 34",
-    "metadata": { "page": "TC 2", "section": "6" }
-  },
-  {
-    "id": 59,
-    "document": "86 Double Cropped Acreage Involving an Annual Forage Crop Page 35",
-    "metadata": { "page": "TC 2", "section": "7" }
-  },
-  {
-    "id": 60,
-    "document": "87 Dual Use Page 36",
-    "metadata": { "page": "TC 2", "section": "8" }
-  },
-  {
-    "id": 61,
-    "document": "88-90 (Reserved) Page 36",
-    "metadata": { "page": "TC 2", "section": "9" }
-  },
-  {
-    "id": 62,
-    "document": "EXHIBITS Page 37",
-    "metadata": { "page": "TC 2", "section": "10" }
-  },
-  {
-    "id": 63,
-    "document": "Exhibit 1 Acronyms and Abbreviations Page 37",
-    "metadata": { "page": "TC 2", "section": "11" }
-  },
-  {
-    "id": 64,
-    "document": "Exhibit 2 Definitions Page 38",
-    "metadata": { "page": "TC 2", "section": "12" }
-  },
-  {
-    "id": 65,
-    "document": "Exhibit 3 Lease Certification Form Page 39",
-    "metadata": { "page": "TC 2", "section": "13" }
-  },
-  {
-    "id": 66,
-    "document": "Exhibit 4 Rainfall Index Disclaimers Page 41",
-    "metadata": { "page": "TC 2", "section": "14" }
-  },
-  {
-    "id": 67,
-    "document": "Exhibit 5 Rainfall Index - Pasture Rangeland Forage Example Page 42",
-    "metadata": { "page": "TC 2", "section": "15" }
-  },
-  {
-    "id": 68,
-    "document": "Exhibit 6 Insurable Interest for Pasture Rangeland Forage with Intended Use of Grazing Page 50",
-    "metadata": { "page": "TC 2", "section": "16" }
-  },
-  {
-    "id": 69,
-    "document": "Exhibit 7 Apiculture Leases Page 55",
-    "metadata": { "page": "TC 2", "section": "17" }
-  },
-  {
-    "id": 70,
-    "document": "PART 1: GENERAL INFORMATION AND RESPONSIBILITIES",
-    "metadata": { "page": "1", "section": "1" }
-  },
-  {
-    "id": 71,
-    "document": "1 General Information",
-    "metadata": { "page": "1", "section": "2" }
-  },
-  {
-    "id": 72,
-    "document": "A. Purpose and Objective",
-    "metadata": { "page": "1", "section": "3" }
-  },
-  {
-    "id": 73,
-    "document": "This handbook provides procedures and information for administering the Rainfall Index plans of insurance.",
-    "metadata": { "page": "1", "section": "4" }
-  },
-  {
-    "id": 74,
-    "document": "If there is a conflict between this handbook and the CIH or other FCIC approved handbook, this handbook controls. If there is a conflict between this handbook and the policy, the policy controls.",
-    "metadata": { "page": "1", "section": "5" }
-  },
-  {
-    "id": 75,
-    "document": "B. Source of Authority",
-    "metadata": { "page": "1", "section": "6" }
-  },
-  {
-    "id": 76,
-    "document": "The RI plans of insurance are authorized under Section 522(c) of the Federal Crop Insurance Act. Initially, the only crop covered was PRF. However, other products that utilize the provisions of the RI plans of insurance were approved by the FCIC Board of Directors under Section 508(h) of the Federal Crop Insurance Act.",
-    "metadata": { "page": "1", "section": "7" }
-  },
-  {
-    "id": 77,
-    "document": "The PRF program is an RMA developed product approved by the FCIC Board of Directors under Section 522(c) of the Federal Crop Insurance Act. The apiculture and the AF programs are privately developed products approved by the FCIC Board of Directors under Section 508(h) of the Federal Crop Insurance Act.",
-    "metadata": { "page": "1", "section": "8" }
-  },
-  {
-    "id": 78,
-    "document": "C. Title VI of the Civil Rights Act of 1964",
-    "metadata": { "page": "1", "section": "9" }
-  },
-  {
-    "id": 79,
-    "document": "The USDA prohibits discrimination against its customers. Title VI of the Civil Rights Act of 1964 provides that 'No person in the United States shall on the ground of race, color, or national origin, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any program or activity receiving Federal financial assistance.' Therefore, programs and activities that receive Federal financial assistance must operate in a non-discriminatory manner. Also, a recipient of RMA funding may not retaliate against any person because they opposed an unlawful practice or policy, or made charges, testified, or participated in a complaint under Title VI.",
-    "metadata": { "page": "1", "section": "10" }
-  },
-  {
-    "id": 80,
-    "document": "It is the AIPs' responsibility to ensure that standards, procedures, methods, and instructions, as authorized by FCIC in the sale and service of crop insurance contracts, are implemented in a manner compliant with Title VI. Information regarding Title VI of the Civil Rights Act of 1964 and the program discrimination complaint process is available on the USDA public website at www.ascr.usda.gov. For more information on the RMA Non-Discrimination Statement, see the DSSH.",
-    "metadata": { "page": "1", "section": "11" }
-  },
-  {
-    "id": 81,
-    "document": "D. Duration",
-    "metadata": { "page": "1", "section": "12" }
-  },
-  {
-    "id": 82,
-    "document": "The Apiculture, AF, and PRF programs will continue until canceled by FCIC or no premium rate is filed for the crop.",
-    "metadata": { "page": "1", "section": "13" }
-  },
-  {
-    "id": 83,
-    "document": "E. AIP Option to Offer",
-    "metadata": { "page": "1", "section": "14" }
-  },
-  {
-    "id": 84,
-    "document": "Because apiculture and the AF programs are privately developed products, AIPs are not required to offer them. Accordingly, each AIP must determine whether they will offer the apiculture or the AF program. AIPs that elect to offer the apiculture or the AF program must offer it to all eligible producers and must administer the program according to the Rainfall Index plans of insurance, apiculture or AF CP, and the procedures in this handbook.",
-    "metadata": { "page": "1", "section": "14" }
-  },
-  {
-    "id": 85,
-    "document": "Because the PRF program is an RMA developed product, AIPs are required to offer it to all eligible producers and must administer it according to the Rainfall Index plans of insurance, PRF CP, and the procedures in this handbook.",
-    "metadata": { "page": "1", "section": "15" }
-  },
-  {
-    "id": 86,
-    "document": "F. Related Handbooks",
-    "metadata": { "page": "1", "section": "16" }
-  },
-  {
-    "id": 87,
-    "document": "The following table provides handbooks related to this handbook.",
-    "metadata": { "page": "1", "section": "17" }
-  },
-  {
-    "id": 88,
-    "document": "Handbook: DSSH, Relation/Purpose: This handbook provides the official FCIC-approved form, standards, and procedures for use in the sale and service of any eligible Federal crop insurance policy; required statements and disclosures; and the standards for submission and review of non-reinsured supplemental policies in accordance with the SRA.",
-    "metadata": { "page": "1", "section": "18" }
-  },
-  {
-    "id": 89,
-    "document": "Handbook: GSH, Relation/Purpose: This handbook provides the official FCIC-approved standards for policies administered by AIPs under the General Administrative Regulations, Common Crop Insurance Policy Regulations Basic Provisions, including the Catastrophic Risk Protection Endorsement; the Area Risk Protection Insurance Regulations Basic Provisions; the Stacked Income Protection Plan of Insurance; the Rainfall Index Plan; and the Whole Farm Revenue Protection Pilot Policy.",
-    "metadata": { "page": "1", "section": "19" }
-  },
-  {
-    "id": 90,
-    "document": "G. AIPs and Agents",
-    "metadata": { "page": "1", "section": "20" }
-  },
-  {
-    "id": 91,
-    "document": "AIPs may authorize agents to perform all functions and actions provided in this handbook, except for: (1) determining whether to offer the Apiculture or AF according to subparagraph D; (2) reviews; and (3) developing forms and certification statements.",
-    "metadata": { "page": "1", "section": "21" }
+    "document": "Productivity Factor The Rainfall Index plans of insurance utilize a productivity factor that allows the insured to individualize coverage based on the productivity of the acreage insured. Insureds may elect a productivity factor between 60 percent and 150 percent in 1 percent increments and only one productivity factor can be selected by county crop and intended use. Example: Insured A is insuring alfalfa acreage with an intended use of haying in a county with a county base value of $269.54 per acre. Insured A believes the alfalfa acreage has a greater value than the county base value and selects a productivity factor of 115, thereby increasing the dollar amount of protection per acre by 15 percent. If insured A believed the alfalfa acreage had less value than the county base value, a productivity factor less than 100 could have been selected, thereby reducing the dollar amount of protection per acre.",
+    "metadata": {
+      "page": "5",
+      "section": "13",
+      "subsection": "",
+      "type": "paragraph"
+    }
   }
 ]
