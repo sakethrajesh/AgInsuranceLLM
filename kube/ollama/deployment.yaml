@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    deployment.kubernetes.io/revision: '5'
+    deployment.kubernetes.io/revision: '13'
     field.cattle.io/publicEndpoints: >-
       [{"addresses":["192.168.50.53","192.168.50.56","192.168.50.57"],"port":80,"protocol":"HTTP","serviceName":"llama:ollama-new","ingressName":"llama:ollama-ingress","hostname":"ollamaaginsurance.endeavour.cs.vt.edu","path":"/","allNodes":false}]
   creationTimestamp: '2024-02-07T22:55:06Z'
-  generation: 13
+  generation: 23
   labels:
     workload.user.cattle.io/workloadselector: apps.deployment-llama-ollama-new
   managedFields:
@@ -96,7 +96,7 @@ metadata:
               f:terminationGracePeriodSeconds: {}
       manager: agent
       operation: Update
-      time: '2024-02-08T12:46:28Z'
+      time: '2024-03-11T14:00:09Z'
     - apiVersion: apps/v1
       fieldsType: FieldsV1
       fieldsV1:
@@ -106,6 +106,7 @@ metadata:
             f:deployment.kubernetes.io/revision: {}
         f:status:
           f:availableReplicas: {}
+          f:collisionCount: {}
           f:conditions:
             .: {}
             k:{"type":"Available"}:
@@ -131,10 +132,10 @@ metadata:
       manager: kube-controller-manager
       operation: Update
       subresource: status
-      time: '2024-02-08T12:47:32Z'
+      time: '2024-03-11T14:00:09Z'
   name: ollama-new
   namespace: llama
-  resourceVersion: '265526762'
+  resourceVersion: '295664815'
   uid: 5c6e2dd3-86c9-441b-ac87-4ff5c5e87cfe
 spec:
   progressDeadlineSeconds: 600
@@ -168,9 +169,11 @@ spec:
             postStart:
               exec:
                 command:
-                  - ollama
-                  - run
-                  - llama2
+                  - /bin/sh
+                  - '-c'
+                  - >
+                    ollama run llama2:chat; ollama run llama2; ollama run
+                    mistral
           name: ollama-1
           ports:
             - containerPort: 11434
@@ -204,20 +207,21 @@ spec:
       terminationGracePeriodSeconds: 30
 status:
   availableReplicas: 1
+  collisionCount: 1
   conditions:
-    - lastTransitionTime: '2024-02-07T23:35:58Z'
-      lastUpdateTime: '2024-02-07T23:35:58Z'
+    - lastTransitionTime: '2024-02-07T22:55:06Z'
+      lastUpdateTime: '2024-02-13T05:17:05Z'
+      message: ReplicaSet "ollama-new-6ccbc48d7d" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: 'True'
+      type: Progressing
+    - lastTransitionTime: '2024-03-11T13:05:04Z'
+      lastUpdateTime: '2024-03-11T13:05:04Z'
       message: Deployment has minimum availability.
       reason: MinimumReplicasAvailable
       status: 'True'
       type: Available
-    - lastTransitionTime: '2024-02-07T22:55:06Z'
-      lastUpdateTime: '2024-02-08T12:47:32Z'
-      message: ReplicaSet "ollama-new-5fb458d6c6" has successfully progressed.
-      reason: NewReplicaSetAvailable
-      status: 'True'
-      type: Progressing
-  observedGeneration: 13
+  observedGeneration: 23
   readyReplicas: 1
   replicas: 1
   updatedReplicas: 1

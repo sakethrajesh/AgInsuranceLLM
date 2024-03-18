@@ -21,4 +21,4 @@ COPY api_unstable.py .
 
 ENV OLLAMA_URL=https://ollamaaginsurance.endeavour.cs.vt.edu
 
-ENTRYPOINT ["python3", "api_unstable.py"]
+ENTRYPOINT ["python3", "api.py"]

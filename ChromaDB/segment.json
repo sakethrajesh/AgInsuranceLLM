@@ -1,0 +1,17 @@
+[
+    {
+      "id": 1,
+      "document": "NOAA CPC Precipitation Data The NOAA CPC precipitation data is not simply the measurement of precipitation from a specific rain gauge(s) or reporting station(s) within a grid. Each day, NOAA CPC obtains data from a minimum of four reporting stations closest to the center of the grid that report data for that day. The closest reporting station may be located outside the grid for which the data will be used. Each day, different reporting stations may be used because not all reporting stations report data every day. Accordingly, the gridded precipitation data used is an interpolated value for the entire grid and cannot be traced to a single point or reporting station(s). RMA does not receive the daily precipitation amount or which reporting station data was used. NOAA CPC data is accepted and used by other government agencies and private entities and undergoes a rigorous quality control process by the CPC to ensure accuracy.",
+      "metadata": { "section": "33", "subsection": "A", "type":"paragraph" }
+    },
+    {
+        "id": 2,
+        "document": "Producer Precipitation Data Precipitation data maintained by producers or any other source other than NOAA CPC is not used in any manner under the Rainfall Index plan of insurance. The precipitation data used may not match the amount of precipitation received by a producer in a specific location(s) because it is an interpolated value for the entire grid and index interval.",
+        "metadata": { "section": "33", "subsection": "B", "type":"paragraph" }
+    },  
+    {
+        "id": 3,
+        "document": "Expected and Final Grid Index An expected grid index is calculated for each grid ID and index interval using the long-term historical gridded precipitation data for the grid ID and index interval. The expected grid index represents the average precipitation for the grid ID during the index interval based on NOAA CPC data from 1948 to two years prior to the crop year. Example: The expected grid indexes for 2013 crop year represents the average precipitation based on NOAA CPC data from 1948 through 2011. A final grid index is based on NOAA CPC precipitation data and is expressed as a percentage. An index of 100 represents average precipitation, an index below 100 represents below average precipitation, and an index above 100 represents above average precipitation. Only the precipitation received during the index interval is used to determine a final grid index. Precipitation received during prior index intervals has no effect on the final grid index for subsequent index intervals. Example: Precipitation received during the index interval that includes both April and May have no effect on the final grid index for the index interval that includes both June and July. The NOAA CPC data used to calculate the expected and final grid index is conclusively presumed to be accurate unless it meets the criteria outlined in section 8(e) of the Rainfall Index Basic Provision. RMA does not alter the NOAA CPC data.",
+        "metadata": { "section": "33", "subsection": "C", "type":"paragraph" }
+    }
+]

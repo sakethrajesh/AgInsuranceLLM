@@ -1,0 +1,19 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN pip install chromadb ollama
+
+RUN pip install langchain 
+RUN pip install langchain_community
+RUN pip install pypdf
+
+COPY chromaBuild.py .
+COPY segment.json .
+
+# COPY test.py .
+# COPY /Users/saketh/Documents/vt/Spring2024/AgInsuranceLLM/LLM/InsuranceContext/handbook.pdf .
+
+
+# CMD ["python", "test.py"]
+CMD ["python", "chromaBuild.py"]
