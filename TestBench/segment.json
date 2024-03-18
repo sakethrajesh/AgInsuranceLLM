@@ -148,5 +148,887 @@
       "subsection": "",
       "type": "paragraph"
     }
+  },
+  {
+    "id": 16,
+    "document": "Percent of Value Insureds must allocate on their application a percent of value to each unit. The percent of value allows insureds with more than one unit to individualize their coverage within the requirements of the program. Using the percent of value insureds can allocate a percentage of the total insured value to each selected index interval. Example: Insured A has a 100 percent share in 1000 insurable acres in the grid and elects to insure all 1000 acres with an intended use of grazing. The county base value is $20.00 per acre. Insured A selects a 90 percent coverage level, 120 percent productivity factor, and the April – May and July – August index intervals. The dollar amount of protection per acre is $21.60 ($20.00 × .90 × 1.20) and the total policy protection is $21600 ($21.60 × 1000 acres). Insured A allocates 60 percent of the total value to the April – May index interval and 40 percent to the July – August index interval. Based on Insured A’s allocation, the policy protection amount for the unit comprised of the April – May index interval is $12960 ($21.60 × 1000 acres × 60 percent of value × 1.00 share). The policy protection amount for the unit comprised of the July – August index interval is $8640 ($21.60 × 1000 acres × 40 percent of value × 1.00 share). The total policy protection amount ($21600) does not change. Regardless of how the total value is allocated between index intervals, the sum of the percentages for all index intervals, by grid ID, share, irrigated practice, organic practice (if applicable), and intended use, must equal 100 percent.There may be a minimum and maximum percent of value that can be allocated to an index interval. See the CP and AD for more information about minimum and maximum amounts that may be allocated.",
+    "metadata": {
+      "page": "6",
+      "section": "14",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 17,
+    "document": "Selecting a Grid The insured must select the grid where the insured acreage is physically located or assigned if contiguous acreage by providing a point of reference. The grid must be selected using the maps contained on RMA’s website or an AIP’s mapping software. See Part 3 for information about the grid size for the Rainfall Index plan. See Part 4 for instructions on how to select a grid.",
+    "metadata": {
+      "page": "6",
+      "section": "15",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 18,
+    "document": "Intended Use PRF acreage must be reported and insured with an intended use of either haying or grazing as selected by the insured. Under no circumstances can the same acreage be reported or insured with an intended use of both haying and grazing in the same crop year. If the insured intends to hay and graze the acreage to be insured and the acreage meets the requirements to be insured as either, the insured must select only one intended use for the acreage.",
+    "metadata": {
+      "page": "6",
+      "section": "16",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 19,
+    "document": "Forms and Statements The DSSH procedures and standards for forms must be adhered to unless otherwise specified in this handbook. Exhibit 4 provides disclaimer statements that must be signed by each person insured under the Rainfall Index plans of insurance.",
+    "metadata": {
+      "page": "7",
+      "section": "17",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 20,
+    "document": "Acreage Reports Insureds must provide all required reports and are responsible for the accuracy of all information contained in those reports. Inaccurate information reported on the acreage report can result in over- and under-reported liability.",
+    "metadata": {
+      "page": "7",
+      "section": "18",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 21,
+    "document": "Modifying Acreage Reports On or before the acreage reporting date, an insured may modify their acreage report for any reason. After the acreage reporting date an acreage report may be modified only: (1) to correct a clear error, such as the number of acres reported was 871.0 instead of 87.1; and (2) if the AIP agrees to the modification. Acreage reports modified after the acreage reporting date must be identified as “corrected.”",
+    "metadata": {
+      "page": "7",
+      "section": "18",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 22,
+    "document": "Verifiable Records Insureds must have verifiable records to support the information on their acreage report. Insureds are not required to submit records unless requested by the AIP or RMA for an audit and review.For Apiculture: Acceptable types of records to verify the insured colonies may include, but are not limited to: (1) Federal or State reporting systems that capture the location of the colonies; )2) FSA reports; (3) tax records; (4) transportation invoices; (5) purchase agreements; (6) bills of sale; (7) pollination contracts; or (8) queen bee purchases.",
+    "metadata": {
+      "page": "7",
+      "section": "18",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 23,
+    "document": "Verifiable Records (Continued) Insured colonies do not have to equal insurable colonies for the insured; however, the insured colonies cannot exceed insurable colonies for the crop year. In addition, the total insurable colonies cannot exceed the highest number of insurable colonies in the previous three years unless the insured can provide documentation that supports the number of colonies they want to insure. The insured’s records can be obtained from the previous three years to verify the insured amount. If it is determined that insured colonies exceeded the number of insurable colonies, the insured will be subject to 9(f)(1) of the Basic Provisions.",
+    "metadata": {
+      "page": "8",
+      "section": "18",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 24,
+    "document": "Quality Control Reviews The SRA, Appendix IV, provides the quality control review requirements for Rainfall Index policies.",
+    "metadata": {
+      "page": "8",
+      "section": "19",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 25,
+    "document": "Loss Adjustment There are no loss adjustment activities under the Rainfall Index plans of insurance.",
+    "metadata": {
+      "page": "8",
+      "section": "20",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 26,
+    "document": "Reserved",
+    "metadata": {
+      "page": "8",
+      "section": "21-30",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 27,
+    "document": "Rainfall Index Design The Rainfall Index plan of insurance is a risk management tool to insure against a decline in an index value that is based on the long-term historical average precipitation for the grid and index interval. It is best suited for producers whose production tends to follow and correlate to the historical average precipitation patterns for the grid. The Rainfall Index plan of insurance: (1) does not measure, capture, or utilize the actual crop production of any producer or any of the actual crop production within the grid; and (2) utilizes NOAA CPC gridded interpolated precipitation data. (3) The Rainfall Index is not “drought insurance” and does not insure against abnormally “high temperatures” or “windy conditions.” See paragraph 33 for more information about NOAA CPC gridded precipitation data. Historical indices information for each grid ID and index interval is available on RMA’s website. This information must be used by producers and agents to determine whether the producer’s production history follows and correlates to average precipitation patterns for the grid.",
+    "metadata": {
+      "page": "9",
+      "section": "31",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 28,
+    "document": "Index Intervals NOAA CPC gridded precipitation data is obtained, by grid, for the following 11 specific 2-month time periods, referred to as index intervals, during a year. Historical NOAA CPC gridded data since 1948 is also obtained, by grid, for each index interval. (1) January and February. (2) February and March. (3) March and April. (4) April and May. (5) May and June. (6) June and July. (7) July and August. (8) August and September. (9) September and October. (10) October and November. (11) November and December. Not all index intervals are available in all counties. See the AD to determine which index intervals are available.",
+    "metadata": {
+      "page": "10",
+      "section": "32",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 29,
+    "document": "Selecting Index Intervals A minimum of two index intervals must be selected for acreage insured under the Rainfall Index plan of insurance by the insured. Selection of index intervals is critical to the effectiveness of the Rainfall Index plan of insurance as a risk management tool. Factors to be considered when determining which index intervals to select include, but are not limited to, type of forage or plant to be pollinated, location, elevation, intended use, and the time period when precipitation is needed under normal conditions for the insured crop. Selecting index intervals when precipitation is not needed for the insured crop or when precipitation does not normally occur is not an effective use of the Rainfall Index plan of insurance nor is insuring periods when livestock or colonies will be on the property unless that corresponds to when precipitation is critical. Example: Based on the location of the land, type of grass, and intended use, precipitation is needed in the months of March, April, May, and June for the grass to produce a normal amount of forage under normal conditions during the normal growing season. Selecting index intervals before March or after June would not be an effective use of the Rainfall Index plan of insurance because precipitation received during those index intervals is not as needed for the normal growing season.",
+
+    "metadata": {
+      "page": "9",
+      "section": "32",
+      "subsection": "C",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 29,
+    "document": "NOAA CPC Precipitation Data The NOAA CPC precipitation data is not simply the measurement of precipitation from a specific rain gauge(s) or reporting station(s) within a grid. Each day, NOAA CPC obtains data from a minimum of four reporting stations closest to the center of the grid that report data for that day. The closest reporting station may be located outside the grid for which the data will be used. Each day, different reporting stations may be used because not all reporting stations report data every day. Accordingly, the gridded precipitation data used is an interpolated value for the entire grid and cannot be traced to a single point or reporting station(s). RMA does not receive the daily precipitation amount or which reporting station data was used. NOAA CPC data is accepted and used by other government agencies and private entities and undergoes a rigorous quality control process by the CPC to ensure accuracy.",
+    "metadata": {
+      "page": "11",
+      "section": "33",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 30,
+    "document": "Producer Precipitation Data Precipitation data maintained by producers or any other source other than NOAA CPC is not used in any manner under the Rainfall Index plan of insurance. The precipitation data used may not match the amount of precipitation received by a producer in a specific location(s) because it is an interpolated value for the entire grid and index interval.",
+    "metadata": {
+      "page": "11",
+      "section": "33",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 31,
+    "document": "Expected and Final Grid Index An expected grid index is calculated for each grid ID and index interval using the long-term historical gridded precipitation data for the grid ID and index interval. The expected grid index represents the average precipitation for the grid ID during the index interval based on NOAA CPC data from 1948 to two years prior to the crop year. Example: The expected grid indexes for 2013 crop year represents the average precipitation based on NOAA CPC data from 1948 through 2011. A final grid index is based on NOAA CPC precipitation data and is expressed as a percentage. An index of 100 represents average precipitation, an index below 100 represents below average precipitation, and an index above 100 represents above average precipitation. Only the precipitation received during the index interval is used to determine a final grid index. Precipitation received during prior index intervals has no effect on the final grid index for subsequent index intervals. Example: Precipitation received during the index interval that includes both April and May have no effect on the final grid index for the index interval that includes both June and July. The NOAA CPC data used to calculate the expected and final grid index is conclusively presumed to be accurate unless it meets the criteria outlined in section 8(e) of the Rainfall Index Basic Provision. RMA does not alter the NOAA CPC data.",
+    "metadata": {
+      "page": "11",
+      "section": "33",
+      "subsection": "C",
+      "type": "paragraph"
+    }
+  },
+  {
+  "id": 32,
+  "document": "Cause of Loss The Rainfall Index plan of insurance only covers a decline from the long-term historical normal interpolated precipitation for a grid and index interval, it does not cover other perils such as, but not limited to, flood, fire, and hail. The Rainfall Index program is not “drought insurance.” While a drought may cause a decline in the index value to the point that an indemnity payment is issued to eligible insured producers, a drought being declared in a state, county or area does not, by itself, trigger an indemnity payment under the RI program.",
+  "metadata": {
+    "page": "12",
+    "section": "34",
+    "subsection": "A",
+    "type": "paragraph"
   }
+},
+{
+  "id": 33,
+  "document": "Indemnity Payments Indemnity payments are earned by eligible insureds only when the final grid index is less than the trigger grid index. The insured’s amount of production is not considered when determining eligibility for an indemnity payment. Because the Rainfall Index plan of insurance is an area plan and does not measure, capture, or utilize any actual crop production, an insured may experience a loss of production and not receive an indemnity payment. However, it is also possible for an insured to receive an indemnity payment without suffering a loss of actual production. The NOAA CPC data used to calculate the expected and final grid index is conclusively presumed to be accurate. RMA does not alter the NOAA CPC data.",
+  "metadata": {
+    "page": "12",
+    "section": "34",
+    "subsection": "B",
+    "type": "paragraph"
+  }
+},
+{
+    "id": 34,
+    "document": "Reserved",
+    "metadata": {
+      "page": "12",
+      "section": "35-70",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+  "id": 35,
+  "document": "Use of RMA Website The grid ID is determined based on a point of reference selected by the insured using the interactive maps and tools on RMA’s website or an AIP’s mapping software. The point of reference must be provided using the maps and tools contained on RMA’s website or an AIP’s mapping software. RMA’s website allows a user to navigate through various pages to collect information, identify land, establish a point of reference and determine the grid ID. A direct link, titled “Grid ID Locator, Decision Support Tool, Historical Indices,” to the maps and tools is located on the specific crop page. The specific crop pages can be accessed from the Rainfall Indices page. The link takes the user to the “Grid Locator” page for the crop selected. There are slight differences in the PRF), AF, and apiculture web pages; however, the basic design, core functionality, and navigation are similar between these programs.",
+  "metadata": {
+    "page": "13",
+    "section": "71",
+    "subsection": "",
+    "type": "paragraph"
+  }
+},
+{
+  "id": 36,
+  "document": "Grid Locator The user may select different view options for the Grid Locator map. Options include the standard, which is the default, satellite, hybrid, and terrain map views. The map size can be changed by using the “Zoom to Grids” bar located to the left of the map. Grid IDs and boundaries and county names and boundaries can be displayed by selecting the applicable boxes located above the map. Additional tools and information are located to the left of the map. The following is an example of the Grid Locator page for PRF. The following is an example of the Grid Locator page for PRF zoomed in to display county names and boundaries and grid IDs and boundaries. In the example, the grid boundaries are outlined with red lines and the county boundaries are outlined with a blue line.",
+  "metadata": {
+    "page": "13",
+    "section": "72",
+    "subsection": "",
+    "type": "paragraph"
+  }
+},
+{
+    "id": 37,
+    "document": "Identifying Acreage Locating an Insured’s Acreage
+The Grid Locator map and tools provide multiple options for identifying the insured’s acreage to
+establish a point of reference and determine the grid ID. The following steps provide one
+method for locating the insured’s acreage.
+(1) In the “Find address or place” search box located at the top of the Grid Locator page,
+enter the city and state near the acreage to be insured, or the county and state in which
+the acreage to be insured is physically located, then click the “Search” button.
+(2) Navigate close to where the acreage to be insured is physically located. Use of the zoom
+function and alternative map views may help identify roads, ponds, buildings, rivers, or
+other landmarks or features that will help navigate to the applicable acreage.
+(3) Use the zoom function and move the map to display the acreage to be insured in
+enough detail that a point of reference can be established within the field boundaries.
+The following is an example of the Grid Locator page for PRF when “McLouth, Kansas” is
+searched by using the search box.
+The following is an example of the Grid Locator page for PRF using the imagery map view to
+navigate to acreage located a few miles from McLouth, Kansas, using roads and other
+landmarks to locate the acreage.",
+    "metadata": {
+      "page": "14",
+      "section": "73",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 38,
+    "document": "Determining Grid ID
+The point of reference selected by the insured will determine the grid ID and county. The
+insured must establish a point of reference for the acreage to be insured and reported on the
+acreage report for API and PRF.
+Establish a point of reference by positioning the curser within the boundaries of the acreage to
+be insured and clicking the left mouse button. A blue or red point of reference symbol will be
+displayed on the map where the point of reference is established. In addition, a popup
+information balloon containing the following for the point of reference will display.
+(1) Grid ID
+(2) Latitude
+(3) Longitude
+(4) County
+(5) State
+The same information will display to the left of the map under “Current Location.” Use the
+zoom function and different map views to identify the acreage to be insured and ensure the
+point of reference is accurate and within the boundaries of acreage to be insured.
+If the point of reference selected is not within the boundaries of the acreage to be insured,
+remove the point of reference by clicking the “Clear All” button in the upper left-hand corner of
+the map.
+The following is an example of the Grid Locator page with a point of reference established for
+acreage located in grid ID 22939 a few miles from McLouth, Kansas.",
+    "metadata": {
+      "page": "16",
+      "section": "73",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 39,
+    "document": "The point of reference identifies the acreage to be insured and determines the grid ID. Insureds may
+need to provide multiple points of reference depending on the acreage and crop insured.
+Important: A latitude and longitude for each point of reference must be reported on the acreage
+report. The latitude and longitude must be obtained from the grid locator map from the
+RMA website, or an AIP’s mapping software.
+Important: The same acres cannot be insured in more than one grid ID or county. The total amount
+of an insured’s insured acres of the crop in a county cannot exceed 100 percent of the
+insured’s insurable acreage of the crop in the county.
+Important: Some grids cross the U.S. Border (e.g., into Canada or Mexico, or out into a body of
+water) and no insurance offer is available for that partial grid ID. If an insured has
+acreage in that partial grid, the insured can cover that acreage under the closest grid ID
+with an insurance offer. AIP’s must keep documentation identifying the original location
+grid ID. Only acres located within the United States can be insured.
+The following table provides a reference for determining how many points of references are needed.",
+    "metadata": {
+      "page": "17",
+      "section": "74",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 40,
+    "document": "IF the crop is… AND the
+acreage is…
+AND the intended
+use and practices
+(where applicable)
+is…
+AND the
+insured
+chooses to…
+THEN the insured must
+establish a point of
+reference…
+PRF Noncontiguous the same for all the
+acreage
+within the acreage
+boundaries for each of
+the noncontiguous
+acreage in a grid.
+See subparagraph 75 A
+for examples.
+PRF Noncontiguous different for part of
+the acreage
+for each intended use,
+or by irrigation
+practice, and organic
+practice if offered in
+the AD within the
+acreage boundaries for
+the noncontiguous
+acreage in a grid.
+See subparagraph 75 B
+for examples.",
+    "metadata": {
+      "page": "17",
+      "section": "74",
+      "subsection": "",
+      "type": "table"
+    }
+  },
+  {
+    "id": 41,
+    "document": "Point of Reference (Continued)
+IF the crop is… AND the
+acreage is…
+AND the intended
+use and practices
+(where applicable)
+is…
+AND the
+insured
+chooses to…
+THEN the insured must
+establish a point of
+reference…
+PRF Contiguous the same for all the
+acreage
+combine the
+contiguous
+acreage into
+one grid
+within the acreage
+boundaries within the
+grid selected by the
+insured.
+See subparagraph 76 B
+for examples.
+PRF Contiguous the same for all the
+acreage
+separate the
+contiguous
+acreage into
+separate
+grids
+within the acreage
+boundaries within each
+grid selected by the
+insured.
+See subparagraph 76 B
+for examples.
+PRF Contiguous different for part of
+the acreage
+combine the
+contiguous
+acreage into
+one grid
+for each intended use,
+or by irrigation
+practice, and organic
+practice if offered in
+the AD within the
+acreage boundaries
+within the grid selected
+by the insured.
+See subparagraph76 C
+for examples.
+PRF Contiguous different for part of
+the acreage
+separate the
+contiguous
+acreage into
+separate
+grids
+for each intended use,
+or by irrigation
+practice, and organic
+practice if offered in
+the AD within the
+acreage boundaries
+within each grid
+selected by the
+insured.
+See subparagraph 76 C
+for examples.",
+    "metadata": {
+      "page": "18",
+      "section": "74",
+      "subsection": "",
+      "type": "table"
+    }
+  },
+  {
+    "id": 42,
+    "document": "Point of Reference (Continued)
+IF the crop is… AND the
+acreage is…
+AND the intended
+use and practices
+(where applicable)
+is…
+AND the
+insured
+chooses to…
+THEN the insured must
+establish a point of
+reference…
+Apiculture and AF Noncontiguous within the acreage
+boundaries for each of
+the noncontiguous
+acreage in a grid.
+See subparagraph 75 C.
+Apiculture and AF Contiguous combine the
+contiguous
+acreage into
+one grid
+within the acreage
+boundaries within the
+grid selected by the
+insured.
+See subparagraph 76
+D.
+Apiculture and AF Contiguous separate the
+contiguous
+acreage into
+separate
+grids
+within the acreage
+boundaries within each
+grid selected by the
+insured.
+See subparagraph 76
+D. ",
+    "metadata": {
+      "page": "19",
+      "section": "74",
+      "subsection": "",
+      "type": "table"
+    }
+  },
+  {
+    "id": 43,
+    "document": "Noncontiguous Acreage - Point of Reference
+A. Pasture, Rangeland, Forage with the Same Intended Use, Irrigation Practice, and Organic
+Practice
+For noncontiguous acreage in a grid, the insured must establish a point of reference, by
+intended use, irrigation practice, and organic practice; where applicable, within the acreage
+boundaries.
+The following is an example of noncontiguous acreage with all acreage having the same
+intended use and irrigation practice. Only one point of reference is required because it is
+noncontiguous acreage with the same intended use and irrigation practice. The red “+”
+represents the point of reference. ",
+    "metadata": {
+      "page": "20",
+      "section": "75",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 44,
+    "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued)
+The following is an example of the Grid Locator page with two points of reference established.
+There are two separate noncontiguous fields in the same grid with all acreage in both fields
+having the same intended use and irrigation practice. A point of reference must be established
+for each field because they are separate noncontiguous fields.
+The following is an example of two noncontiguous fields located in separate grids. All acreage
+in both fields has the same intended use and irrigation practice. A point of reference must be
+established for each field because they are noncontiguous fields located in separate grids. The
+red “+” represents the point of reference. ",
+    "metadata": {
+      "page": "21",
+      "section": "75",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 45,
+    "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued)
+The following is an example of the Grid Locator page with two points of reference established.
+There are two separate noncontiguous fields in the same grid with all acreage in both fields
+having the same intended use and irrigation practice. A point of reference must be established
+for each field because they are separate noncontiguous fields.
+The following is an example of two noncontiguous fields located in separate grids. All acreage
+in both fields has the same intended use and irrigation practice. A point of reference must be
+established for each field because they are noncontiguous fields located in separate grids. The
+red “+” represents the point of reference. ",
+    "metadata": {
+      "page": "22",
+      "section": "75",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 46,
+    "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued)
+The following is an example of the Grid Locator page with two points of reference established.
+There is one noncontiguous field in grid ID 22939 and another noncontiguous field in grid ID
+22940. A point of reference must be established for each field because they are separate
+noncontiguous fields located in separate grids.
+",
+    "metadata": {
+      "page": "23",
+      "section": "75",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 47,
+    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use, or Irrigation Practice, or
+Organic Practice
+For noncontiguous acreage in a grid, the insured must establish a point of reference, by
+intended use, irrigation practice, and organic practice; where applicable, within the acreage
+boundaries. The following is an example of noncontiguous acreage located in one field with some of the
+acreage having an intended use of grazing and the remaining acreage having an intended use of
+haying. Two points of reference are required, one for the acres intended for grazing and one
+for the acres intended for haying. The red “+” represents the point of reference.
+The following is an example of the Grid Locator page with two points of reference established.
+Some of the acres within the noncontiguous field have an intended use of grazing and the
+remaining acres have an intended use of haying or the acres within the one noncontiguous field
+are irrigated and the acres within the second noncontiguous field are non-irrigated. A separate
+point of reference must be established for each intended use, irrigation practice, and organic
+practice where applicable.",
+    "metadata": {
+      "page": "24",
+      "section": "75",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 48,
+    "document": "Apiculture
+Intended use is not applicable under the apiculture program. Therefore, under the apiculture
+program, a point of reference is established for noncontiguous acreage in the same manner as
+under the PRF program when all acreage has the same intended use and irrigation practice.
+See subparagraph A for examples of establishing a point of reference for noncontiguous
+acreage when all acreage has the same intended use.",
+    "metadata": {
+      "page": "25",
+      "section": "75",
+      "subsection": "C",
+      "type": "paragraph"
+    }
+  },
+{
+    "id": 49,
+    "document": "Pasture, Rangeland, Forage with the Same or More Than One Intended Use
+For contiguous acreage in a grid, the insured must establish a point of reference, by intended
+use, irrigation practice, and organic practice (where applicable), within the acreage boundaries
+within the grid selected by the insured. Because contiguous acreage is located in more than
+one grid or county the insured must choose whether to:
+(1) combine the contiguous acreage and assign it all to one grid; or
+(2) separate the contiguous acreage and assign portions into separate grids.
+If the insured chooses to separate the contiguous acreage into separate grids, the insured may
+assign any number of the contiguous acres to each applicable grid by intended use and
+irrigation practice when applicable. However, the sum of the acres assigned to all grids cannot
+exceed the total number of contiguous acres.
+Important: Contiguous acreage that continues into an adjoining state must be insured in the
+state where majority of the insured acres are located, or they can be separated
+and insured in their respective state.
+Example: Part of insured A’s 50.0 contiguous acre field is physically located in grid ID 1 and
+part is physically located in grid ID 2. Insured A can:
+(1) combine the acres and assign all 50.0 to grid ID 1;
+(2) combine the acres and assign all 50.0 acres to grid ID 2; or
+(3) separate the acres and assign any number of acres less than 50.0 to grid
+ID 1 and assign the remaining acres to grid ID 2.
+The sum of the number of acres assigned to grid ID 1 and grid ID 2 cannot exceed
+50.0 acres.",
+    "metadata": {
+      "page": "25",
+      "section": "76",
+      "subsection": "A",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 50,
+    "document": "IF… THEN…
+all contiguous acreage is
+combined and assigned
+to one grid ID
+one point of reference must be established, by intended use,
+irrigation practice, and organic practice; when applicable,
+within the boundaries of the contiguous acreage within the
+grid selected.
+the contiguous acreage
+is separated into more
+than one grid
+a separate point of reference must be established, by intended
+use, irrigation practice, and organic practice; when applicable,
+within the boundaries for the contiguous acreage within each
+grid selected.",
+    "metadata": {
+      "page": "26",
+      "section": "76",
+      "subsection": "A",
+      "type": "table"
+    }
+  },
+  {
+    "id": 51,
+    "document": "Pasture, Rangeland, Forage with the Same Intended Use
+The following is an example of contiguous acreage where the insured chose to combine all the
+acreage and assign it to grid ID 1. All the acreage has the same intended use and irrigation
+practice. The insured must establish one point of reference within the field boundaries within
+grid ID 1. The red “+” represents the point of reference.
+The following is an example of contiguous acreage where the insured chose to combine all the
+acreage and assign it to grid ID 2. All the acreage has the same intended use and irrigation
+practice. The insured must establish one point of reference within the field boundaries within
+grid ID 2. The red “+” represents the point of reference. ",
+    "metadata": {
+      "page": "26",
+      "section": "76",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 52,
+    "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued)
+The following is an example of contiguous acreage where the insured chose to separate the
+acreage and assign 10.0 acres to grid ID 1 and assign 40.0 acres to grid ID 2. All the acreage has
+the same intended use and irrigation practice. The insured must establish two points of
+reference, one within the field boundaries within grid ID 1 and one within the field boundaries
+within grid ID 2. The insured could have assigned any number of the contiguous acres to either
+grid ID regardless of the number of acres physically located in each grid. However, the sum of
+the number of acres assigned to grid ID 1 and grid ID 2 cannot exceed 50.0 acres. The red “+”
+represents the point of reference.
+The following is an example of the Grid Locator page with one point of reference established
+for 70.0 contiguous acreage physically located in two grids. The insured chose to combine the
+acreage and assign all 70.0 acres to grid ID 22940. All the acreage has the same intended use
+and irrigation practice. The insured must establish one point of reference within the field
+boundaries within grid ID 22940.
+If the insured had chosen to combine the acreage and assign all 70.0 acres to grid ID 22939, the
+one point of reference would have to be within the field boundaries within grid ID 22939.",
+    "metadata": {
+      "page": "27",
+      "section": "76",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+{
+    "id": 53,
+    "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued)
+The following is an example of the Grid Locator page with two points of reference established
+for 70.0 contiguous acreage physically located in two grids. All the acreage has the same
+intended use and irrigation practice. The insured chose to separate the acreage and assign
+some of 70.0 acres to grid ID 22939 and some to grid ID 22940. The insured must establish two
+points of reference, one within the field boundaries within grid ID 22939 and one within the
+field boundaries within grid ID 22940.
+The insured can assign any number of the contiguous acres less than 70.0 to one grid ID and the
+remaining acres to the other grid ID regardless of the number of the contiguous acres physically
+located in each grid. However, the sum of the number of acres assigned to grid ID 22939 and
+grid ID 22940 cannot exceed 70.0 acres.",
+    "metadata": {
+      "page": "28",
+      "section": "76",
+      "subsection": "B",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 54,
+    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use
+The following is an example of contiguous acreage located in one field with some of the acreage
+having an intended use of grazing and the remaining acreage having an intended use of haying.
+The insured chose to combine all 90.0 acres with an intended use of haying and assign it to grid
+ID 1 and combine all 60.0 acres with an intended use of grazing and assign it to grid ID 1. Two
+points of reference are required, one for the acres intended for grazing and one for the acres
+intended for haying. The red “+” represents the point of reference.
+The following is an example of the Grid Locator page with two points of reference established
+for contiguous acreage physically located in two grids. Some of the acreage has an intended
+use of grazing and the remaining acreage has an intended use of haying.
+The insured chose to combine all acres with an intended use of haying and assign it to grid ID
+22940 and combine all acres with an intended use of grazing and assign it to grid ID 22940. Two
+points of reference are required, one for the acres intended for grazing and one for the acres
+intended for haying. ",
+    "metadata": {
+      "page": "29",
+      "section": "76",
+      "subsection": "C",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 55,
+    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued)
+The following is an example of contiguous acreage located in one field with some of the acreage
+having an intended use of grazing and the remaining acreage having an intended use of haying.
+The insured chose to combine all 90.0 acres with an intended use of haying and assign it to grid
+ID 1 and combine all 60.0 acres with an intended use of grazing and assign it to grid ID 2. Two
+points of reference are required, one in grid ID 1for the acres intended for haying and one in
+grid 2 for the acres intended for grazing. The red “+” represents the point of reference.
+The following is an example of contiguous acreage located in one field with some of the acreage
+having an intended use of grazing and the remaining acreage having an intended use of haying.
+The insured chose to separate the acreage intended for haying and assign 20.0 acres to grid ID 1
+and assign 70.0 acres to grid ID 2. The insured chose to combine all 60.0 acres with an intended
+use of grazing and assign it to grid ID 2.
+The insured must establish three points of reference, one within the field boundaries within
+grid ID 1 for the acreage intended for haying, one within the field boundaries within grid ID 2
+for the acreage intended for haying, and one within the field boundaries within grid ID 2 for the
+acreage intended for grazing. The red “+” represents the point of reference.
+The insured could have assigned any number of the contiguous acres intended for haying to
+either grid ID regardless of the number of acres physically located in each grid. The insured
+could have also assigned any number of the contiguous acres intended for grazing to either grid
+ID regardless of the number of acres physically located in each grid. ",
+    "metadata": {
+      "page": "30",
+      "section": "76",
+      "subsection": "C",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 56,
+    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued)
+However, the sum of the:
+(1) number of acres intended for haying assigned to grid ID 1 and grid ID 2 cannot exceed
+90.0 acres;
+(2) number of acres intended for grazing assigned to grid ID 1 and grid ID 2 cannot exceed
+60.0 acres; and
+(3) all acres assigned to grid ID 1 and grid ID 2 cannot exceed 150.0 acres.
+The following is an example of the Grid Locator page with four points of reference established
+for contiguous acreage physically located in two grids. Some of the acreage has an intended
+use of grazing and the remaining acreage has an intended use of haying.
+The insured chose to separate the acreage intended for haying and assign some acres to grid ID
+22939 and assign the remaining acres intended for haying to grid ID 22940. The insured also
+chose to separate the acreage intended for grazing and assign some acres to grid ID 22939 and
+assign the remaining acres intended for grazing to grid ID 22940.
+The insured must establish the following four points of reference.
+(1) One point of reference within the field boundaries within grid ID 22939 for the acreage
+intended for haying assigned to that grid ID.
+(2) One point of reference within the field boundaries within grid ID 22940 for the acreage
+intended for haying assigned to that grid ID.
+(3) One point of reference within the field boundaries within grid ID 22939 for the acreage
+intended for grazing assigned to that grid ID.
+(4) One point of reference within the field boundaries within grid ID 22940 for the acreage
+intended for grazing assigned to that grid ID. ",
+    "metadata": {
+      "page": "31",
+      "section": "76",
+      "subsection": "C",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 57,
+    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued)
+The insured could have assigned any number of the contiguous acres intended for haying to
+either grid ID regardless of the number of acres physically located in each grid. The insured
+could have also assigned any number of the contiguous acres intended for grazing to either grid
+ID regardless of the number of acres physically located in each grid.
+NOTE: The above examples can be used to illustrate the point of reference
+requirements for irrigated and non-irrigated haying where those practices are
+separated. Where the example shows intended use, substitute irrigated and
+non-irrigated practice or organic practice if applicable.",
+    "metadata": {
+      "page": "32",
+      "section": "76",
+      "subsection": "C",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 58,
+    "document": "Apiculture and Annual Forage
+Intended use and irrigation practice is not applicable under the AF or apiculture programs.
+Therefore, under the AF or apiculture program, points of reference are established for
+contiguous acreage in the same manner as under the PRF program when all acreage has the
+same intended use.
+See subparagraph B for examples of establishing a point of reference for noncontiguous
+acreage when all acreage has the same intended use.",
+    "metadata": {
+      "page": "32",
+      "section": "76",
+      "subsection": "D",
+      "type": "paragraph"
+    }
+  },
+   {
+    "id": 59,
+    "document": "Reserved",
+    "metadata": {
+      "page": "32",
+      "section": "77-80",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+{
+    "id": 60,
+    "document": "PART 5: ANNUAL FORAGE Growing Seasons
+There are 12 growing seasons available in the AF crop insurance program; eligibility for each of the
+growing seasons is dependent on when the annual forage crop is planted.
+CAT growing seasons will only have one index interval for each growing season and can be found in the
+AD.
+Not all growing seasons are available in all counties. See the AD to determine which growing seasons
+and index intervals are available.",
+    "metadata": {
+      "page": "33",
+      "section": "81",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 61,
+    "document": "Planting Periods, Associated Index Intervals and Growing Seasons Growing
+Season
+Planting
+Month S/O O/N N/D D/J J/F F/M M/A A/M M/J J/J J/A A/S S/O O/N N/D D/J J/F
+1 August
+2 September
+3 October
+4 November
+5 December
+6 January
+7 February
+8 March
+9 April
+10 May
+11 June
+12 July
+",
+    "metadata": {
+      "page": "33",
+      "section": "82",
+      "subsection": "",
+      "type": "table"
+    }
+  },
+
+
+
+
+
+
+  {
+    "id": 0,
+    "document": "",
+    "metadata": {
+      "page": "#",
+      "section": "",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
 ]
