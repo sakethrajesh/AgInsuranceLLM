@@ -91,6 +91,15 @@ def stream_chat():
     messages.insert(0, {"role": "assistant", "content": prompt})
     print(messages)
     model = request.json.get('model')
+    question = messages[-1]['content'] 
+    retrieved_docs = collection.query(
+            query_texts=question,
+            n_results=3,
+        )
+
+    print(retrieved_docs)
+
+    formatted_context = retrieved_docs
 
     print('model:', model)
 
@@ -101,18 +110,6 @@ def stream_chat():
         
         yield (json.dumps({"source_tags" : retrieved_docs['metadatas'], "source_documents" : retrieved_docs['documents']}) + "\n").encode()
     try:
-        question = messages[-1]['content']
-
-        # get the top 3 documents from the collection that are most relevant to the question
-        retrieved_docs = collection.query(
-            query_texts=question,
-            n_results=3,
-        )
-
-        print(retrieved_docs)
-
-        formatted_context = retrieved_docs
-
         return Response(stream_with_context(generate(ollama_llm(messages, formatted_context, stream=True, model=model))),content_type='application/json')    
     except Exception as e:
         return jsonify({"error": str(e)}), 500 
