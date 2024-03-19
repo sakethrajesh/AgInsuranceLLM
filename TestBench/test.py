@@ -29,9 +29,9 @@ answers.append(current_date)
 with open('testbench.csv', 'a', newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
     for question in questions:
-        answer = evaluate(question)
+        answer = 'evaluate(question)'
 
         answers.append(answer)
 
-    csv_writer.writerows([answers])
+    csv_writer.writerows(answers)
 

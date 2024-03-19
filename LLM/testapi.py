@@ -2,10 +2,8 @@ from ollama import Client
 import os
 import json
 from flask import Flask, Response, request, jsonify, stream_with_context
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OllamaEmbeddings
-from langchain_community.document_loaders import PyPDFLoader
+from chromadb import HttpClient
+
 
 app = Flask(__name__)
 
@@ -21,7 +19,7 @@ print(f'Using CHROMADB_URL: {CHROMADB_URL}')
 
 # chromadb collection setup
 COLLECTION_NAME = os.environ.get('COLLECTION_NAME')
-collection = chroma_client.get_collection(name="COLLECTION_NAME")
+collection = chroma_client.get_collection(name=COLLECTION_NAME)
 print(f'Using COLLECTION_NAME: {COLLECTION_NAME}')
 
 # system prompt
@@ -29,7 +27,9 @@ prompt = '''
  You are an agricultural insurance chatbot. 
  You should only respond to questions related to agricultural insurance with context information. 
  If there is no context information, respond to the
- user that you cannot answer their question without disclosing you are using an external source of information.
+ user that you cannot answer their question because you do not have knowledge on the subject.
+ Do not disclose that you are using an external source or context of information.
+ However, you cna answer basic questions without context like what is agriculture insurance.
  You should not make any agreements or promises with the user.
 '''
 
@@ -43,8 +43,8 @@ prompt = '''
 #     where_document=where_document
 # )
 
-def format_docs(docs):
-    return "\n\n".join(doc.page_content for doc in docs)
+# def format_docs(docs):
+#     return "\n\n".join(doc.page_content for doc in docs)
 
 def ollama_llm(convo, context, stream=False, model='llama2:chat'):
     question = convo[-1]['content']
@@ -73,7 +73,8 @@ def chat():
 
         print(retrieved_docs)
 
-        formatted_context = format_docs(retrieved_docs)
+        # formatted_context = format_docs(retrieved_docs)
+        formatted_context = retrieved_docs
 
         text_content = ollama_llm(messages, formatted_context, model=model)
 
@@ -97,6 +98,8 @@ def stream_chat():
         for chunk in stream:
             if chunk:
                 yield (json.dumps({"text": chunk["message"]["content"]}) + "\n").encode()
+        
+        yield (json.dumps({"source_tags" : retrieved_docs['metadatas'], "source_documents" : retrieved_docs['documents']}) + "\n").encode()
     try:
         question = messages[-1]['content']
 
@@ -108,7 +111,7 @@ def stream_chat():
 
         print(retrieved_docs)
 
-        formatted_context = format_docs(retrieved_docs)
+        formatted_context = retrieved_docs
 
         return Response(stream_with_context(generate(ollama_llm(messages, formatted_context, stream=True, model=model))),content_type='application/json')    
     except Exception as e:
