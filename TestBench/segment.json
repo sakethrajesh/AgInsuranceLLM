@@ -899,29 +899,7 @@ ID regardless of the number of acres physically located in each grid. ",
   },
   {
     "id": 56,
-    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued)
-However, the sum of the:
-(1) number of acres intended for haying assigned to grid ID 1 and grid ID 2 cannot exceed
-90.0 acres;
-(2) number of acres intended for grazing assigned to grid ID 1 and grid ID 2 cannot exceed
-60.0 acres; and
-(3) all acres assigned to grid ID 1 and grid ID 2 cannot exceed 150.0 acres.
-The following is an example of the Grid Locator page with four points of reference established
-for contiguous acreage physically located in two grids. Some of the acreage has an intended
-use of grazing and the remaining acreage has an intended use of haying.
-The insured chose to separate the acreage intended for haying and assign some acres to grid ID
-22939 and assign the remaining acres intended for haying to grid ID 22940. The insured also
-chose to separate the acreage intended for grazing and assign some acres to grid ID 22939 and
-assign the remaining acres intended for grazing to grid ID 22940.
-The insured must establish the following four points of reference.
-(1) One point of reference within the field boundaries within grid ID 22939 for the acreage
-intended for haying assigned to that grid ID.
-(2) One point of reference within the field boundaries within grid ID 22940 for the acreage
-intended for haying assigned to that grid ID.
-(3) One point of reference within the field boundaries within grid ID 22939 for the acreage
-intended for grazing assigned to that grid ID.
-(4) One point of reference within the field boundaries within grid ID 22940 for the acreage
-intended for grazing assigned to that grid ID. ",
+    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued) However, the sum of the: (1) number of acres intended for haying assigned to grid ID 1 and grid ID 2 cannot exceed 90.0 acres; (2) number of acres intended for grazing assigned to grid ID 1 and grid ID 2 cannot exceed 60.0 acres; and (3) all acres assigned to grid ID 1 and grid ID 2 cannot exceed 150.0 acres. The following is an example of the Grid Locator page with four points of reference established for contiguous acreage physically located in two grids. Some of the acreage has an intended use of grazing and the remaining acreage has an intended use of haying. The insured chose to separate the acreage intended for haying and assign some acres to grid ID 22939 and assign the remaining acres intended for haying to grid ID 22940. The insured also chose to separate the acreage intended for grazing and assign some acres to grid ID 22939 and assign the remaining acres intended for grazing to grid ID 22940. The insured must establish the following four points of reference. (1) One point of reference within the field boundaries within grid ID 22939 for the acreage intended for haying assigned to that grid ID. (2) One point of reference within the field boundaries within grid ID 22940 for the acreage intended for haying assigned to that grid ID. (3) One point of reference within the field boundaries within grid ID 22939 for the acreage intended for grazing assigned to that grid ID. (4) One point of reference within the field boundaries within grid ID 22940 for the acreage intended for grazing assigned to that grid ID.",
     "metadata": {
       "page": "31",
       "section": "76",
@@ -931,15 +909,8 @@ intended for grazing assigned to that grid ID. ",
   },
   {
     "id": 57,
-    "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued)
-The insured could have assigned any number of the contiguous acres intended for haying to
-either grid ID regardless of the number of acres physically located in each grid. The insured
-could have also assigned any number of the contiguous acres intended for grazing to either grid
-ID regardless of the number of acres physically located in each grid.
-NOTE: The above examples can be used to illustrate the point of reference
-requirements for irrigated and non-irrigated haying where those practices are
-separated. Where the example shows intended use, substitute irrigated and
-non-irrigated practice or organic practice if applicable.",
+    "document": 
+    "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued) The insured could have assigned any number of the contiguous acres intended for haying to either grid ID regardless of the number of acres physically located in each grid. The insured could have also assigned any number of the contiguous acres intended for grazing to either grid ID regardless of the number of acres physically located in each grid. NOTE: The above examples can be used to illustrate the point of reference requirements for irrigated and non-irrigated haying where those practices are separated. Where the example shows intended use, substitute irrigated and non-irrigated practice or organic practice if applicable.",
     "metadata": {
       "page": "32",
       "section": "76",
@@ -949,13 +920,8 @@ non-irrigated practice or organic practice if applicable.",
   },
   {
     "id": 58,
-    "document": "Apiculture and Annual Forage
-Intended use and irrigation practice is not applicable under the AF or apiculture programs.
-Therefore, under the AF or apiculture program, points of reference are established for
-contiguous acreage in the same manner as under the PRF program when all acreage has the
-same intended use.
-See subparagraph B for examples of establishing a point of reference for noncontiguous
-acreage when all acreage has the same intended use.",
+    "document": 
+    "Apiculture and Annual Forage Intended use and irrigation practice is not applicable under the AF or apiculture programs. Therefore, under the AF or apiculture program, points of reference are established for contiguous acreage in the same manner as under the PRF program when all acreage has the same intended use. See subparagraph B for examples of establishing a point of reference for noncontiguous acreage when all acreage has the same intended use.",
     "metadata": {
       "page": "32",
       "section": "76",
@@ -973,15 +939,10 @@ acreage when all acreage has the same intended use.",
       "type": "paragraph"
     }
   },
-{
+  {
     "id": 60,
-    "document": "PART 5: ANNUAL FORAGE Growing Seasons
-There are 12 growing seasons available in the AF crop insurance program; eligibility for each of the
-growing seasons is dependent on when the annual forage crop is planted.
-CAT growing seasons will only have one index interval for each growing season and can be found in the
-AD.
-Not all growing seasons are available in all counties. See the AD to determine which growing seasons
-and index intervals are available.",
+    "document": 
+    "PART 5: ANNUAL FORAGE Growing Seasons There are 12 growing seasons available in the AF crop insurance program; eligibility for each of the growing seasons is dependent on when the annual forage crop is planted. CAT growing seasons will only have one index interval for each growing season and can be found in the AD. Not all growing seasons are available in all counties. See the AD to determine which growing seasons and index intervals are available.",
     "metadata": {
       "page": "33",
       "section": "81",
@@ -991,23 +952,7 @@ and index intervals are available.",
   },
   {
     "id": 61,
-    "document": "Planting Periods, Associated Index Intervals and Growing Seasons Growing
-Season
-Planting
-Month S/O O/N N/D D/J J/F F/M M/A A/M M/J J/J J/A A/S S/O O/N N/D D/J J/F
-1 August
-2 September
-3 October
-4 November
-5 December
-6 January
-7 February
-8 March
-9 April
-10 May
-11 June
-12 July
-",
+    "document": "Planting Periods, Associated Index Intervals and Growing Seasons Growing Season Planting Month S/O O/N N/D D/J J/F F/M M/A A/M M/J J/J J/A A/S S/O O/N N/D D/J J/F 1 August 2 September 3 October 4 November 5 December 6 January 7 February 8 March 9 April 10 May 11 June 12 July",
     "metadata": {
       "page": "33",
       "section": "82",
@@ -1015,9 +960,121 @@ Month S/O O/N N/D D/J J/F F/M M/A A/M M/J J/J J/A A/S S/O O/N N/D D/J J/F
       "type": "table"
     }
   },
-
-
-
+  {
+    "id": 62,
+    "document": 
+    "Information at Sales Closing Date: In addition to other material information required on the application to insure the crop, for other than CAT coverage the insured will need to select the following for each growing season: (1) Coverage Level (same as policy). (2) Productivity Factor (same as policy). (3) Index intervals for growing seasons in which the insured desires coverage. While it is not required for growing seasons that the insured does not wish to cover, it is recommended that the insured select the index intervals and percent of value for every growing season. Per the CP, coverage will not be provided for acreage planted for a growing season where no index intervals and associated value was selected and reported by the sales closing date.",
+    "metadata": {
+      "page": "33",
+      "section": "83",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 63,
+    "document": 
+    "Information at Sales Closing Date (Continued): (a) A minimum of two or three index intervals for each growing season must be selected for acreage insured under the AF Rainfall Index plan of insurance by the insured. See the AD to determine the minimum number and which index intervals are available. (b) In addition to the index intervals listed in Para. 32B, there will also be an interval for December ‒ January (not all growing seasons and index intervals are available in all counties, [see the AD to determine which index intervals are available]). (4) A percent of value will need to be selected for intervals in each growing seasons in which the insured desires coverage. See the AD to determine the maximum and minimum percentage of value allowed per interval for each growing season. While it is not required for growing seasons that the insured does not wish to cover, it is recommended that the insured select the percent of value for each interval for every growing season. However, per the CP, coverage will not be provided for acreage planted for a growing season where the index interval and associated value were not selected and reported by the sales closing date.",
+    "metadata": {
+      "page": "34",
+      "section": "83",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 64,
+    "document": "Acreage Reporting: The insured is not required to insure 100 percent of the insurable acres; however, for the acreage to be eligible for insurance coverage, the insured must select the index intervals and percent of value for the growing season in which they desire coverage by sales closing date and report any planted acres by the 5th day of the month immediately following the planting period for the growing season. Per the CP, acreage planted and not reported by the acreage reporting date for the growing season will not be insurable. Example: For coverage in Growing Season 2 the annual forage crop must be planted on or after September 1 and on or before September 30 of the same crop year. The planted acreage must be reported by October 5th. The index interval and associated values must be selected by Sales Closing Date. The available index intervals for this growing season will be from October 1 through April 30 of the same crop year. An acreage report is not required to be filed for each growing season. If no acreage was planted during the month the insured is not required to file an acreage report. However, if an acreage report is not timely filed by the acreage reporting date, there will be no coverage and the acreage will not be insurable. Failure to file a timely acreage report does not qualify for modifying an acreage report as provided in Part 2, Para. 18A.",
+    "metadata": {
+      "page": "34",
+      "section": "84",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 65,
+    "document": "Eligibility of Second Annual Forage Crop Planting: Per the CP, annual forage can be planted and insured in any growing season unless prevented in the SP; however, the same acreage cannot be planted and insured in a growing season with the same index intervals.",
+    "metadata": {
+      "page": "34",
+      "section": "85",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 66,
+    "document": "Eligibility of Second Annual Forage Crop Planting (Continued: Example: Acreage planted in August, growing season 1 (would include the last index interval of February ‒ March), would not be eligible to be planted again until February, growing season 7 (March ‒ April first index interval). In addition, the same acres cannot be insured in more than one grid ID or county during a single growing season. See illustration below for months eligible for second AF planting.",
+    "metadata": {
+      "page": "35",
+      "section": "85",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 67,
+    "document": "Growing Season Planting Month 1 August February March April May June July 2 September March April May June July 3 October April May June July 4 November May June July 5 December June July 6 January July 7 February 8 March 9 April 10 May 11 June 12 July Eligible Second Annual Forage Planting",
+    "metadata": {
+      "page": "35",
+      "section": "85",
+      "subsection": "",
+      "type": "table"
+    }
+  },
+  {
+    "id": 68,
+    "document": 
+    "Double Cropped Acreage Involving an Annual Forage Crop: When there is a double cropping scenario involving an insured AF crop, the requirements in 6(k)(1)-(3) of the RI Basic Provisions must be met to qualify as double cropping. If those requirements are not met, then the acreage will be subject to the first and second crop rules. Example 1: Planting an annual forage crop (i.e., haygrazer) following a failed spring or summer crop (i.e., cotton) does not meet the requirement for a full indemnity on both crops in the same crop year, because it does not meet the requirements of Sections 6(k)(1) and (2). It is not customary to plant the haygrazer on the same acres of cotton that are taken to harvest in the same crop year. Example 2: Planting an annual forage crop (i.e., corn for silage) following a failed winter crop for grain (i.e., wheat) may meet the requirements for potentially receiving a full indemnity on both crops in the same crop year, because it may be possible to take the wheat to harvest and follow it with corn for silage in the same crop year, if it is customary and a practice generally recognized by agricultural experts for the area.",
+    "metadata": {
+      "page": "35",
+      "section": "86",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 69,
+    "document": 
+    "Double Cropped Acreage Involving an Annual Forage Crop (Continued): Example 3: Planting a spring or summer crop (i.e., cotton) following a failed winter annual forage crop (i.e., wheat) would generally meet the requirements for potentially receiving a full indemnity on both crops in the same crop year, because it is generally possible to utilize annual forage crops and follow it with cotton in the same year, if it is a practice generally recognized by agricultural experts for the area.",
+    "metadata": {
+      "page": "36",
+      "section": "86",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 70,
+    "document": 
+    "Dual Use: By the acreage reporting date, producers may elect to insure their crop using the dual use option which allows the producer to purchase both an AF Policy and a Small Grains Crop Policy. AF commodities covered under the Small Grains CP that offer a short rate and that are planted with the intent of grazing the crop first and then later harvesting the crop for grain will be eligible for the dual use option and producers will be able to retain both benefits. Per the CP and these SP, the requirements of both the AF and accompanying MPCI or similar policy must be met.",
+    "metadata": {
+      "page": "36",
+      "section": "87",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 71,
+    "document": "Reserved",
+    "metadata": {
+      "page": "36",
+      "section": "88-90",
+      "subsection": "",
+      "type": "paragraph"
+    }
+  },
+  {
+    "id": 72,
+    "document": "",
+    "metadata": {
+      "page": "37",
+      "section": "Exhibit 1",
+      "subsection": "",
+      "type": "table"
+    }
+  },
 
 
 

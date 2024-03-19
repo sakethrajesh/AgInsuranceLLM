@@ -48,6 +48,11 @@ export function Header() {
           <UserOrLogin />
         </React.Suspense>
       </div>
+      <div className="model name">
+        <h1 className="bold model">
+          {/* Model Placeholder Text */}
+        </h1>
+      </div>
       <div className="flex items-center justify-end space-x-2">
         <a
           href="https://www.rma.usda.gov/en/Policy-and-Procedure/Insurance-Plans/Pasture-Rangeland-Forage/"
