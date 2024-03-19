@@ -17,8 +17,10 @@ RUN pip install flask
 COPY api.py .
 COPY InsuranceContext ./
 COPY InsuranceContext/handbook.pdf .
-COPY api_unstable.py .
+COPY testapi.py .
 
-ENV OLLAMA_URL=https://ollamaaginsurance.endeavour.cs.vt.edu
+ENV OLLAMA_URL=https://ollamaaginsurance.endeavour.cs.vt.edu/
+ENV CHROMADB_URL=https://chromadb-ingress.endeavour.cs.vt.edu
+ENV COLLECTION_NAME=RAINFALL_INDEX_INSURANCE_STANDARDS_HANDBOOK_2024
 
-ENTRYPOINT ["python3", "api.py"]
+ENTRYPOINT ["python3", "testapi.py"]
