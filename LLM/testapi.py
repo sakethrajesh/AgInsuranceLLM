@@ -1,11 +1,15 @@
 from ollama import Client
 import os
 import json
+import logging
 from flask import Flask, Response, request, jsonify, stream_with_context
 from chromadb import HttpClient
 
 
+
 app = Flask(__name__)
+#logging.basicConfig(level=logging.DEBUG)
+
 
 # ollama setup
 OLLAMA_URL = os.environ.get('OLLAMA_URL')
@@ -71,7 +75,7 @@ def chat():
             n_results=3,
         )
 
-        print(retrieved_docs)
+        app.logger.info(retrieved_docs)
 
         # formatted_context = format_docs(retrieved_docs)
         formatted_context = retrieved_docs
@@ -97,7 +101,21 @@ def stream_chat():
             n_results=3,
         )
 
-    print(retrieved_docs)
+    #app.logger.info(retrieved_docs)
+    #app.logger.info(retrieved_docs['metadatas'][0]) 
+    #app.logger.info(retrieved_docs['documents'][0])
+
+    citations = []
+
+    for i in range(len(retrieved_docs['metadatas'][0])):
+        metadata = retrieved_docs['metadatas'][0][i]
+        document = retrieved_docs['documents'][0][i]
+        s = f" - **Reference:** {metadata['type']} from page {metadata['page']} of section {metadata['section']}"
+        if len(metadata['subsection']) > 0:
+            s += f" in subsection {metadata['subsection']}"
+        s += f'''\n\n - **Document:** \n {document} \n'''
+        citations.append(s)
+
 
     formatted_context = retrieved_docs
 
@@ -106,9 +124,10 @@ def stream_chat():
     def generate(stream):  
         for chunk in stream:
             if chunk:
-                yield (json.dumps({"text": chunk["message"]["content"]}) + "\n").encode()
+                yield (json.dumps({"text": chunk["message"]["content"]}) + "x1x\n").encode()
         
-        yield (json.dumps({"source_tags" : retrieved_docs['metadatas'], "source_documents" : retrieved_docs['documents']}) + "\n").encode()
+
+        yield (json.dumps({"text" : f'''\n\n **Citations**: \n\n  {"".join(citations)}'''}) + "x1x\n").encode()
     try:
         return Response(stream_with_context(generate(ollama_llm(messages, formatted_context, stream=True, model=model))),content_type='application/json')    
     except Exception as e:

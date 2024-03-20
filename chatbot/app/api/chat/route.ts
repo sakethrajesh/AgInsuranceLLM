@@ -8,7 +8,7 @@ async function POST2(req: Request) {
 
   const json = await req.json()
   const URL = process.env.URL;
-  
+  console.log("URL", URL);
   const response = await fetch(`${URL}/api/chat`, {
     method: 'POST',
     headers: {
@@ -43,6 +43,9 @@ export async function POST(req: Request) {
   }
   
   const URL = process.env.URL;
+  console.log("URL", URL);
+  const fullUrl = `${URL}/api/stream_chat`;
+  console.log("Full URL before fetch", fullUrl);
   const response = await fetch(`${URL}/api/stream_chat`, {
     method: 'POST',
     headers: {
@@ -51,7 +54,7 @@ export async function POST(req: Request) {
     body: JSON.stringify({ messages: messages, model: model})
   }); 
 
-  
+  console.log("request works")
   try {
         if (response.ok) {
           let reader = response.body?.getReader();
@@ -67,13 +70,15 @@ export async function POST(req: Request) {
                   let chunk = decoder.decode(value, { stream: true });
                   try {
                         //console.log("Chunk:", chunk);
-                        chunk.split("\n").forEach((line) => {
+                        chunk.split("x1x\n").forEach((line) => {
                           if(line.trim().length > 0)
                           {
                             //console.log("Line:", line);
                             const json = JSON.parse(line);
+                            console.log(json);
                             if (json && json.text && json.text.length > 0) {
                                 buffer += json.text; 
+                        
                             }
                           }
                         });
