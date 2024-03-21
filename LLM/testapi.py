@@ -8,8 +8,6 @@ from chromadb import HttpClient
 
 
 app = Flask(__name__)
-#logging.basicConfig(level=logging.DEBUG)
-
 
 # ollama setup
 OLLAMA_URL = os.environ.get('OLLAMA_URL')
@@ -101,7 +99,7 @@ def stream_chat():
             n_results=3,
         )
 
-    #app.logger.info(retrieved_docs)
+    app.logger.info(retrieved_docs)
     #app.logger.info(retrieved_docs['metadatas'][0]) 
     #app.logger.info(retrieved_docs['documents'][0])
 
@@ -110,10 +108,10 @@ def stream_chat():
     for i in range(len(retrieved_docs['metadatas'][0])):
         metadata = retrieved_docs['metadatas'][0][i]
         document = retrieved_docs['documents'][0][i]
-        s = f" - **Reference:** {metadata['type']} from page {metadata['page']} of section {metadata['section']}"
+        s = f''' - **Reference:** {metadata['type']} from page {metadata['page']} of section {metadata['section']}'''
         if len(metadata['subsection']) > 0:
             s += f" in subsection {metadata['subsection']}"
-        s += f'''\n\n - **Document:** \n {document} \n'''
+        s += f'''\n\n - **Document:** \n {document}'''
         citations.append(s)
 
 
@@ -124,10 +122,11 @@ def stream_chat():
     def generate(stream):  
         for chunk in stream:
             if chunk:
-                yield (json.dumps({"text": chunk["message"]["content"]}) + "x1x\n").encode()
-        
+                yield (json.dumps({"text": chunk["message"]["content"]}) + "\x1e").encode()
 
-        yield (json.dumps({"text" : f'''\n\n **Citations**: \n\n  {"".join(citations)}'''}) + "x1x\n").encode()
+        yield (json.dumps({"text" : f'''\n\n **Citations**: \n\n'''}) + "\x1e").encode()
+        for citation in citations:
+            yield (json.dumps({"text" : f'''{citation} \n'''}) + "\x1e").encode()
     try:
         return Response(stream_with_context(generate(ollama_llm(messages, formatted_context, stream=True, model=model))),content_type='application/json')    
     except Exception as e:
