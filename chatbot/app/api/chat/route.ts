@@ -8,7 +8,7 @@ async function POST2(req: Request) {
 
   const json = await req.json()
   const URL = process.env.URL;
-  console.log("URL", URL);
+  //console.log("URL", URL);
   const response = await fetch(`${URL}/api/chat`, {
     method: 'POST',
     headers: {
@@ -66,20 +66,19 @@ export async function POST(req: Request) {
                   let chunk = decoder.decode(value, { stream: true });
                   try {
                         //console.log("Chunk:", chunk);
-                        chunk.split("x1x\n").forEach((line) => {
+                        chunk.split("\x1e").forEach((line) => {
                           if(line.trim().length > 0)
                           {
                             //console.log("Line:", line);
                             const json = JSON.parse(line);
                             if (json && json.text && json.text.length > 0) {
                                 buffer += json.text; 
-                        
                             }
                           }
                         });
                     
                   } catch (error) {
-                      //console.log("Error Chunk:", chunk);
+                      console.log("Error Chunk:", chunk);
                       console.error('Error parsing JSON chunk', error);
                   }
                   if (buffer.length > 20) { // Threshold can adjusted for more responsiveness
@@ -117,6 +116,7 @@ export async function POST(req: Request) {
           // }
         ]
       }
+      
       await kv.hmset(`chat:${id}`, payload)
       await kv.zadd(`user:chat:${userId}`, {
         score: createdAt,
