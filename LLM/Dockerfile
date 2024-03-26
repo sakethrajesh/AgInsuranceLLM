@@ -12,7 +12,6 @@ RUN pip install langchain_community
 RUN pip install chromadb
 RUN pip install pypdf
 RUN pip install flask
-# RUN pip install pysqlite3-binary
 
 COPY api.py .
 COPY InsuranceContext ./

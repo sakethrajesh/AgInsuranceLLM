@@ -5,10 +5,10 @@ Populates the chromaDB hosted at a specified location with data in the segment.j
 ```
 .
 └── ChromaDB/
-    ├── chromaBuild.py
-    ├── segment.json
-    ├── Dockerfile.chromadb
-    └── docker-compose.yaml
+    ├── chromaBuild.py      <-- main file that is run to populate chromadb
+    ├── segment.json        <-- file of embedding documents and metadata
+    ├── Dockerfile.chromadb <-- dockerfile for environment for chromaBuild.py to run
+    └── docker-compose.yaml <-- compose file to run the dockerfile
 
 ```
 

@@ -2,7 +2,21 @@
 
 ## File Structure
 ```
-
+.
+└── LLM/
+    ├── InsuranceContext/
+    │   └── handbook.pdf
+    │
+    ├── .env.example
+    ├── .gitignore
+    │
+    ├── api.py                  <-- main api file that facilities communication to Ollama (LLMs) and ChromaDB (vectordb)
+    ├── Dockerfile              <-- dockerfile, instructions to create environment that runs the api.py
+    ├── docker-compose.yaml     <-- compose file that can be used to run Dockerfile
+    ├── dockerpush.sh           <-- script to push api Docker image to container registry
+    ├── sample_api.py           <-- 
+    ├── test_pdf_splitter.py    <-- 
+    └── testapi.py              <-- same functionality of api.py, but has alternate segmentation methods
 ```
 
 ## env file
