@@ -282,6 +282,7 @@
     {
       "id": 29,
       "document": "Selecting Index Intervals A minimum of two index intervals must be selected for acreage insured under the Rainfall Index plan of insurance by the insured. Selection of index intervals is critical to the effectiveness of the Rainfall Index plan of insurance as a risk management tool. Factors to be considered when determining which index intervals to select include, but are not limited to, type of forage or plant to be pollinated, location, elevation, intended use, and the time period when precipitation is needed under normal conditions for the insured crop. Selecting index intervals when precipitation is not needed for the insured crop or when precipitation does not normally occur is not an effective use of the Rainfall Index plan of insurance nor is insuring periods when livestock or colonies will be on the property unless that corresponds to when precipitation is critical. Example: Based on the location of the land, type of grass, and intended use, precipitation is needed in the months of March, April, May, and June for the grass to produce a normal amount of forage under normal conditions during the normal growing season. Selecting index intervals before March or after June would not be an effective use of the Rainfall Index plan of insurance because precipitation received during those index intervals is not as needed for the normal growing season.",
+  
       "metadata": {
         "page": "9",
         "section": "32",
@@ -290,7 +291,7 @@
       }
     },
     {
-      "id": 77,
+      "id": 100,
       "document": "NOAA CPC Precipitation Data The NOAA CPC precipitation data is not simply the measurement of precipitation from a specific rain gauge(s) or reporting station(s) within a grid. Each day, NOAA CPC obtains data from a minimum of four reporting stations closest to the center of the grid that report data for that day. The closest reporting station may be located outside the grid for which the data will be used. Each day, different reporting stations may be used because not all reporting stations report data every day. Accordingly, the gridded precipitation data used is an interpolated value for the entire grid and cannot be traced to a single point or reporting station(s). RMA does not receive the daily precipitation amount or which reporting station data was used. NOAA CPC data is accepted and used by other government agencies and private entities and undergoes a rigorous quality control process by the CPC to ensure accuracy.",
       "metadata": {
         "page": "11",
@@ -372,6 +373,7 @@
     {
       "id": 37,
       "document": "Identifying Acreage Locating an Insured’s Acreage The Grid Locator map and tools provide multiple options for identifying the insured’s acreage to establish a point of reference and determine the grid ID. The following steps provide one method for locating the insured’s acreage. (1) In the “Find address or place” search box located at the top of the Grid Locator page, enter the city and state near the acreage to be insured, or the county and state in which the acreage to be insured is physically located, then click the “Search” button. (2) Navigate close to where the acreage to be insured is physically located. Use of the zoom function and alternative map views may help identify roads, ponds, buildings, rivers, or other landmarks or features that will help navigate to the applicable acreage. (3) Use the zoom function and move the map to display the acreage to be insured in enough detail that a point of reference can be established within the field boundaries. The following is an example of the Grid Locator page for PRF when “McLouth, Kansas” is searched by using the search box. The following is an example of the Grid Locator page for PRF using the imagery map view to navigate to acreage located a few miles from McLouth, Kansas, using roads and other landmarks to locate the acreage.",
+  
       "metadata": {
         "page": "14",
         "section": "73",
@@ -381,7 +383,7 @@
     },
     {
       "id": 38,
-      "document": "Determining Grid ID The point of reference selected by the insured will determine the grid ID and county. The insured must establish a point of reference for the acreage to be insured and reported on the acreage report for API and PRF. Establish a point of reference by positioning the curser within the boundaries of the acreage to be insured and clicking the left mouse button. A blue or red point of reference symbol will be displayed on the map where the point of reference is established. In addition, a popup information balloon containing the following for the point of reference will display. (1) Grid ID (2) Latitude (3) Longitude (4) County (5) State The same information will display to the left of the map under “Current Location.” Use the zoom function and different map views to identify the acreage to be insured and ensure the point of reference is accurate and within the boundaries of acreage to be insured. If the point of reference selected is not within the boundaries of the acreage to be insured, remove the point of reference by clicking the “Clear All” button in the upper left-hand corner of the map. The following is an example of the Grid Locator page with a point of reference established for acreage located in grid ID 22939 a few miles from McLouth, Kansas.",
+      "document": "Determining Grid ID The point of reference selected by the insured will determine the grid ID and county. The insured must establish a point of reference for the acreage to be insured and reported on the acreage report for API and PRF. Establish a point of reference by positioning the cursor within the boundaries of the acreage to be insured and clicking the left mouse button. A blue or red point of reference symbol will be displayed on the map where the point of reference is established. In addition, a popup information balloon containing the following for the point of reference will display. (1) Grid ID (2) Latitude (3) Longitude (4) County (5) State The same information will display to the left of the map under “Current Location.” Use the zoom function and different map views to identify the acreage to be insured and ensure the point of reference is accurate and within the boundaries of acreage to be insured. If the point of reference selected is not within the boundaries of the acreage to be insured, remove the point of reference by clicking the “Clear All” button in the upper left-hand corner of the map. The following is an example of the Grid Locator page with a point of reference established for acreage located in grid ID 22939 a few miles from McLouth, Kansas.",
       "metadata": {
         "page": "16",
         "section": "73",
@@ -411,7 +413,7 @@
     },
     {
       "id": 41,
-      "document": "Point of Reference (Continued) IF the crop is… AND the acreage is… AND the intended use and practices (where applicable) is… AND the insured chooses to… THEN the insured must establish a point of reference… PRF Contiguous the same for all the acreage combine the contiguous acreage into one grid within the acreage boundaries within the grid selected by the insured. See subparagraph 76 B for examples. PRF Contiguous the same for all the acreage separate the contiguous acreage into separate grids within the acreage boundaries within each grid selected by the insured. See subparagraph 76 B for examples. PRF Contiguous different for part of the acreage combine the contiguous acreage into one grid for each intended use, or by irrigation practice, and organic practice if offered in the AD within the acreage boundaries within the grid selected by the insured. See subparagraph76 C for examples. PRF Contiguous different for part of the acreage separate the contiguous acreage into separate grids for each intended use, or by irrigation practice, and organic practice if offered in the AD within the acreage boundaries within each grid selected by the insured. See subparagraph 76 C for examples.",
+      "document": "Point of Reference (Continued) IF the crop is… AND the acreage is… AND the intended use and practices (where applicable) is… AND the insured chooses to… THEN the insured must establish a point of reference… PRF Contiguous the same for all the acreage combine the contiguous acreage into one grid within the acreage boundaries within the grid selected by the insured. See subparagraph 76 B for examples. PRF Contiguous the same for all the acreage separate the contiguous acreage into separate grids within the acreage boundaries within each grid selected by the insured. See subparagraph 76 B for examples. PRF Contiguous different for part of the acreage combine the contiguous acreage into one grid for each intended use, or by irrigation practice, and organic practice if offered in the AD within the acreage boundaries within the grid selected by the insured. See subparagraph 76 C for examples. PRF Contiguous different for part of the acreage separate the contiguous acreage into separate grids for each intended use, or by irrigation practice, and organic practice if offered in the AD within the acreage boundaries within each grid selected by the insured. See subparagraph 76 C for examples.",
       "metadata": {
         "page": "18",
         "section": "74",
@@ -421,7 +423,7 @@
     },
     {
       "id": 42,
-      "document": "Point of Reference (Continued) IF the crop is… AND the acreage is… AND the intended use and practices (where applicable) is… AND the insured chooses to… THEN the insured must establish a point of reference… Apiculture and AF Noncontiguous within the acreage boundaries for each of the noncontiguous acreage in a grid. See subparagraph 75 C. Apiculture and AF Contiguous combine the contiguous acreage into one grid within the acreage boundaries within the grid selected by the insured. See subparagraph 76 D. Apiculture and AF Contiguous separate the contiguous acreage into separate grids within the acreage boundaries within each grid selected by the insured. See subparagraph 76 D. ",
+      "document": "Point of Reference (Continued) IF the crop is… AND the acreage is… AND the intended use and practices (where applicable) is… AND the insured chooses to… THEN the insured must establish a point of reference… Apiculture and AF Noncontiguous within the acreage boundaries for each of the noncontiguous acreage in a grid. See subparagraph 75 C. Apiculture and AF Contiguous combine the contiguous acreage into one grid within the acreage boundaries within the grid selected by the insured. See subparagraph 76 D. Apiculture and AF Contiguous separate the contiguous acreage into separate grids within the acreage boundaries within each grid selected by the insured. See subparagraph 76 D.",
       "metadata": {
         "page": "19",
         "section": "74",
@@ -431,7 +433,7 @@
     },
     {
       "id": 43,
-      "document": "Noncontiguous Acreage - Point of Reference A. Pasture, Rangeland, Forage with the Same Intended Use, Irrigation Practice, and Organic Practice For noncontiguous acreage in a grid, the insured must establish a point of reference, by intended use, irrigation practice, and organic practice; where applicable, within the acreage boundaries. The following is an example of noncontiguous acreage with all acreage having the same intended use and irrigation practice. Only one point of reference is required because it is noncontiguous acreage with the same intended use and irrigation practice. The red “+” represents the point of reference. ",
+      "document": "Noncontiguous Acreage - Point of Reference A. Pasture, Rangeland, Forage with the Same Intended Use, Irrigation Practice, and Organic Practice For noncontiguous acreage in a grid, the insured must establish a point of reference, by intended use, irrigation practice, and organic practice; where applicable, within the acreage boundaries. The following is an example of noncontiguous acreage with all acreage having the same intended use and irrigation practice. Only one point of reference is required because it is noncontiguous acreage with the same intended use and irrigation practice. The red “+” represents the point of reference.",
       "metadata": {
         "page": "20",
         "section": "75",
@@ -441,7 +443,7 @@
     },
     {
       "id": 44,
-      "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued) The following is an example of the Grid Locator page with two points of reference established. There are two separate noncontiguous fields in the same grid with all acreage in both fields having the same intended use and irrigation practice. A point of reference must be established for each field because they are separate noncontiguous fields. The following is an example of two noncontiguous fields located in separate grids. All acreage in both fields has the same intended use and irrigation practice. A point of reference must be established for each field because they are noncontiguous fields located in separate grids. The red “+” represents the point of reference. ",
+      "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued) The following is an example of the Grid Locator page with two points of reference established. There are two separate noncontiguous fields in the same grid with all acreage in both fields having the same intended use and irrigation practice. A point of reference must be established for each field because they are separate noncontiguous fields. The following is an example of two noncontiguous fields located in separate grids. All acreage in both fields has the same intended use and irrigation practice. A point of reference must be established for each field because they are noncontiguous fields located in separate grids. The red “+” represents the point of reference.",
       "metadata": {
         "page": "21",
         "section": "75",
@@ -451,7 +453,7 @@
     },
     {
       "id": 45,
-      "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued) The following is an example of the Grid Locator page with two points of reference established. There are two separate noncontiguous fields in the same grid with all acreage in both fields having the same intended use and irrigation practice. A point of reference must be established for each field because they are separate noncontiguous fields. The following is an example of two noncontiguous fields located in separate grids. All acreage in both fields has the same intended use and irrigation practice. A point of reference must be established for each field because they are noncontiguous fields located in separate grids. The red “+” represents the point of reference. ",
+      "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued) The following is an example of the Grid Locator page with two points of reference established. There are two separate noncontiguous fields in the same grid with all acreage in both fields having the same intended use and irrigation practice. A point of reference must be established for each field because they are separate noncontiguous fields. The following is an example of two noncontiguous fields located in separate grids. All acreage in both fields has the same intended use and irrigation practice. A point of reference must be established for each field because they are noncontiguous fields located in separate grids. The red “+” represents the point of reference.",
       "metadata": {
         "page": "22",
         "section": "75",
@@ -461,7 +463,7 @@
     },
     {
       "id": 46,
-      "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued) The following is an example of the Grid Locator page with two points of reference established. There is one noncontiguous field in grid ID 22939 and another noncontiguous field in grid ID 22940. A point of reference must be established for each field because they are separate noncontiguous fields located in separate grids. ",
+      "document": "Pasture, Rangeland, Forage with the Same Intended Use (Continued) The following is an example of the Grid Locator page with two points of reference established. There is one noncontiguous field in grid ID 22939 and another noncontiguous field in grid ID 22940. A point of reference must be established for each field because they are separate noncontiguous fields located in separate grids.",
       "metadata": {
         "page": "23",
         "section": "75",
@@ -511,7 +513,7 @@
     },
     {
       "id": 51,
-      "document": "Pasture, Rangeland, Forage with the Same Intended Use The following is an example of contiguous acreage where the insured chose to combine all the acreage and assign it to grid ID 1. All the acreage has the same intended use and irrigation practice. The insured must establish one point of reference within the field boundaries within grid ID 1. The red “+” represents the point of reference. The following is an example of contiguous acreage where the insured chose to combine all the acreage and assign it to grid ID 2. All the acreage has the same intended use and irrigation practice. The insured must establish one point of reference within the field boundaries within grid ID 2. The red “+” represents the point of reference. ",
+      "document": "Pasture, Rangeland, Forage with the Same Intended Use The following is an example of contiguous acreage where the insured chose to combine all the acreage and assign it to grid ID 1. All the acreage has the same intended use and irrigation practice. The insured must establish one point of reference within the field boundaries within grid ID 1. The red “+” represents the point of reference. The following is an example of contiguous acreage where the insured chose to combine all the acreage and assign it to grid ID 2. All the acreage has the same intended use and irrigation practice. The insured must establish one point of reference within the field boundaries within grid ID 2. The red “+” represents the point of reference.",
       "metadata": {
         "page": "26",
         "section": "76",
@@ -541,7 +543,7 @@
     },
     {
       "id": 54,
-      "document": "Pasture, Rangeland, Forage with the More Than One Intended Use The following is an example of contiguous acreage located in one field with some of the acreage having an intended use of grazing and the remaining acreage having an intended use of haying. The insured chose to combine all 90.0 acres with an intended use of haying and assign it to grid ID 1 and combine all 60.0 acres with an intended use of grazing and assign it to grid ID 1. Two points of reference are required, one for the acres intended for grazing and one for the acres intended for haying. The red “+” represents the point of reference. The following is an example of the Grid Locator page with two points of reference established for contiguous acreage physically located in two grids. Some of the acreage has an intended use of grazing and the remaining acreage has an intended use of haying. The insured chose to combine all acres with an intended use of haying and assign it to grid ID 22940 and combine all acres with an intended use of grazing and assign it to grid ID 22940. Two points of reference are required, one for the acres intended for grazing and one for the acres intended for haying. ",
+      "document": "Pasture, Rangeland, Forage with the More Than One Intended Use The following is an example of contiguous acreage located in one field with some of the acreage having an intended use of grazing and the remaining acreage having an intended use of haying. The insured chose to combine all 90.0 acres with an intended use of haying and assign it to grid ID 1 and combine all 60.0 acres with an intended use of grazing and assign it to grid ID 1. Two points of reference are required, one for the acres intended for grazing and one for the acres intended for haying. The red “+” represents the point of reference. The following is an example of the Grid Locator page with two points of reference established for contiguous acreage physically located in two grids. Some of the acreage has an intended use of grazing and the remaining acreage has an intended use of haying. The insured chose to combine all acres with an intended use of haying and assign it to grid ID 22940 and combine all acres with an intended use of grazing and assign it to grid ID 22940. Two points of reference are required, one for the acres intended for grazing and one for the acres intended for haying.",
       "metadata": {
         "page": "29",
         "section": "76",
@@ -551,7 +553,7 @@
     },
     {
       "id": 55,
-      "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued) The following is an example of contiguous acreage located in one field with some of the acreage having an intended use of grazing and the remaining acreage having an intended use of haying. The insured chose to combine all 90.0 acres with an intended use of haying and assign it to grid ID 1 and combine all 60.0 acres with an intended use of grazing and assign it to grid ID 2. Two points of reference are required, one in grid ID 1for the acres intended for haying and one in grid 2 for the acres intended for grazing. The red “+” represents the point of reference. The following is an example of contiguous acreage located in one field with some of the acreage having an intended use of grazing and the remaining acreage having an intended use of haying. The insured chose to separate the acreage intended for haying and assign 20.0 acres to grid ID 1 and assign 70.0 acres to grid ID 2. The insured chose to combine all 60.0 acres with an intended use of grazing and assign it to grid ID 2. The insured must establish three points of reference, one within the field boundaries within grid ID 1 for the acreage intended for haying, one within the field boundaries within grid ID 2 for the acreage intended for haying, and one within the field boundaries within grid ID 2 for the acreage intended for grazing. The red “+” represents the point of reference. The insured could have assigned any number of the contiguous acres intended for haying to either grid ID regardless of the number of acres physically located in each grid. The insured could have also assigned any number of the contiguous acres intended for grazing to either grid ID regardless of the number of acres physically located in each grid. ",
+      "document": "Pasture, Rangeland, Forage with the More Than One Intended Use (Continued) The following is an example of contiguous acreage located in one field with some of the acreage having an intended use of grazing and the remaining acreage having an intended use of haying. The insured chose to combine all 90.0 acres with an intended use of haying and assign it to grid ID 1 and combine all 60.0 acres with an intended use of grazing and assign it to grid ID 2. Two points of reference are required, one in grid ID 1 for the acres intended for haying and one in grid 2 for the acres intended for grazing. The red “+” represents the point of reference. The following is an example of contiguous acreage located in one field with some of the acreage having an intended use of grazing and the remaining acreage having an intended use of haying. The insured chose to separate the acreage intended for haying and assign 20.0 acres to grid ID 1 and assign 70.0 acres to grid ID 2. The insured chose to combine all 60.0 acres with an intended use of grazing and assign it to grid ID 2. The insured must establish three points of reference, one within the field boundaries within grid ID 1 for the acreage intended for haying, one within the field boundaries within grid ID 2 for the acreage intended for haying, and one within the field boundaries within grid ID 2 for the acreage intended for grazing. The red “+” represents the point of reference. The insured could have assigned any number of the contiguous acres intended for haying to either grid ID regardless of the number of acres physically located in each grid. The insured could have also assigned any number of the contiguous acres intended for grazing to either grid ID regardless of the number of acres physically located in each grid.",
       "metadata": {
         "page": "30",
         "section": "76",
@@ -721,12 +723,274 @@
     },
     {
       "id": 72,
-      "document": "",
+      "document": "Acronyms and Abbreviations: Approved Acronym/Abbreviation Term AD Actuarial Documents AIP Approved Insurance Provider AF Annual Forage APH Actual Production History AR Acreage Report ARD Acreage Reporting Date CLU Common Land Unit CP Crop Provisions CPC Climate Prediction Center DSSH Document and Supplemental Standards Handbook FCIC Federal Crop Insurance Corporation Grid ID Grid Identification Number GSH General Standards Handbook NOAA National Oceanic and Atmospheric Administration PASD RMA, PM, Product Administration and Standards Division PRF Pasture, Rangeland, and Forage RMA USDA Risk Management Agency RLU Resource Land Unit SP Special Provisions SRA Standard Reinsurance Agreement U.S. United States USDA United States Department of Agriculture",
       "metadata": {
         "page": "37",
-        "section": "Exhibit 1",
+        "section": "E1",
         "subsection": "",
         "type": "table"
       }
+    },
+    {
+      "id": 73,
+      "document": "Definitions: Common Land Unit (CLU): The smallest unit of land that has a permanent, contiguous boundary, common land cover and land management, common owner, and common producer association. This information is used by RMA as an electronic representation of the FSA Field. Contiguous: (1) for PRF, acreage in a county or grid that continues into an adjoining state, county or grid without interruption. Acreage separated by only a public or private right-of-way, waterway, or an irrigation canal will be considered contiguous. (2) for apiculture, acreage which contains locations owned or controlled by the insured or rented by the insured for cash or crop share, in a county or grid that continues into an adjoining county or grid without interruption and is occupied and foraged by insurable colonies. Acreage separated by only a public or private right-of-way, waterway, or an irrigation canal will be considered contiguous. Expected grid index: A grid index determined by FCIC based on the mean accumulated precipitation by index interval, calculated by using NOAA’s interpolated historical gridded precipitation data, or successor data, based on a 24-hour period determined by the data, normalized and expressed as a percentage such that the mean is 100. The data used to calculate the expected grid index is conclusively presumed to be accurate but may be changed in accordance with section 8(e). Final grid index: A grid index determined by FCIC based on NOAA’s interpolated gridded precipitation data or successor data, based on a 24-hour period determined by the data, for each grid ID and index interval, expressed as a percentage. The data used to calculate the final grid index is conclusively presumed to be accurate unless notified by NOAA CPC in writing that there is an issue with the data and the revised data is provided. Grid: An area identified by longitude and latitude used to determine the expected grid index, final grid index, premium and indemnity. The grid is a 0.25 degree gridded area, or successor area, established by NOAA CPC. Grid identification number (grid ID): A specific number assigned to each grid. Lease Certification Form: A self-certified form used by you to certify a lease agreement. Point of reference: The location provided by the insured of the insured acreage. The point of reference must be provided using the maps contained on RMA’s website or an AIP’s mapping software. RMA’s website: A website hosted by RMA and located at www.rma.usda.gov or a successor website. Resource Land Unit (RLU): Generic geospatial data standard, established between AIPs and RMA, used to meet geospatial reporting requirements per Appendix III of the Standard Reinsurance Agreement. Trigger grid index: The result of multiplying the expected grid index by the coverage level selected by you. Verifiable Records: Contemporaneous records provided by the insured which may be verified through an independent source and which substantiate the information reported including the number of colonies insured and your ability or right to occupy or place/locate colonies on specific property within a grid ID during the crop year.",
+      "metadata": {
+        "page": "38",
+        "section": "E2",
+        "subsection": "",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 74,
+      "document": "Lease Certification Form: If an AIP chooses to develop a lease certification form for use by their insureds, such forms should comply with the “Substantive” standards listed below and the applicable state laws that govern lease agreements. This certification form can be used for all Rainfall products. All items within quotation marks in the subparagraphs below are substantive unless otherwise noted. A. General Information (1) “State” (2) “County” (3) “Policy Number” B. Lease Certification (1) “Operator/Tenant (Lessee)” (2) “Landowner/Landlord (Lessor)” (3) “Landowner/Landlord (Lessor) Address and Phone Number” (4) “Address(es), FSA Farm Number(s), Legal Description, or Latitude and Longitude” (5) “Number of Acres Leased” (6) “Lease Commenced on” (7) “Lease Expires on” (8) “Terms of the Lease Agreement (Select one of the following for applicable program) (a) For PRF/AF: (i) Dollar/Acre Rental Arrangement (ii) Cash or Fixed Dollar Amount (iii) Share Rent (iv) Rate of Gain (v) Cost Per Head, Per Day or Month (vi) Animal Unit Month Basis (vii) Other, (Specify)",
+      "metadata": {
+        "page": "39",
+        "section": "E3",
+        "subsection": "",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 75,
+      "document": "Lease Certification Form (Continued): B. Lease Certification (Continued) (b) For Apiculture: (i) Dollar/Acre Rental Arrangement (ii) Cash or Fixed Dollar Amount (iii) Share Rent (iv) Other, (Specify)” (9) “I certify that I entered into a lease agreement with the Lessor specified in B(2) beginning on the date specified in B(5) and ending on the date in B(6). I certify that the terms of the lease agreement entered in B(7) are true and correct for the specified farm(s) listed in B(3) for the period of the lease agreement entered in B(5) and (6).” (10) “Signature of Lessee (By)” (11) “Title/Relationship of the Individual Signing in a Representative Capacity” (12) “Date (MM-DD-YYYY)” C. Required Statements (1) Certification Statement is required (DSSH Para. 502) (2) Privacy Act Statement is required (DSSH Para. 501) (3) Non-Discrimination Policy Statement is required (DSSH Para. 503)",
+      "metadata": {
+        "page": "40",
+        "section": "E3",
+        "subsection": "",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 76,
+      "document": "Rainfall Index Disclaimers: The following is the Rainfall Index Disclaimer form that must be signed by each insured when completing their application. Rainfall Index Disclaimer By signing below, I certify that I understand the following. 1. The Rainfall Index plan of insurance is not a plan of insurance against a loss of actual production. The terms and conditions of the Rainfall Index are different from those of an Actual Production History plan of insurance. The Rainfall Index plan of insurance does not measure, capture, or utilize the actual crop production of any producer or any of the actual crop production within the grid, county or state. It is based upon grid indices, not individual farm yields. 2. Selecting index intervals when precipitation is not needed for the insured crop or when precipitation does not normally occur is not an effective use of the Rainfall Index plan of insurance. 3. The Rainfall Index is a risk management tool to insure against a decline in an index value that is based on the long-term historical average precipitation for the grid and index interval. It is best suited for producers whose production tends to follow and correlate to the historical average interpolated precipitation patterns for the grid. 4. It is possible for me to have low crop production or receive low precipitation amounts on the acreage I insure and still not receive an indemnity payment under this plan. 5. The only insurable cause of loss is having a final grid index less than my trigger grid index. 6. There are historical indices, information, and other tools on the RMA website to help me determine if the Rainfall Index is suitable for my risk management needs. Insured’s signature: _______________________________________ Date: _____________",
+      "metadata": {
+        "page": "41",
+        "section": "E4",
+        "subsection": "",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 77,
+      "document": "Rainfall Index - Pasture, Rangeland, Forage Example: A. Overview This exhibit provides an example of a producer who has elected to insure PRF acreage under the Rainfall Index plan of insurance. It also provides an illustration of how indemnities would be calculated. The same basic information is applicable to the apiculture program. However, there are some differences between the Rainfall Index and the apiculture, AF, and PRF programs. Some of the differences include, but are not limited to, the number of index intervals required to be insured, limitations on the maximum percent of value that may be selected in an index interval, growing seasons, the applicability of different intended uses, and the payment calculation factor. See the Rainfall Index Plan Common Policy, AF CP, Apiculture CP and AD for more information about each plan and crop policy. The following information is applicable to this example. (1) The county base value per acre for an intended use of grazing is $20.00. (2) The expected grid index is 100 for each grid ID, intended use, and index interval. (3) The premium rate for 90 percent coverage level for an intended use of grazing is: (a) 0.1000 in the April ‒ May index interval; and (b) 0.1100 in the July ‒ August index interval. (4) The premium subsidy factor for 90 percent coverage level is 51 percent. (5) Some of the calculations in the example are rounded to the nearest whole dollar.",
+      "metadata": {
+        "page": "42",
+        "section": "E5",
+        "subsection": "A",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 78,
+      "document": "B. Producer A’s Acreage Information Producer A has five properties with a total of 645.0 acres in two counties. The acreage is spread out over four separate grids. Producer A has 100 percent share in all the acreage. Using RMA’s website and grid locator, producer A locates the five properties and corresponding grids. See part 4 for more information about identifying acreage and grid IDs.",
+      "metadata": {
+        "page": "42",
+        "section": "E5",
+        "subsection": "B",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 79,
+      "document": 
+      "Rainfall Index - Pasture, Rangeland, Forage Example (Continued): B. Producer A’s Acreage Information (Continued) The following illustrates the location of the five properties.",
+      "metadata": {
+        "page": "43",
+        "section": "E5",
+        "subsection": "B",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 80,
+      "document": "C. Points of Reference The location and number of points of reference required are determined by Producer A’s choices. Producer A makes the following choices regarding the five properties. (1) Not to insure property A. (2) Insure all 150.0 acres in property B with an intended use of grazing but separate the contiguous acreage and assign 100.0 acres to grid ID 1 and 50.0 acres to grid ID 2. (3) Not insure 40.0 acres in property C with an intended use of haying. (4) Insure 100.0 acres in property C with an intended use of grazing and combine the contiguous acreage into County B. (5) Insure all 120.0 acres in property D with an intended use of grazing. (6) Insure all 125.0 acres in property E with an intended use of grazing. Based on Producer A’s choices, five separate points of reference must be established by Producer A. The following illustrates the location of the five properties with the points of reference selected by Producer A. The red “+” represents the point of reference.",
+      "metadata": {
+        "page": "43",
+        "section": "E5",
+        "subsection": "C",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 81,
+      "document": "Rainfall Index - Pasture, Rangeland, Forage Example (Continued): C. Points of Reference (Continued) There is no point of reference for property A or the 40 acres in property C intended for haying because Producer A chose not to insure any acreage property A and not insure the acreage intended for haying in property C.",
+      "metadata": {
+        "page": "44",
+        "section": "E5",
+        "subsection": "C",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 82,
+      "document": "D. Insurance Choices For all the acreage to be insured, Producer A selects: (1) a 90 percent coverage level for all acreage to be insured; (2) a 120 percent productivity factor; (3) index interval 628 (April ‒ May) and 631 (July ‒ August); (4) a percent of value of 60 percent for index interval 628; and (5) a percent of value of 40 percent for index interval 631.",
+      "metadata": {
+        "page": "44",
+        "section": "E5",
+        "subsection": "D",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 83,
+      "document": 
+      "Rainfall Index - Pasture, Rangeland, Forage Example (Continued) E. Protection and Premium The following are based on Producer A’s acreage, intended uses, and insurance choices. The dollar amount of protection per acre is $21.60. Dollar amount of protection per acre equals county base value per acre multiplied by the coverage level selected multiplied by the productivity factor selected ($20.00 × .90 × 1.20). The total policy protection is $10,692. The total policy protection is the sum of the policy protection for each unit. Total premium amount due is $1,114. However, FCIC pays 51 percent subsidy at the 90 percent coverage level; therefore, Producer A’s total premium amount due is $546 ($1,114 - $568). The total premium amount due is the sum of the premium amount due for each unit. The premium amount per unit equals the dollar amount of protection per acre multiplied by the premium rate for the coverage level and index interval selected multiplied by the number of acres multiplied by the percent of value selected multiplied by the producer’s share.",
+      "metadata": {
+        "page": "45",
+        "section": "E5",
+        "subsection": "E",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 84,
+      "document": "Grid ID Index Interval Unit Policy Protection Per Unit 1 628 xxxxx $1,296.00 ($21.60 × 100.0 acres × 60 percent of value × 1.00 share) 631 xxxxx $864.00 ($21.60 × 100.0 acres × 40 percent of value × 1.00 share) 2 628 xxxxx $648.00 ($21.60 × 50.0 acres × 60 percent of value × 1.00 share) 631 xxxxx $432.00 ($21.60 × 50.0 acres × 40 percent of value × 1.00 share) 3 628 xxxxx $1,296.00 ($21.60 × 100.0 acres × 60 percent of value × 1.00 share) 631 xxxxx $864.00 ($21.60 × 100.0 acres × 40 percent of value × 1.00 share) 4 628 xxxxx $3,175.00 ($21.60 × 245.0 acres × 60 percent of value × 1.00 share) 631 xxxxx $2,117.00 ($21.60 × 245.0 acres × 40 percent of value × 1.00 share) Total policy protection $10,692.00",
+      "metadata": {
+        "page": "45",
+        "section": "E5",
+        "subsection": "E",
+        "type": "table"
+      }
+    },
+    {
+      "id": 85,
+      "document": "Rainfall Index - Pasture, Rangeland, Forage Example (Continued): E. Protection and Premium (Continued) The following table provides the premium amount for each unit.",
+      "metadata": {
+        "page": "46",
+        "section": "E5",
+        "subsection": "E",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 86,
+      "document": "F. Indemnity Scenarios The indemnity for the unit will be equal to the payment calculation factor multiplied by the policy protection per unit. The indemnity payment calculation factor for the Rainfall Index plan of insurance is determined by dividing the result of the insured’s trigger grid index minus the final grid index by the insured’s trigger grid index [(insured’s trigger grid index - final grid index) ÷ insured’s trigger grid index].",
+      "metadata": {
+        "page": "46",
+        "section": "E5",
+        "subsection": "F",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 87,
+      "document": "Rainfall Index - Pasture, Rangeland, Forage Example (Continued): F. Indemnity Scenarios (Continued) The following scenarios provide examples of different final grid indexes and the resulting indemnities for Insured A, if any. Insured A’s trigger grid index is 90 (100 expected grid index × 90 percent coverage level). Scenarios for index interval 628: Scenario 1: FCIC publishes a final grid index of 120 for index interval 628 for all four grids. Result: The final grid index is above Insured A’s trigger grid index. Therefore, no indemnity payment is due. Scenario 2: For index interval 628, FCIC publishes a final grid index of 80 for grid ID 1 and grid ID 2, and a final grid index of 95 for grid ID 3 and grid ID 4. Result: The final grid index is below Insured A’s trigger grid index for grid ID 1 and grid ID 2; therefore, Insured A is eligible for an indemnity payment for those units. The payment calculation factor is 0.111 ((90 - 80) ÷ 90). Insured A’s indemnity amount is $144 (0.111 × $1,296) for the 100.0 acres in grid ID 1, and $72 (0.111 × $648) for the 50.0 acres in grid ID 2. The final grid index is above Insured A’s trigger grid index for grid ID 3 and grid ID 4; therefore, no indemnity is due for those units. Scenario 3: For index interval 628, FCIC publishes a final grid index of 80 for grid ID 1 and grid ID 2, and a final grid index of 60 for grid ID 3 and grid ID 4. Result: The final grid index is below Insured A’s trigger grid index for all four grids; therefore, Insured A is eligible for an indemnity payment for units. The payment calculation factor is 0.111 ((90 - 80) ÷ 90) for grid ID 1 and grid ID 2. The payment calculation factor is 0.333 ((90 - 60) ÷ 90) for grid ID 3 and grid ID 4. Insured A’s indemnity amount is: (1) $144 (0.111 × $1,296) for the 100.0 acres in grid ID 1; (2) $72 (0.111 × $648) for the 50.0 acres in grid ID 2; (3) $432 (0.333 × $1,296) for the 100.0 acres in grid ID 3; and (4) $1,057 (0.333 × $3,175) for the 245.0 acres in grid ID 4.",
+      "metadata": {
+        "page": "47",
+        "section": "E5",
+        "subsection": "F",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 88,
+      "document": "Rainfall Index - Pasture, Rangeland, Forage Example (Continued): F. Indemnity Scenarios (Continued) Scenarios for index interval 631: Scenario 1: For index interval 631, FCIC publishes a final grid index of 90 for grid ID 1 and grid ID 2, and a final grid index of 85 for grid ID 3 and grid ID 4. Result: The final grid index is equal to Insured A’s trigger grid index for grid ID 1 and grid ID 2; therefore, no indemnity is due for those units. The final grid index is below Insured A’s trigger grid index for grid ID 3 and grid ID 4; therefore, Insured A is eligible for an indemnity payment for those units. The payment calculation factor is 0.056 ((90 - 85) ÷ 90). Insured A’s indemnity amount is $48 (0.056 × $864) for the 100.0 acres in grid ID 3, and $119 (0.056 × $2,117) for the 245.0 acres in grid ID 4. Scenario 2: For index interval 631, FCIC publishes a final grid index of 70 for grid ID 1 and grid ID 2, and a final grid index of 65 for grid ID 3 and grid ID 4. Result: The final grid index is below Insured A’s trigger grid index for all four grids; therefore, Insured A is eligible for an indemnity payment for units. The payment calculation factor is 0.222 ((90 - 70) ÷ 90) for grid ID 1 and grid ID 2. The payment calculation factor is 0.278 ((90 - 65) ÷ 90) for grid ID 3 and grid ID 4. Insured A’s indemnity amount is: (1) $192 (0.222 × $864) for the 100.0 acres in grid ID 1; (2) $96 (0.222 × $432) for the 50.0 acres in grid ID 2; (3) $240 (0.278 × $864) for the 100.0 acres in grid ID 3; and (4) $588 (0.278 × $2,117) for the 245.0 acres in grid ID 4. Scenario 3: FCIC publishes a final grid index of 120 for index interval 631 for all four grids. Result: The final grid index is above Insured A’s trigger grid index. Therefore, no indemnity payment is due.",
+      "metadata": {
+        "page": "48",
+        "section": "E5",
+        "subsection": "F",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 89,
+      "document": "Rainfall Index - Pasture, Rangeland, Forage Example (Continued): F. Indemnity Scenarios (Continued) The following are the total indemnities for Insured A based on the scenarios for both index intervals. Insured A received a total of: $167 [($0 for index interval 628) + ($48 + $119 for index interval 631)] in indemnities under scenario 1; $1,332 [($144 + 72 for index interval 628) + ($192 + $96 + $240 + $588 for index interval 631)] in indemnities under scenario 2; and $1,705 [($144 + $72 + $432 + $1,057 for index interval 628) + ($0 for index interval 631)] in indemnities under scenario 3.",
+      "metadata": {
+        "page": "49",
+        "section": "E5",
+        "subsection": "F",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 90,
+      "document": "Insurable Interest for Pasture, Rangeland, Forage with Intended Use of Grazing: A. Insurable Interest Insurable interest is the insured’s percentage of the insured crop that is at financial risk. When the insured crop is the PRF with an intended use of grazing, the insured’s percentage of the insured crop that is at financial risk will be based on the insured’s percentage: (1) interest in the livestock to be grazed on the insured acres, if the acres are cash leased; or (2) of the value gained of the livestock being grazed on the insured acres if the acres are share leased. Lessors under a cash lease are not considered to have a share in the insured crop. Important: For the intended use of grazing under PRF, the insurable interest in the crop is based on the interest in the livestock and not the land. If requested, records must be provided to determine if the acreage is cash leased or share leased and that the producer has grazed livestock in past will be required. If natural causes require the producer to destock their livestock, records demonstrating disposition are acceptable. In addition, these records must be maintained for period of three years after the crop year.",
+      "metadata": {
+        "page": "50",
+        "section": "E6",
+        "subsection": "A",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 91,
+      "document": "B. Share and Cash Grazing Leases A grazing lease is considered a cash lease if the lease provides for only a guaranteed sum certain cash payment, or fixed quantity of in-kind payment, such as: (1) a set sum of money per head or per month; (2) a specific quantity of in-kind payment, such as a specific number of calves; (3) a specific amount per weight gain, such as 12 cents per pound of weight gained during the lease period; or (4) other forms of compensation where the lessor does not obtain a percentage interest of the value of gain of the livestock being grazed. See subparagraph C for examples of cash grazing leases.",
+      "metadata": {
+        "page": "50",
+        "section": "E6",
+        "subsection": "B",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 92,
+      "document": "Insurable Interest for Pasture, Rangeland, Forage with Intended Use of Grazing (Continued): B. Share and Cash Grazing Leases (Continued) A grazing lease is considered a share lease if the lessor obtains: (1) a percentage interest of the value of the gain of the livestock being grazed. Value of the gain includes, but is not limited to: (a) offspring from the livestock being grazed; (b) proceeds derived from the weight of gain of the livestock being grazed; or (c) proceeds from the value of the milk produced from the livestock. (2) a combination of a guaranteed sum certain cash payment or fixed quantity of in-kind payment, and a percentage interest of the value of the gain of the livestock being grazed. See subparagraph D for examples of share grazing leases. Important: The lease certification form may be used; however, the AIP must be able to verify the information submitted on the certification form. If the AIP discovers that the lease certification form was false and no lease existed, the insured be subject to section 16(d) of the Basic Provisions no indemnities will be paid the insured will still owe premium.",
+      "metadata": {
+        "page": "51",
+        "section": "E6",
+        "subsection": "B",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 93,
+      "document": "C. Examples of Cash Grazing Leases The following are examples of leases that are considered cash grazing leases. The lessee owns 100 percent of the livestock being grazed in each example. Example 1: Lessor A leases 150.0 PRF acres for grazing to Lessee B in return for $21.00 per acre. In this example, Lessor A has no insurable interest and is not eligible to insure the 150.0 acres under the Rainfall Index plan of insurance. Lessee B has 100 percent insurable interest in the insured PRF crop. Example 2: Lessor C leases 200.0 PRF acres for grazing to Lessee D in return for 5 calves. Lessor C receives a specific quantity of in-kind payment, regardless of the number of calves born during the lease period from the cows grazing the leased acres. In this example, Lessor C has no insurable interest and is not eligible to insure the 200.0 acres under the Rainfall Index plan of insurance. Lessee D has 100 percent insurable interest in the insured PRF crop.",
+      "metadata": {
+        "page": "51",
+        "section": "E6",
+        "subsection": "C",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 94,
+      "document": "Insurable Interest for Pasture, Rangeland, Forage with Intended Use of Grazing (Continued): C. Examples of Cash Grazing Leases (Continued) Example 3: Lessor E leases 250.0 PRF acres for grazing to Lessee F in return for 12 cents per pound of weight gained by the livestock grazing the leased acreage during the lease period. If the total weighted gained by the livestock during the lease period is 2,000 pounds, Lessor E receives $240.00. If the total weight gained by the livestock during the lease period is 2,500 pounds, Lessor E receives $300.00. While the amount Lessor E receives depends on the total weight gained, the amount per pound is a specific amount per pound gained, not a percentage of the value of the weight gained. In this example, Lessor E has no insurable interest and is not eligible to insure the 250.0 acres under the Rainfall Index plan of insurance. Lessee F has 100 percent insurable interest in the insured PRF crop.",
+      "metadata": {
+        "page": "52",
+        "section": "E6",
+        "subsection": "C",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 95,
+      "document": "D. Examples of Share Grazing Leases: Example 1: Lessor G leases 500.0 PRF acres for grazing to Lessee H in return for five percent of the calves born during the lease period from the cows grazing the leased acres. If 100 calves are born by the cows grazing the leased acreage during the lease period, Lessor G receives five calves. If 150 calves are born by the cows grazing the leased acreage during the lease period, Lessor G receives eight calves. In this example, Lessor G’s insurable interest in the insured PRF crop is five percent and Lessee H’s insurable interest is 95 percent. Example 2: Lessor I leases 100.0 PRF acres for grazing to Lessee J in return for 25 percent of the value of the weight the livestock gained during the lease period. If the value of the total weight gained of all livestock grazing the leased acreage during the lease period is $1,200.00, Lessor I receives $300.00. In this example, Lessor I’s insurable interest in the insured PRF crop is 25 percent and Lessee J’s insurable interest is 75 percent. Example 3: Lessor K leases 300.00 PRF acres for grazing to Lessee L in return for $5.00 per acres plus 12 percent of the value of the weight the livestock gained during the lease period. If the value of the total weight gained of all livestock grazing the leased acreage during the lease period is $1,200.00, Lessor K receives $144.00. In this example, Lessor K’s insurable interest in the insured PRF crop is 12 percent and Lessee L’s insurable interest is 88 percent.",
+      "metadata": {
+        "page": "52",
+        "section": "E6",
+        "subsection": "D",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 96,
+      "document": "Insurable Interest for Pasture, Rangeland, Forage with Intended Use of Grazing (Continued): E. Determining Shares An insurable share is the percentage of interest in the insured crop the owner, owner-operator, tenant has at the time insurance attaches. For the intended use of grazing for PRF, the insurable interest is based upon the percentage of interest in the livestock or percentage interest in the value gained of the livestock. When determining shares, identify if the acres are owned or leased on a cash basis; or leased for a share of the profit in the livestock. Once that determination is made, review the lease in conjunction with the FSA-578 (Report of Acreage), or Resource Land Units to identify the location of the acreage and the quantity of acreage available to the producer for insurance (the “insurable acreage”). Documentation that supports insurable acreage can be, but are not limited to: (1) Grazing permit (BLM, USFS, State); (a) For BLM acreage, shares will be determined based on the producer’s Active Use AUMs. (2) Lease Agreement; (3) Property Tax Records; and (4) Deeds. An FSA-578 is NOT acceptable documentation by itself for determining shares. FSA programs and PRF have different rules/criteria for determining who has a share in a crop, and therefore, may not be appropriate for PRF. The FSA-578 may be used in support of or in conjunction with other documentation for determining shares but cannot be used as the only documentation for determining shares. The following are examples of using the FSA-578 in conjunction with lease, grazing permit, or ownership records to determine insurable acreage; however, upon request livestock records may also need to be provided for the intended use of grazing: Example 1: Lessee K leases land from the BLM. Lessee K reports the lease to FSA and obtains an FSA-578. Lessee K provides the FSA-578 and BLM master allotment report. The FSA-578 provides the location of the land and reports the producer has 100% share of 50,000 acres. The BLM master allotment report clarifies that the producer only has access to 100 animal unit month (AUM) within the allotment along with four other producers. The total Active Use AUMs on the BLM allotment is 400. In this case the producer has 25% share in 50,000 acres rather.",
+      "metadata": {
+        "page": "53",
+        "section": "E6",
+        "subsection": "E",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 97,
+      "document": "Insurable Interest for Pasture, Rangeland, Forage with Intended Use of Grazing (Continued): E. Determining Shares (Continued) Example 2: Lessee M leases land from the BLM. Lessee M reports the lease to FSA and obtains an FSA-578. Lessee M provides the FSA-578 and BLM master allotment report. The FSA-578 provides the location of the land and reports the producer has 100% share of 10,000 acres. The BLM master allotment report indicates that the total acres within the allotment are 10,000 acres, but 2,000 of those acres are private land within the boundaries of the allotment. The total insurable acreage Lessor M can insure based on this information is 8,000 acres, unless Lessor M provides a record showing ownership or lease of the 2,000 private acres. Example 3: Landowner X has 200 acres of grazing land that are used for grazing cattle and are reported to FSA as grazing. Landowner X is requested to provide records of livestock ownership and the acreage. To meet the request, Landowner X provides sales records of cattle, an FSA-578, and tax records from the previous year to show ownership of the acreage. Example 4: Lessee Y leases 100 grazing acres from Lessor Z. Lessee Y reports the lease to FSA and obtains an FSA-578. Lessee Y is requested to provide records of livestock ownership and a lease for the acreage. To meet the request, Lessee Y provides sales records of cattle, an FSA-578, and the lease certification form. The FSA-578 acreage matches the acreage certified on the verified lease certification form and the livestock records support the insurable interest.",
+      "metadata": {
+        "page": "54",
+        "section": "E6",
+        "subsection": "E",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": 98,
+      "document": "Apiculture Leases: NOTE: In this Exhibit, all variations of the terms “acreage” and “colonies” should be read as presented. To be insured, colonies must be located on acreage the insured owns, leases, or can provide verifiable records specific to the insured grid ID and county that allows the placement of colonies at that location. The insured must possess, when requested for audit or review, acceptable verifiable records. The verifiable records, as defined in the CP, can be used to support insured locations in combination with the lease or lease certification form. Examples of verifiable records that may be used to support permission to be on the land and that colonies were physically located at insured locations may include, but is not limited to: Leases; Legal deeds; Lease certification form combined with verifiable records that may include, but not limited to: Photos with latitude/longitude markers that also show the colonies with ownership identification; Trucking logs; Written documentation; Example: An email/text from landowner granting permission to place colonies. Compensation Receipts; May include, but is not limited to: Cash; Share of insured crop; Proceeds; Labor; Honey; and Service contracts (including services such as pollination). Verbal agreements are NOT acceptable verifiable records. Important: The lease certification form may be used to certify that there is a lease, or agreement/arrangement that allows placement of colonies in the insured grid ID and county. If revealed that the lease certification form is not verifiable or that it was false and no agreement existed, the insured be subject to section 16(d) of the Basic Provisions, no indemnities will be paid and the insured will still owe premium.",
+      "metadata": {
+        "page": "55",
+        "section": "E7",
+        "subsection": "",
+        "type": "paragraph"
+      }
     }
-  ]
+]  

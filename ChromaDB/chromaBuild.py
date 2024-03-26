@@ -8,6 +8,7 @@ OLLAMA_client = Client(host=OLLAMA_URL)
 
 
 # override the EmbeddingFunction class in chromadb
+# does not look like it works
 # class MyEmbeddingFunction(EmbeddingFunction):
     # def __call__(self, input: Documents) -> Embeddings:
     #     embeddings = []
