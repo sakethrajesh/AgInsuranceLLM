@@ -1,4 +1,4 @@
-export async function GET() {
+export async function GET(request: Request) {
 
   const response = await fetch(
     'https://ollamaaginsurance.endeavour.cs.vt.edu/api/tags', 
