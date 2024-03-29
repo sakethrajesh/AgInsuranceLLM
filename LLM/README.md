@@ -64,7 +64,7 @@ This is an example
 registry="container.cs.vt.edu"
 username="saketh"
 project="aginsurancellm"
-service="backend"
+serviceName="backend"
 
 # login to the container registry
 docker login $registry

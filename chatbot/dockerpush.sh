@@ -1,10 +1,15 @@
 #!/bin/bash
 
-# login
-docker login container.cs.vt.edu
+registry="container.cs.vt.edu"
+username="saketh"
+project="aginsurancellm"
+serviceName="frontend"
 
-# Build the image
-docker build --platform linux/amd64 -t container.cs.vt.edu/saketh/aginsurancellm/frontend .
+# login to the container registry
+docker login $registry
+
+# Build the image for a linux/amd64 platform 
+docker build --platform linux/amd64 -t $registry/$username/$project/$serviceName .
 
 # Push the image
-docker push container.cs.vt.edu/saketh/aginsurancellm/frontend
+docker push $registry/$username/$project/$serviceName
