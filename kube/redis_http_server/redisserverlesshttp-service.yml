@@ -1,0 +1,64 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    field.cattle.io/targetWorkloadIds: '["llama/redisserverlesshttp"]'
+    management.cattle.io/ui-managed: 'true'
+  creationTimestamp: '2024-03-07T05:38:29Z'
+  managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:field.cattle.io/targetWorkloadIds: {}
+            f:management.cattle.io/ui-managed: {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"37d4ee02-bd2a-4351-a0f3-4509f2e9744d"}: {}
+        f:spec:
+          f:internalTrafficPolicy: {}
+          f:ports:
+            .: {}
+            k:{"port":80,"protocol":"TCP"}:
+              .: {}
+              f:name: {}
+              f:port: {}
+              f:protocol: {}
+              f:targetPort: {}
+          f:selector: {}
+          f:sessionAffinity: {}
+          f:type: {}
+      manager: agent
+      operation: Update
+      time: '2024-03-07T05:38:29Z'
+  name: redisserverlesshttp
+  namespace: llama
+  ownerReferences:
+    - apiVersion: apps/v1
+      controller: true
+      kind: Deployment
+      name: redisserverlesshttp
+      uid: 37d4ee02-bd2a-4351-a0f3-4509f2e9744d
+  resourceVersion: '291674703'
+  uid: ece98c54-69bc-47a1-a674-ccc6e3c8c641
+spec:
+  clusterIP: 10.43.190.89
+  clusterIPs:
+    - 10.43.190.89
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+    - name: servedb
+      port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    workload.user.cattle.io/workloadselector: apps.deployment-llama-redisserverlesshttp
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

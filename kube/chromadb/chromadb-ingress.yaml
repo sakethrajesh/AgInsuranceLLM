@@ -1,0 +1,55 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    field.cattle.io/description: chromadb-ingress
+    field.cattle.io/publicEndpoints: >-
+      [{"addresses":["192.168.50.53","192.168.50.56","192.168.50.57"],"port":80,"protocol":"HTTP","serviceName":"llama:chromadb-insurance","ingressName":"llama:chromadb-ingress","hostname":"chromadb-ingress.endeavour.cs.vt.edu","path":"/","allNodes":false}]
+  creationTimestamp: '2024-02-08T14:56:32Z'
+  generation: 3
+  managedFields:
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:field.cattle.io/description: {}
+            f:field.cattle.io/publicEndpoints: {}
+        f:spec:
+          f:rules: {}
+      manager: agent
+      operation: Update
+      time: '2024-03-11T14:00:12Z'
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:loadBalancer:
+            f:ingress: {}
+      manager: nginx-ingress-controller
+      operation: Update
+      subresource: status
+      time: '2024-03-11T14:00:12Z'
+  name: chromadb-ingress
+  namespace: llama
+  resourceVersion: '295664868'
+  uid: 6211972f-dc53-4272-ba96-298cf62c3427
+spec:
+  rules:
+    - host: chromadb-ingress.endeavour.cs.vt.edu
+      http:
+        paths:
+          - backend:
+              service:
+                name: chromadb-insurance
+                port:
+                  number: 8000
+            path: /
+            pathType: Prefix
+status:
+  loadBalancer:
+    ingress:
+      - ip: 192.168.50.53
+      - ip: 192.168.50.56
+      - ip: 192.168.50.57

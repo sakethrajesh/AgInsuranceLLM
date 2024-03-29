@@ -48,7 +48,9 @@ export function EmptyScreen({
 
   useEffect(() => {
     const fetchModels = async () => {
-      const response = await fetch('/api/tags')
+      const response = await fetch('/api/tags', {
+        method: 'POST',
+      })
       const data = await response.json() // Parse the response as JSON
       setModels(data.models) // Access the 'models' property from the parsed JSON
       console.log(data.models)

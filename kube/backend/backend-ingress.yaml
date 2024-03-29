@@ -1,0 +1,55 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    field.cattle.io/description: backend ingress for agInsuranceLLM
+    field.cattle.io/publicEndpoints: >-
+      [{"addresses":["192.168.50.53","192.168.50.56","192.168.50.57"],"port":80,"protocol":"HTTP","serviceName":"llama:backend-deploymnet","ingressName":"llama:backend-ingress","hostname":"backend-aginsurancellm.endeavour.cs.vt.edu","path":"/","allNodes":false}]
+  creationTimestamp: '2024-02-10T20:36:05Z'
+  generation: 3
+  managedFields:
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:field.cattle.io/description: {}
+            f:field.cattle.io/publicEndpoints: {}
+        f:spec:
+          f:rules: {}
+      manager: agent
+      operation: Update
+      time: '2024-03-11T14:00:17Z'
+    - apiVersion: networking.k8s.io/v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:loadBalancer:
+            f:ingress: {}
+      manager: nginx-ingress-controller
+      operation: Update
+      subresource: status
+      time: '2024-03-11T14:00:17Z'
+  name: backend-ingress
+  namespace: llama
+  resourceVersion: '295665081'
+  uid: a2e40988-7d91-4c8d-a066-671e4e04c12c
+spec:
+  rules:
+    - host: backend-aginsurancellm.endeavour.cs.vt.edu
+      http:
+        paths:
+          - backend:
+              service:
+                name: backend-deploymnet
+                port:
+                  number: 5001
+            path: /
+            pathType: Prefix
+status:
+  loadBalancer:
+    ingress:
+      - ip: 192.168.50.53
+      - ip: 192.168.50.56
+      - ip: 192.168.50.57

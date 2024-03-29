@@ -1,0 +1,64 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    field.cattle.io/targetWorkloadIds: '["llama/backend-deploymnet"]'
+    management.cattle.io/ui-managed: 'true'
+  creationTimestamp: '2024-02-10T20:34:08Z'
+  managedFields:
+    - apiVersion: v1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:field.cattle.io/targetWorkloadIds: {}
+            f:management.cattle.io/ui-managed: {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"caacfb96-39f6-434c-9253-0543f80a9866"}: {}
+        f:spec:
+          f:internalTrafficPolicy: {}
+          f:ports:
+            .: {}
+            k:{"port":5001,"protocol":"TCP"}:
+              .: {}
+              f:name: {}
+              f:port: {}
+              f:protocol: {}
+              f:targetPort: {}
+          f:selector: {}
+          f:sessionAffinity: {}
+          f:type: {}
+      manager: agent
+      operation: Update
+      time: '2024-02-10T20:34:08Z'
+  name: backend-deploymnet
+  namespace: llama
+  ownerReferences:
+    - apiVersion: apps/v1
+      controller: true
+      kind: Deployment
+      name: backend-deploymnet
+      uid: caacfb96-39f6-434c-9253-0543f80a9866
+  resourceVersion: '267766714'
+  uid: 35c22617-216d-4851-8e2b-eb4ab09a9f0c
+spec:
+  clusterIP: 10.43.119.0
+  clusterIPs:
+    - 10.43.119.0
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+    - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+    - name: entry
+      port: 5001
+      protocol: TCP
+      targetPort: 5001
+  selector:
+    workload.user.cattle.io/workloadselector: apps.deployment-llama-backend-deploymnet
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
