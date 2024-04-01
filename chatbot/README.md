@@ -1,5 +1,17 @@
 # Frontend
 
+# Table of Contents
+
+1. [File Structure](#file-structure)
+2. [Nextjs API](#nextjs-api)
+3. [Styling](#styling)
+4. [env file](#env-file)
+5. [Running Locally](#running-locally)
+6. [Pushing to Container Registry](#pushing-to-container-registry)
+   - [What is happening under the hood?](#what-is-happening-under-the-hood)
+   - [To execute the push to the container registry](#to-execute-the-push-to-the-container-registry)
+7. [Known Issues](#known-issues)
+
 ## File Structure
 ```
 ```
