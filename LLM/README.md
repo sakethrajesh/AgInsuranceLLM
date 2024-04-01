@@ -1,5 +1,19 @@
 # LLM
 
+## Table of Contents
+
+1. [File Structure](#file-structure)
+2. [API Reference](#api-reference)
+   - [Chat](#chat)
+   - [Stream Chat](#stream-chat)
+3. [env file](#env-file)
+4. [Running Locally](#running-locally)
+5. [Pushing to Container Registry](#pushing-to-container-registry)
+   - [What is happening under the hood?](#what-is-happening-under-the-hood)
+   - [To execute the push to the container registry](#to-execute-the-push-to-the-container-registry)
+6. [Known Issues](#known-issues)
+
+
 ## File Structure
 ```
 .
