@@ -19,6 +19,100 @@
     └── testapi.py              <-- same functionality of api.py, but has alternate segmentation methods
 ```
 
+## API Reference
+This documentation provides information about the endpoints available in the Flask app.
+
+### Chat
+
+```http
+  POST /api/chat
+```
+
+| Parameter | Type     | Description                                   |
+| :-------- | :------- | :-------------------------------------------- |
+| `messages`| `array`  | **Required**. Array of user's messages        |
+| `model`   | `string` | Optional. Model for chat (default: llama2:chat)|
+
+``` json
+{
+    "messages": [
+        {
+            "role": "user",
+            "content": "User's message"
+        }
+    ],
+    "model": "llama2:chat"  // Optional, default is "llama2:chat"
+}
+```
+
+#### Success Response
+
+ **Code:** `200 OK`
+ **Content:** 
+  ```json
+  {
+      "text": "Assistant's response",
+      "source_tags": ["source_tag_1", "source_tag_2"],
+      "source_documents": ["source_document_1", "source_document_2"]
+  }
+  ```
+
+#### Error Response
+
+ **Code:** `500 Internal Server Error`
+ **Content:** 
+  ```json
+  {
+      "error": "Error message"
+  }
+  ```
+
+### Stream Chat
+
+```http
+  POST /api/stream_chat
+```
+
+| Parameter | Type     | Description                                   |
+| :-------- | :------- | :-------------------------------------------- |
+| `messages`| `array`  | **Required**. Array of user's messages        |
+| `model`   | `string` | Optional. Model for chat                      |
+
+``` json
+{
+    "messages": [
+        {
+            "role": "user",
+            "content": "User's message"
+        }
+    ],
+    "model": "llama2:chat"  // Optional, default is "llama2:chat"
+}
+```
+
+#### Success Response
+
+ **Code:** `200 OK`
+ **Content:** Stream of JSON objects containing assistant's responses and citations.
+
+ # ADD A EXAMPLE OF WHAT A STREAM LOOKS LIKE HERE
+
+ ``` json
+ {}
+ ```
+
+#### Error Response
+
+ **Code:** `500 Internal Server Error`
+ **Content:** 
+  ```json
+  {
+      "error": "Error message"
+  }
+  ```
+
+**Note:** In both endpoints, the assistant's response is generated based on the user's message and context information from relevant documents retrieved from CHROMADB. If an error occurs during the process, an error message is returned.
+
 ## env file
 Create .env file and copy contents of .env.example into .env
 
