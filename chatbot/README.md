@@ -1,6 +1,6 @@
 # Frontend
 
-# Table of Contents
+## Table of Contents
 
 1. [File Structure](#file-structure)
 2. [Nextjs API](#nextjs-api)
