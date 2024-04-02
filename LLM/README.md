@@ -192,6 +192,12 @@ docker push $registry/$username/$project/$serviceName
 bash dockerpush.sh
 ```
 
+## Recourses
+- [Ollama on Docker Container](https://noted.lol/ollama/)
+- [Ollama Adapter](https://github.com/lgrammel/modelfusion-ollama-nextjs-starter?tab=readme-ov-file)
+- [Ollama RAG](https://mer.vin/2024/01/ollama-rag/)
+- [Langchain Docs](https://python.langchain.com/docs/get_started/introduction)
+
 ## Known Issues
 
 

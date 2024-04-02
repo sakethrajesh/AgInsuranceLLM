@@ -52,9 +52,6 @@ prompt = '''
 #     where_document=where_document
 # )
 
-# def format_docs(docs):
-#     return "\n\n".join(doc.page_content for doc in docs)
-
 def ollama_llm(convo, context, stream=False, model='llama2:chat'):
     question = convo[-1]['content']
     formatted_prompt = f"Question: {question}\n\nContext: {context}"
