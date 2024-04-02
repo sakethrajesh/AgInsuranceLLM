@@ -1,4 +1,5 @@
 from ollama import Client
+from openai import OpenAI
 import os
 import json
 import logging
@@ -9,9 +10,15 @@ from chromadb import HttpClient
 
 app = Flask(__name__)
 
+# openai setup
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
+OpenAI_client = OpenAI(
+    api_key=OPENAI_API_KEY,
+)
+
 # ollama setup
 OLLAMA_URL = os.environ.get('OLLAMA_URL')
-client = Client(host=OLLAMA_URL)
+Ollama_client = Client(host=OLLAMA_URL)
 print(f'Using OLLAMA_URL: {OLLAMA_URL}')
 
 # chromadb setup
@@ -31,7 +38,7 @@ prompt = '''
  If there is no context information, respond to the
  user that you cannot answer their question because you do not have knowledge on the subject.
  Do not disclose that you are using an external source or context of information.
- However, you cna answer basic questions without context like what is agriculture insurance.
+ However, you can answer basic questions without context like what is agriculture insurance.
  You should not make any agreements or promises with the user.
 '''
 
@@ -52,7 +59,16 @@ def ollama_llm(convo, context, stream=False, model='llama2:chat'):
     question = convo[-1]['content']
     formatted_prompt = f"Question: {question}\n\nContext: {context}"
     convo[-1]['content'] = formatted_prompt
-    return client.chat(model=model, messages=convo, stream=stream)  
+
+    if model == 'gpt-4':
+        return OpenAI_client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=convo,
+            stream=stream
+        )
+    
+    else:
+        return Ollama_client.chat(model=model, messages=convo, stream=stream)  
 
 ############################################################################################################################################################
 
@@ -83,6 +99,7 @@ def chat():
         return jsonify({"text": text_content['message']['content'], "source_tags" : retrieved_docs['metadatas'], "source_documents" : retrieved_docs['documents']}), 200
     
     except Exception as e:
+        print(str(e), flush=True)
         return jsonify({"error": str(e)}), 500
     
 
@@ -117,12 +134,15 @@ def stream_chat():
 
     formatted_context = retrieved_docs
 
-    print('model:', model)
+    print('model:', model, flush=True)
 
     def generate(stream):  
         for chunk in stream:
             if chunk:
-                yield (json.dumps({"text": chunk["message"]["content"]}) + "\x1e").encode()
+                if hasattr(chunk, 'choices') and chunk.choices:
+                    yield (json.dumps({"text": chunk.choices[0].delta.content}) + "\x1e").encode()
+                else:
+                    yield (json.dumps({"text": chunk["message"]["content"]}) + "\x1e").encode()
 
         yield (json.dumps({"text" : f'''\n\n **Citations**: \n\n'''}) + "\x1e").encode()
         for citation in citations:
@@ -130,6 +150,7 @@ def stream_chat():
     try:
         return Response(stream_with_context(generate(ollama_llm(messages, formatted_context, stream=True, model=model))),content_type='application/json')    
     except Exception as e:
+        print(str(e), flush=True)
         return jsonify({"error": str(e)}), 500 
 
 

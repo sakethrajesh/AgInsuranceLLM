@@ -12,14 +12,11 @@ RUN pip install langchain_community
 RUN pip install chromadb
 RUN pip install pypdf
 RUN pip install flask
+RUN pip install openai
 
 COPY api.py .
 COPY InsuranceContext ./
 COPY InsuranceContext/handbook.pdf .
 COPY testapi.py .
-
-ENV OLLAMA_URL=https://ollamaaginsurance.endeavour.cs.vt.edu/
-ENV CHROMADB_URL=https://chromadb-ingress.endeavour.cs.vt.edu
-ENV COLLECTION_NAME=RAINFALL_INDEX_INSURANCE_STANDARDS_HANDBOOK_2024
 
 ENTRYPOINT ["python3", "testapi.py"]

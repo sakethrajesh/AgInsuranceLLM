@@ -7,6 +7,8 @@ import { cn } from '@/lib/utils'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
+import { SessionProvider } from 'next-auth/react'
+import { auth } from '@/auth'
 
 export const metadata = {
   metadataBase: new URL(`https://${process.env.HOST}`),
@@ -34,7 +36,9 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const session = await auth()
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -53,7 +57,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <div className="flex flex-col min-h-screen">
             <Header />
+            <SessionProvider session={session}>
             <main className="flex flex-col flex-1 bg-muted/50">{children}</main>
+            </SessionProvider>
           </div>
           <TailwindIndicator />
         </Providers>

@@ -20,6 +20,7 @@ import {
   SelectTrigger,
   SelectValue
 } from './ui/select'
+import { useSession } from 'next-auth/react'
 
 const exampleMessages = [
   {
@@ -37,6 +38,10 @@ const exampleMessages = [
   }
 ]
 
+const emailWhitelist = new Set(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST ? (process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST.split(', ')) : []);
+
+console.log(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST);
+
 export function EmptyScreen({
   setModel,
   setInput
@@ -45,19 +50,25 @@ export function EmptyScreen({
   setInput: any
 }) {
   const [models, setModels] = useState<{ name: string }[]>([])
+  const { data: session, status } = useSession()
 
   useEffect(() => {
-    const fetchModels = async () => {
-      const response = await fetch('/api/tags', {
-        method: 'POST',
-      })
-      const data = await response.json() // Parse the response as JSON
-      setModels(data.models) // Access the 'models' property from the parsed JSON
-      console.log(data.models)
-    }
+      const fetchModels = async () => {
+        const response = await fetch('/api/tags', {
+          method: 'POST',
+        })
+        const data = await response.json()
 
-    fetchModels()
-  }, [])
+        // if you are authorized, you can see the gpt-4 model
+        if (emailWhitelist.has(session?.user?.email ?? '')) {
+          data.models.push({ name: 'gpt-4' })
+        }
+        
+        setModels(data.models)
+      }
+
+      fetchModels()
+    }, [])
 
   return (
     <div className="mx-auto max-w-2xl px-4">
