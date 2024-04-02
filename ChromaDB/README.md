@@ -37,3 +37,6 @@ segment.json is the Insurance handbook manually segmented section by section
       ...
 ]
 ```
+
+## Resourses
+https://www.trychroma.com/
