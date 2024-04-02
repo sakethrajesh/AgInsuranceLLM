@@ -109,10 +109,8 @@ This documentation provides information about the endpoints available in the Fla
  **Code:** `200 OK`
  **Content:** Stream of JSON objects containing assistant's responses and citations.
 
- # ADD A EXAMPLE OF WHAT A STREAM LOOKS LIKE HERE
-
  ``` json
- {}
+ {text: "Hi, how"} + \x1e + {text: "are you"} ....
  ```
 
 #### Error Response
