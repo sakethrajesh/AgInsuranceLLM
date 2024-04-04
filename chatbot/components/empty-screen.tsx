@@ -1,26 +1,8 @@
-import { useEffect, useState } from 'react'
-import { UseChatHelpers } from 'ai/react'
-
-import { Button } from '@/components/ui/button'
-import { ExternalLink } from '@/components/external-link'
-import { IconArrowRight, IconExternalLink } from '@/components/ui/icons'
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger
-} from '@/components/ui/dropdown-menu'
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue
-} from './ui/select'
-import { useSession } from 'next-auth/react'
+import React, { useEffect, useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { IconArrowRight } from '@/components/ui/icons';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from './ui/select';
+import { useSession } from 'next-auth/react';
 
 const exampleMessages = [
   {
@@ -36,9 +18,9 @@ const exampleMessages = [
     heading: 'Look up definitions for terms',
     message: `What does the acronym PRF-RI mean?`
   }
-]
+];
 
-const emailWhitelist = new Set(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST ? (process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST.split(', ')) : []);
+const emailWhitelist = new Set(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST ? process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST.split(', ') : []);
 
 console.log(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST);
 
@@ -46,29 +28,34 @@ export function EmptyScreen({
   setModel,
   setInput
 }: {
-  setModel: any
+  setModel: any,
   setInput: any
 }) {
-  const [models, setModels] = useState<{ name: string }[]>([])
-  const { data: session, status } = useSession()
+  const [models, setModels] = useState<{ name: string }[]>([]);
+  const { data: session, status } = useSession();
+
+  // Function to handle model change
+  const handleModelChange = (value: string) => {
+    setModel(value); // Update the selected model
+  };
 
   useEffect(() => {
-      const fetchModels = async () => {
-        const response = await fetch('/api/tags', {
-          method: 'POST',
-        })
-        const data = await response.json()
+    const fetchModels = async () => {
+      const response = await fetch('/api/tags', {
+        method: 'POST',
+      });
+      const data = await response.json();
 
-        // if you are authorized, you can see the gpt-4 model
-        if (emailWhitelist.has(session?.user?.email ?? '')) {
-          data.models.push({ name: 'gpt-4' })
-        }
-        
-        setModels(data.models)
+      // if you are authorized, you can see the gpt-4 model
+      if (emailWhitelist.has(session?.user?.email ?? '')) {
+        data.models.push({ name: 'gpt-4' });
       }
+      
+      setModels(data.models);
+    };
 
-      fetchModels()
-    }, [])
+    fetchModels();
+  }, []);
 
   return (
     <div className="mx-auto max-w-2xl px-4">
@@ -98,9 +85,7 @@ export function EmptyScreen({
         </div>
         <div className="mt-4 flex items-center justify-between">
           <Select
-            onValueChange={value => {
-              setModel(value)
-            }}
+            onValueChange={handleModelChange} // Call handleModelChange on value change
             defaultValue={'llama2:chat'}
           >
             <SelectTrigger className="w-[180px]">
@@ -145,5 +130,5 @@ export function EmptyScreen({
         </div> */}
       </div>
     </div>
-  )
+  );
 }

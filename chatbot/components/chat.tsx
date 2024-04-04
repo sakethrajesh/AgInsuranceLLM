@@ -16,19 +16,23 @@ import {
   DialogHeader,
   DialogTitle
 } from '@/components/ui/dialog'
-import { useState } from 'react'
+//import { useState } from 'react'
 import { Button } from './ui/button'
 import { Input } from './ui/input'
 import { toast } from 'react-hot-toast'
 import { usePathname, useRouter } from 'next/navigation'
 
+import React, { useState } from 'react';
+
 const IS_PREVIEW = process.env.VERCEL_ENV === 'preview'
 export interface ChatProps extends React.ComponentProps<'div'> {
   initialMessages?: Message[]
   id?: string
+  selectedModel: string;
+  onModelChange: (model: string) => void;
 }
 
-export function Chat({ id, initialMessages, className }: ChatProps) {
+export function Chat({ id, initialMessages, selectedModel, onModelChange, className }: ChatProps) {
   const router = useRouter()
   const path = usePathname()
   const [previewToken, setPreviewToken] = useLocalStorage<string | null>(
@@ -57,6 +61,11 @@ export function Chat({ id, initialMessages, className }: ChatProps) {
         }
       }
     })
+    const handleModelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      const newModel = event.target.value;
+      setModel(newModel);
+      onModelChange(newModel);
+    };
   return (
     <>
       <div className={cn('pb-[200px] pt-4 md:pt-10', className)}>
