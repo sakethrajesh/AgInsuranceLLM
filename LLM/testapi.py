@@ -133,19 +133,21 @@ def stream_chat():
 
     print('model:', model, flush=True)
 
-    def generate(stream):  
-        for chunk in stream:
-            if chunk:
-                if hasattr(chunk, 'choices') and chunk.choices:
-                    yield (json.dumps({"text": chunk.choices[0].delta.content}) + "\x1e").encode()
-                else:
+    def generate(stream, model):
+        if model != "gpt-4":  
+            for chunk in stream:
+                if chunk:
                     yield (json.dumps({"text": chunk["message"]["content"]}) + "\x1e").encode()
-
+        else:
+            for chunk in stream:
+                if chunk:
+                    yield (json.dumps({"text": chunk.choices[0].delta.content}) + "\x1e").encode()
+    
         yield (json.dumps({"text" : f'''\n\n **Citations**: \n\n'''}) + "\x1e").encode()
         for citation in citations:
             yield (json.dumps({"text" : f'''{citation} \n'''}) + "\x1e").encode()
     try:
-        return Response(stream_with_context(generate(ollama_llm(messages, formatted_context, stream=True, model=model))),content_type='application/json')    
+        return Response(stream_with_context(generate(ollama_llm(messages, formatted_context, stream=True, model=model), model=model)),content_type='application/json')    
     except Exception as e:
         print(str(e), flush=True)
         return jsonify({"error": str(e)}), 500 
