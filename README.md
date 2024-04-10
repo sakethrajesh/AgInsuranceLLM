@@ -18,14 +18,23 @@ This project is built on a microservices architecture in the cloud, enabling ind
 ![System Architecture](./SystemDesign.png)
 
 ## Frontend
+[More Details Here](./chatbot/README.md)
 
 ## Backend
+[More Details Here](./LLM/README.md)
 
 ## Ollama
+[More Details Here](./LLM/README.md)
 
 ## Databases
+### Vector Database - ChromaDB
+[More Details Here](./ChromaDB/README.md)
+
+### User DB - Redis
+[More Details Here](./redis/README.md)
 
 ## Testing
+[More Details Here](./TestBench/README.md)
 
 ## Production Deployment
 
