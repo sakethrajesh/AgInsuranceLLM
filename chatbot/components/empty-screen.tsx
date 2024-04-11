@@ -20,9 +20,9 @@ const exampleMessages = [
   }
 ];
 
-const emailWhitelist = new Set(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST ? process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST.split(', ') : []);
+const emailWhitelist = new Set(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST ? (process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST.split(', ')) : ['saketh@vt.edu', 'mfshi03@vt.edu', 'ramaraja@vt.edu', 'hilgenkj20@vt.edu', 'elinor@vt.edu', 'fox@vt.edu', 'shirzaei@vt.edu', 'vinhantruong@vt.edu']);
 
-console.log(process.env.NEXT_PUBLIC_EMAIL_WHITE_LIST);
+console.log(emailWhitelist);
 
 export function EmptyScreen({
   setModel,
