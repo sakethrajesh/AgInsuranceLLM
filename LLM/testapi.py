@@ -122,7 +122,10 @@ def stream_chat():
     for i in range(len(retrieved_docs['metadatas'][0])):
         metadata = retrieved_docs['metadatas'][0][i]
         document = retrieved_docs['documents'][0][i]
-        s = f''' - **Reference:** {metadata['type']} from page {metadata['page']} of section {metadata['section']}'''
+        page_num = int(metadata['page'])
+        page_num = page_num + 5
+
+        s = f''' - **Reference:** [{metadata['type']} from page {metadata['page']} of section {metadata['section']}](https://www.rma.usda.gov/-/media/RMA/Handbooks/Coverage-Plans---18000/Rainfall-and-Vegetation-Index---18150/2024-18150-1-Rainfall-Index-Handbook.ashx?la=en#page={page_num})'''
         if len(metadata['subsection']) > 0:
             s += f" in subsection {metadata['subsection']}"
         s += f'''\n\n - **Document:** \n {document}'''
