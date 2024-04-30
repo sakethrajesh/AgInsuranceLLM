@@ -19,53 +19,39 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--header", action="store_true", help="Write a header file")
 args = parser.parse_args()
 
-output_file = 'output.json'
 questions = []
 models = []
 
-if args.header:
-    # Read the JSON file
-    with open('test_bench_settings.json') as json_file:
-        data = json.load(json_file)
 
-    # Extract the questions and models array
-    questions = data['questions']
-    models = data['models']
+with open('test_bench_settings.json') as json_file:
+    data = json.load(json_file)
 
-    # Join the questions with comma
-    commaQ = ', '.join(questions)
-    commaM = ', '.join(models)
+# Extract the questions and models array
+questions = data['questions']
+models = data['models']
 
-commaQSplit = commaQ.split(",")
-commaMSplit = commaM.split(",")
-print(commaQ)
-print(questions)
+print("Questions: ", questions)
+
 answers = []
 json_data = []
 
-with open('testMQtoCSV.csv', 'w', newline='\n') as csv_file:
-    csv_writer = csv.writer(csv_file)
-    csv_writer.writerow(['Question', 'Answer', 'Model', 'Rank'])  # Write header row
+i = 0
+for question in questions:
     for model in models:
-        question_count = 0  # Counter to track the number of questions asked for each model
-        for question in commaQSplit:
-            answer = evaluate(question, model).replace(",", "\\',\\'").replace("\n","")
-            print(answer)
-            csv_writer.writerow([question, answer, model, 0])
-            json_data.append({
-                "Question": question,
-                "Answer": answer,
-                "Model": model,
-                "Rank": 0
-            })
-            question_count += 1
-            if question_count >= 3:  # Only ask the first 3 questions
-                break
+        answer = evaluate(question, model)
+        json_data.append({
+            "Question": question,
+            "Answer": answer,
+            "Model": model,
+            "Rank": 0
+        })
+    if i == 3:
+        break
 
-print("CSV and JSON files created successfully.")
+current_datetime = datetime.datetime.now()
+filename = current_datetime.strftime("%Y-%m-%d_%H-%M-%S") + ".json"
 
-# Write JSON data to output file
-with open('testMQtoJSON.json', 'w') as json_output_file:
+with open(filename, 'w') as json_output_file:
     json.dump(json_data, json_output_file, indent=4)
 
 print("JSON file created successfully.")

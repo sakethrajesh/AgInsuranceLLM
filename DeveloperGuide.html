@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DeveloperGuide.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="aginsurancellm">AgInsuranceLLM</h1>
+<p>This project aims to address the complexity and confusion surrounding insurance policy selection by developing a conversational assistant tailored for an agricultural insurance program in the US. The assistant will simplify the understanding of insurance terms and aid users in making informed decisions about coverage options. Focusing on the detection of rainfall deficits in insured pasture, forage, and rangelands, the assistant will offer clear explanations, visualizations, and guidance on selecting appropriate insurance terms. Additionally, the project may include simulations to illustrate the potential impact of different choices. Ultimately, this tool seeks to empower users to confidently navigate their insurance options and manage financial risks effectively.</p>
+<h2 id="file-structure">File Structure</h2>
+<pre class="hljs"><code><div>.
+├── chatbot     &lt;-- fronted
+├── ChromaDB    &lt;-- vector db population
+├── kube        &lt;-- kubernetes config files
+├── LLM         &lt;-- backend
+├── redis       &lt;-- user db
+└── TestBench   &lt;-- testing files and infrastructure 
+</div></code></pre>
+<h2 id="system-design">System Design</h2>
+<p>This project is built on a microservices architecture in the cloud, enabling individual scaling of components based on demand. The core architecture comprises separate microservices like the Vector DB, User DB, API, and AI-related services (Gemma, Mistral, Neural-chat, Llama2, Ollama), each independently scalable to accommodate fluctuating loads. The front-end components (Home Page, Chatbot Page, Admin Page) can also scale independently to handle varying user traffic. This microservices approach in the cloud architecture ensures optimal performance, efficient resource utilization, and high scalability across the entire system.</p>
+<p><img src="./SystemDesign.png" alt="System Architecture"></p>
+<h2 id="frontend">Frontend</h2>
+<p><a href="#frontend-1">More Details Here</a></p>
+<h2 id="backend">Backend</h2>
+<p><a href="#llm">More Details Here</a></p>
+<h2 id="ollama">Ollama</h2>
+<p><a href="#llm">More Details Here</a></p>
+<h2 id="databases">Databases</h2>
+<h3 id="vector-database---chromadb">Vector Database - ChromaDB</h3>
+<p><a href="#chromadb">More Details Here</a></p>
+<h3 id="user-db---redis">User DB - Redis</h3>
+<p><a href="#redis">More Details Here</a></p>
+<h2 id="testing">Testing</h2>
+<p><a href="#test-bench">More Details Here</a></p>
+<h2 id="production-deployment">Production Deployment</h2>
+<h2 id="insurance-resources">Insurance Resources</h2>
+<ul>
+<li><a href="https://public-rma.fpac.usda.gov/apps/PRF#">USDA site for insurance computation</a></li>
+<li>Problem with this also lacks significant functionality to support potential policyholders in quickly predicting the impacts of their choices.</li>
+<li><a href="https://www.rma.usda.gov/en/Policy-and-Procedure/Insurance-Plans/Pasture-Rangeland-Forage">Insurance Programs</a></li>
+<li><a href="https://www.rma.usda.gov/-/media/RMA/Handbooks/Coverage-Plans---18000/Rainfall-and-Vegetation-Index---18150/2024-18150-1-Rainfall-Index-Handbook.ashx?la=en">Insurance documentation</a></li>
+</ul>
+<div style="page-break-after: always;"></div>
+<h1 id="frontend">Frontend</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#file-structure">File Structure</a></li>
+<li><a href="#nextjs-api">Nextjs API</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#env-file">env file</a></li>
+<li><a href="#running-locally">Running Locally</a></li>
+<li><a href="#pushing-to-container-registry">Pushing to Container Registry</a>
+<ul>
+<li><a href="#what-is-happening-under-the-hood">What is happening under the hood?</a></li>
+<li><a href="#to-execute-the-push-to-the-container-registry">To execute the push to the container registry</a></li>
+</ul>
+</li>
+<li><a href="#recourses">Recourses</a></li>
+<li><a href="#known-issues">Known Issues</a></li>
+</ol>
+<h2 id="file-structure">File Structure</h2>
+<pre class="hljs"><code><div>.
+└── chatbot/
+    ├── app/                        
+    │   ├── (chat)/
+    │   │   ├── chat/
+    │   │   │   └── [id]/
+    │   │   │       └── page.tsx    &lt;-- page content for a chat
+    │   │   ├── layout.tsx          &lt;-- layout template for chat page
+    │   │   └── page.tsx            &lt;-- driver for the chat page
+    │   ├── api/
+    │   │   ├── auth/
+    │   │   │   └── [...nextauth]/  
+    │   │   │       └── route.ts    &lt;-- initializes the authjs signin logic
+    │   │   ├── chat/
+    │   │   │   └── route.ts        &lt;-- server side endpoint that streams the content from backend
+    │   │   └── tags/
+    │   │       └── route.ts        &lt;-- server side endpoint that gets all available models in Ollama server
+    │   ├── share/
+    │   │   └── [id]/
+    │   │       └── page.tsx        &lt;-- shared chat page
+    │   ├── sign-in/
+    │   │   └── page.tsx            &lt;-- sign in page
+    │   ├── actions.ts              
+    │   ├── global.css
+    │   └── layout.tsx
+    ├── components/
+    │   ├── ui/
+    │   │   └── {custom components}
+    │   └── {shadcn/ui components}
+    ├── lib/
+    │   └── hooks
+    ├── public
+    ├── .dockerignore
+    ├── .env.example
+    ├── .env
+    ├── .gitignore
+    ├── Dockerfile                  &lt;-- dockerfile that creates a react build
+    ├── README.md
+    ├── auth.ts                     &lt;-- authjs config file
+    ├── docker-compose.yaml         &lt;-- compose file that configures docker build
+    ├── dockerpush.sh               &lt;-- bash script that builds a docker image and pushes to image repo
+    ├── middleware.ts
+    ├── next-env.d.ts
+    ├── next.config.js
+    ├── package.json
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    └── tsconfig.json
+</div></code></pre>
+<h2 id="nextjs-api">Nextjs API</h2>
+<p>Next.js API routes allow you to build APIs directly within your Next.js application. They are server-side functions that can receive HTTP requests and return responses. You can use them to handle tasks like interacting with a database, handling form submissions, or even building a full-fledged API. They are created by adding JavaScript files in the app/api directory of your Next.js project.</p>
+<p>In this project, three main endpoints are built using api routes to handle auth, chat, and pulling available model tags.</p>
+<h3 id="auth">auth</h3>
+<h3 id="chat">chat</h3>
+<h3 id="tags">tags</h3>
+<h2 id="styling">Styling</h2>
+<ul>
+<li>Component Library <a href="https://ui.shadcn.com">shadcn/ui</a></li>
+<li>Styling with <a href="https://tailwindcss.com">Tailwind CSS</a></li>
+<li><a href="https://radix-ui.com">Radix UI</a> for headless component primitives</li>
+<li>Icons from <a href="https://phosphoricons.com">Phosphor Icons</a></li>
+</ul>
+<h2 id="env-file">env file</h2>
+<p>Create .env file and copy contents of .env.example into .env</p>
+<p>assign these values</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Google Auth Credentials</span>
+AUTH_GOOGLE_ID=
+AUTH_GOOGLE_SECRET=
+
+<span class="hljs-comment"># Secret key used for encryption in the auth module</span>
+AUTH_SECRET=
+
+<span class="hljs-comment"># Base URL of your backend API</span>
+URL=
+
+<span class="hljs-comment"># The host URL of your application</span>
+HOST=
+
+<span class="hljs-comment"># Base URL of your REDIS REST API</span>
+<span class="hljs-comment"># Token for authenticating with the REDIS REST API</span>
+<span class="hljs-comment"># check README.md in the redis directery for more information</span>
+KV_REST_API_URL=
+KV_REST_API_TOKEN=
+
+<span class="hljs-comment"># The base URL of your Next.js application, used by NextAuth for callbacks and redirects</span>
+NEXTAUTH_URL=
+
+
+<span class="hljs-comment"># _______________ PRODUCTION ONLY _______________ #</span>
+
+
+<span class="hljs-comment"># Proxy URL for redirecting during authentication (only needed in production)</span>
+AUTH_REDIRECT_PROXY_URL=
+</div></code></pre>
+<h2 id="running-locally">Running Locally</h2>
+<h3 id="1-run-with-local-version-of-node">1. run with local version of node</h3>
+<p>This method supports hot reload (no need to kill and run again when changes are made).</p>
+<pre class="hljs"><code><div>npm run dev
+</div></code></pre>
+<h3 id="2-run-with-docker">2. run with docker</h3>
+<p>This method produces a result in the same format as used in production.</p>
+<pre class="hljs"><code><div>docker compose up --build
+</div></code></pre>
+<h2 id="pushing-to-container-registry">Pushing to Container Registry</h2>
+<p>Open dockerpush.sh</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># set these variables</span>
+registry=<span class="hljs-string">""</span>
+username=<span class="hljs-string">""</span>
+project=<span class="hljs-string">""</span>
+serviceName=<span class="hljs-string">""</span>
+</div></code></pre>
+<h3 id="what-is-happening-under-the-hood">What is happening under the hood?</h3>
+<p>This is an example</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Define these variables</span>
+registry=<span class="hljs-string">"container.cs.vt.edu"</span>
+username=<span class="hljs-string">"saketh"</span>
+project=<span class="hljs-string">"aginsurancellm"</span>
+serviceName=<span class="hljs-string">"frontend"</span>
+
+<span class="hljs-comment"># login to the container registry</span>
+docker login <span class="hljs-variable">$registry</span>
+
+<span class="hljs-comment"># Build the image for a linux/amd64 platform </span>
+docker build --platform linux/amd64 -t <span class="hljs-variable">$registry</span>/<span class="hljs-variable">$username</span>/<span class="hljs-variable">$project</span>/<span class="hljs-variable">$serviceName</span> .
+
+<span class="hljs-comment"># Push the image</span>
+docker push <span class="hljs-variable">$registry</span>/<span class="hljs-variable">$username</span>/<span class="hljs-variable">$project</span>/<span class="hljs-variable">$serviceName</span>
+</div></code></pre>
+<h3 id="to-execute-the-push-to-the-container-registry">To execute the push to the container registry</h3>
+<pre class="hljs"><code><div>bash dockerpush.sh
+</div></code></pre>
+<h2 id="recourses">Recourses</h2>
+<ul>
+<li><a href="https://nextjs.org">Next.js</a></li>
+</ul>
+<h2 id="known-issues">Known Issues</h2>
+<ul>
+<li>Sometimes the page does not refresh when <code>start a new chat</code> is clicked</li>
+</ul>
+<div style="page-break-after: always;"></div>
+<h1 id="llm">LLM</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#file-structure">File Structure</a></li>
+<li><a href="#api-reference">API Reference</a>
+<ul>
+<li><a href="#chat">Chat</a></li>
+<li><a href="#stream-chat">Stream Chat</a></li>
+</ul>
+</li>
+<li><a href="#env-file">env file</a></li>
+<li><a href="#running-locally">Running Locally</a></li>
+<li><a href="#pushing-to-container-registry">Pushing to Container Registry</a>
+<ul>
+<li><a href="#what-is-happening-under-the-hood">What is happening under the hood?</a></li>
+<li><a href="#to-execute-the-push-to-the-container-registry">To execute the push to the container registry</a></li>
+</ul>
+</li>
+<li><a href="#known-issues">Known Issues</a></li>
+</ol>
+<h2 id="file-structure">File Structure</h2>
+<pre class="hljs"><code><div>.
+└── LLM/
+    ├── InsuranceContext/
+    │   └── handbook.pdf
+    │
+    ├── .env.example
+    ├── .gitignore
+    │
+    ├── api.py                  &lt;-- main api file that facilities communication to Ollama (LLMs) and ChromaDB (vectordb)
+    ├── Dockerfile              &lt;-- dockerfile, instructions to create environment that runs the api.py
+    ├── docker-compose.yaml     &lt;-- compose file that can be used to run Dockerfile
+    ├── dockerpush.sh           &lt;-- script to push api Docker image to container registry
+    ├── sample_api.py           &lt;-- 
+    ├── test_pdf_splitter.py    &lt;-- 
+    └── testapi.py              &lt;-- same functionality of api.py, but has alternate segmentation methods
+</div></code></pre>
+<h2 id="api-reference">API Reference</h2>
+<p>This documentation provides information about the endpoints available in the Flask app.</p>
+<h3 id="chat">Chat</h3>
+<pre class="hljs"><code><div>  POST /api/chat
+</div></code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>messages</code></td>
+<td style="text-align:left"><code>array</code></td>
+<td style="text-align:left"><strong>Required</strong>. Array of user's messages</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>model</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">Optional. Model for chat (default: llama2:chat)</td>
+</tr>
+</tbody>
+</table>
+<pre class="hljs"><code><div>{
+    <span class="hljs-attr">"messages"</span>: [
+        {
+            <span class="hljs-attr">"role"</span>: <span class="hljs-string">"user"</span>,
+            <span class="hljs-attr">"content"</span>: <span class="hljs-string">"User's message"</span>
+        }
+    ],
+    <span class="hljs-attr">"model"</span>: <span class="hljs-string">"llama2:chat"</span>  <span class="hljs-comment">// Optional, default is "llama2:chat"</span>
+}
+</div></code></pre>
+<h4 id="success-response">Success Response</h4>
+<p><strong>Code:</strong> <code>200 OK</code>
+<strong>Content:</strong></p>
+<pre class="hljs"><code><div>{
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Assistant's response"</span>,
+    <span class="hljs-attr">"source_tags"</span>: [<span class="hljs-string">"source_tag_1"</span>, <span class="hljs-string">"source_tag_2"</span>],
+    <span class="hljs-attr">"source_documents"</span>: [<span class="hljs-string">"source_document_1"</span>, <span class="hljs-string">"source_document_2"</span>]
+}
+</div></code></pre>
+<h4 id="error-response">Error Response</h4>
+<p><strong>Code:</strong> <code>500 Internal Server Error</code>
+<strong>Content:</strong></p>
+<pre class="hljs"><code><div>{
+    <span class="hljs-attr">"error"</span>: <span class="hljs-string">"Error message"</span>
+}
+</div></code></pre>
+<h3 id="stream-chat">Stream Chat</h3>
+<pre class="hljs"><code><div>  POST /api/stream_chat
+</div></code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>messages</code></td>
+<td style="text-align:left"><code>array</code></td>
+<td style="text-align:left"><strong>Required</strong>. Array of user's messages</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>model</code></td>
+<td style="text-align:left"><code>string</code></td>
+<td style="text-align:left">Optional. Model for chat</td>
+</tr>
+</tbody>
+</table>
+<pre class="hljs"><code><div>{
+    <span class="hljs-attr">"messages"</span>: [
+        {
+            <span class="hljs-attr">"role"</span>: <span class="hljs-string">"user"</span>,
+            <span class="hljs-attr">"content"</span>: <span class="hljs-string">"User's message"</span>
+        }
+    ],
+    <span class="hljs-attr">"model"</span>: <span class="hljs-string">"llama2:chat"</span>  <span class="hljs-comment">// Optional, default is "llama2:chat"</span>
+}
+</div></code></pre>
+<h4 id="success-response">Success Response</h4>
+<p><strong>Code:</strong> <code>200 OK</code>
+<strong>Content:</strong> Stream of JSON objects containing assistant's responses and citations.</p>
+<pre class="hljs"><code><div>{text: <span class="hljs-string">"Hi, how"</span>} + \x1e + {text: <span class="hljs-string">"are you"</span>} ....
+</div></code></pre>
+<h4 id="error-response">Error Response</h4>
+<p><strong>Code:</strong> <code>500 Internal Server Error</code>
+<strong>Content:</strong></p>
+<pre class="hljs"><code><div>{
+    <span class="hljs-attr">"error"</span>: <span class="hljs-string">"Error message"</span>
+}
+</div></code></pre>
+<p><strong>Note:</strong> In both endpoints, the assistant's response is generated based on the user's message and context information from relevant documents retrieved from CHROMADB. If an error occurs during the process, an error message is returned.</p>
+<h2 id="env-file">env file</h2>
+<p>Create .env file and copy contents of .env.example into .env</p>
+<p>assign these values</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># this is the URL of the Ollama API</span>
+OLLAMA_URL=https://ollamaaginsurance.endeavour.cs.vt.edu/
+
+<span class="hljs-comment"># this is the URL of the vector database (ChromaDB)</span>
+CHROMADB_URL=https://chromadb-ingress.endeavour.cs.vt.edu
+
+<span class="hljs-comment"># this is the name of the collection in the vector database (ChromaDB)</span>
+COLLECTION_NAME=RAINFALL_INDEX_INSURANCE_STANDARDS_HANDBOOK_2024
+
+<span class="hljs-comment"># this is the OpenAI API key</span>
+OPENAI_API_KEY=jdslafjsdlkfjaslkd
+</div></code></pre>
+<h2 id="running-locally">Running Locally</h2>
+<pre class="hljs"><code><div>docker compose up --build
+</div></code></pre>
+<h2 id="pushing-to-container-registry">Pushing to Container Registry</h2>
+<p>Open dockerpush.sh</p>
+<pre class="hljs"><code><div><span class="hljs-comment"># set these variables</span>
+registry=<span class="hljs-string">""</span>
+username=<span class="hljs-string">""</span>
+project=<span class="hljs-string">""</span>
+serviceName=<span class="hljs-string">""</span>
+
+</div></code></pre>
+<h3 id="what-is-happening-under-the-hood">What is happening under the hood?</h3>
+<p>This is an example</p>
+<pre class="hljs"><code><div><span class="hljs-meta">#!/bin/bash
+</span>
+<span class="hljs-comment"># Define these variables</span>
+registry=<span class="hljs-string">"container.cs.vt.edu"</span>
+username=<span class="hljs-string">"saketh"</span>
+project=<span class="hljs-string">"aginsurancellm"</span>
+serviceName=<span class="hljs-string">"backend"</span>
+
+<span class="hljs-comment"># login to the container registry</span>
+docker login <span class="hljs-variable">$registry</span>
+
+<span class="hljs-comment"># Build the image for a linux/amd64 platform </span>
+docker build --platform linux/amd64 -t <span class="hljs-variable">$registry</span>/<span class="hljs-variable">$username</span>/<span class="hljs-variable">$project</span>/<span class="hljs-variable">$serviceName</span> .
+
+<span class="hljs-comment"># Push the image</span>
+docker push <span class="hljs-variable">$registry</span>/<span class="hljs-variable">$username</span>/<span class="hljs-variable">$project</span>/<span class="hljs-variable">$serviceName</span>
+</div></code></pre>
+<h3 id="to-execute-the-push-to-the-container-registry">To execute the push to the container registry</h3>
+<pre class="hljs"><code><div>bash dockerpush.sh
+</div></code></pre>
+<h2 id="recourses">Recourses</h2>
+<ul>
+<li><a href="https://noted.lol/ollama/">Ollama on Docker Container</a></li>
+<li><a href="https://github.com/lgrammel/modelfusion-ollama-nextjs-starter?tab=readme-ov-file">Ollama Adapter</a></li>
+<li><a href="https://mer.vin/2024/01/ollama-rag/">Ollama RAG</a></li>
+<li><a href="https://python.langchain.com/docs/get_started/introduction">Langchain Docs</a></li>
+</ul>
+<h2 id="known-issues">Known Issues</h2>
+<div style="page-break-after: always;"></div>
+<h1 id="chromadb">ChromaDB</h1>
+<p>Populates the chromaDB hosted at a specified location with data in the segment.json file</p>
+<h2 id="file-structure">File Structure</h2>
+<pre class="hljs"><code><div>.
+└── ChromaDB/
+    ├── chromaBuild.py      &lt;-- main file that is run to populate chromadb
+    ├── segment.json        &lt;-- file of embedding documents and metadata
+    ├── Dockerfile.chromadb &lt;-- dockerfile for environment for chromaBuild.py to run
+    └── docker-compose.yaml &lt;-- compose file to run the dockerfile
+
+</div></code></pre>
+<h2 id="run">Run</h2>
+<pre class="hljs"><code><div>    <span class="hljs-built_in">cd</span> ChromaDB
+    docker compose up --build
+</div></code></pre>
+<h2 id="segmentjson-structure">segment.json structure</h2>
+<p>segment.json is the Insurance handbook manually segmented section by section</p>
+<pre class="hljs"><code><div>[
+    {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-number">0</span>, <span class="hljs-comment">// increment</span>
+        <span class="hljs-attr">"document"</span>: <span class="hljs-string">""</span>, <span class="hljs-comment">// this is the content</span>
+        <span class="hljs-attr">"metadata"</span>: {
+          <span class="hljs-attr">"page"</span>: <span class="hljs-string">"#"</span>, 
+          <span class="hljs-attr">"section"</span>: <span class="hljs-string">""</span>,
+          <span class="hljs-attr">"subsection"</span>: <span class="hljs-string">""</span>,
+          <span class="hljs-attr">"type"</span>: <span class="hljs-string">"paragraph"</span>
+        }
+      }
+      ...
+]
+</div></code></pre>
+<h2 id="resourses">Resourses</h2>
+<p>https://www.trychroma.com/</p>
+<div style="page-break-after: always;"></div>
+<h1 id="redis">Redis</h1>
+<p>This is a Key Value (KV) database that is used to store the chats of users</p>
+<h2 id="redis-and-vercel-kv">Redis and Vercel KV</h2>
+<p>The open sources frontend template that this project is based from, uses Vercel KV. Vercel KV is a cloud service offered by vercel. However, Vercel KV is just Redis behind the curtain. We hosted our own redis database and use the Vercel KV npm package to interface with it.</p>
+<p>Just a simple swap.</p>
+<h2 id="docker-composeyaml-breakdown">docker-compose.yaml Breakdown</h2>
+<pre class="hljs"><code><div><span class="hljs-attr">version:</span> <span class="hljs-string">'3.1'</span>
+
+<span class="hljs-attr">services:</span>
+  <span class="hljs-attr">redis:</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">redis</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">'6379:6379'</span> <span class="hljs-comment"># will be used in SRH_CONNECTION_STRING down below</span>
+
+  <span class="hljs-attr">serverless-redis-http:</span>
+    <span class="hljs-attr">ports:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-string">'8079:80'</span> <span class="hljs-comment"># if run locally, KV_REST_API_URL in frontend's .env would be "http://localhost:8079"</span>
+    <span class="hljs-attr">image:</span> <span class="hljs-string">hiett/serverless-redis-http:latest</span>
+    <span class="hljs-attr">environment:</span>
+      <span class="hljs-attr">SRH_MODE:</span> <span class="hljs-string">env</span>
+      <span class="hljs-attr">SRH_TOKEN:</span> <span class="hljs-string">example_token</span> <span class="hljs-comment"># make a random secure token. if run locally, KV_REST_API_TOKEN in frontend's .env would be "example_token"</span>
+      <span class="hljs-attr">SRH_CONNECTION_STRING:</span> <span class="hljs-string">'redis://redis:6379'</span> <span class="hljs-comment"># Using `redis` hostname since they're in the same Docker network.</span>
+</div></code></pre>
+<h2 id="running-locally">Running Locally</h2>
+<pre class="hljs"><code><div><span class="hljs-built_in">cd</span> redis
+docker compose up --build
+</div></code></pre>
+<h2 id="what-is-hiettserverless-redis-http">What is hiett/serverless-redis-http?</h2>
+<ol>
+<li>
+<p>HTTP-based Redis Pooler: This means that the system or package provides a way to access Redis, a type of database/cache, using HTTP requests. Instead of directly connecting to Redis through traditional means (like a direct client connection), it uses HTTP as the communication protocol. This allows for more flexibility in how applications can interact with Redis, especially in environments where direct connections might not be feasible or efficient.</p>
+</li>
+<li>
+<p>Access Redis from Serverless: Serverless computing is a model where developers can write code that runs in response to events without having to manage the infrastructure. In this context, it means you can utilize Redis within a serverless architecture. This is particularly useful because serverless platforms typically have limitations on long-lived connections, which can be problematic for traditional Redis clients that maintain persistent connections.</p>
+</li>
+<li>
+<p>Without Overloading Connection Limits: Redis has a limit on the number of connections it can handle simultaneously. When operating in a serverless environment where instances are ephemeral and can scale up and down rapidly, managing these connections becomes challenging. The HTTP-based Redis pooler likely manages connections to Redis in a way that prevents overloading Redis with too many simultaneous connections. It likely pools and manages connections efficiently, ensuring that the connection limit is not exceeded.</p>
+</li>
+</ol>
+<p>In essence, hiett/serverless-redis-http provides a solution for accessing Redis from a serverless environment using HTTP requests, while also ensuring that the connection limits of Redis are not exceeded, thus making it a more efficient and scalable approach.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="test-bench">Test Bench</h1>
+<h2 id="file-structure">File Structure</h2>
+<pre class="hljs"><code><div>.
+└── TestBench/
+    ├── test.py         &lt;-- script that runs that bench and adds a new row to testbench.csv with results
+    └── testbench.csv   &lt;-- csv file that stores the responses to test questions and data responses were generated
+
+</div></code></pre>
+<h2 id="running-locally">Running Locally</h2>
+<pre class="hljs"><code><div>python3 test.py
+</div></code></pre>
+
+</body>
+</html>

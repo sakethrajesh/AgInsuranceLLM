@@ -10,40 +10,40 @@
 6. [Pushing to Container Registry](#pushing-to-container-registry)
    - [What is happening under the hood?](#what-is-happening-under-the-hood)
    - [To execute the push to the container registry](#to-execute-the-push-to-the-container-registry)
-7. [Resourses](#resourses)
+7. [Recourses](#recourses)
 8. [Known Issues](#known-issues)
 
 ## File Structure
 ```
 .
 └── chatbot/
-    ├── app/
+    ├── app/                        
     │   ├── (chat)/
     │   │   ├── chat/
     │   │   │   └── [id]/
-    │   │   │       └── page.tsx
-    │   │   ├── layout.tsx
-    │   │   └── page.tsx
+    │   │   │       └── page.tsx    <-- page content for a chat
+    │   │   ├── layout.tsx          <-- layout template for chat page
+    │   │   └── page.tsx            <-- driver for the chat page
     │   ├── api/
     │   │   ├── auth/
-    │   │   │   └── [...nextauth]/
-    │   │   │       └── route.ts
+    │   │   │   └── [...nextauth]/  
+    │   │   │       └── route.ts    <-- initializes the authjs signin logic
     │   │   ├── chat/
-    │   │   │   └── route.ts
+    │   │   │   └── route.ts        <-- server side endpoint that streams the content from backend
     │   │   └── tags/
-    │   │       └── route.ts
+    │   │       └── route.ts        <-- server side endpoint that gets all available models in Ollama server
     │   ├── share/
     │   │   └── [id]/
-    │   │       └── page.tsx
+    │   │       └── page.tsx        <-- shared chat page
     │   ├── sign-in/
-    │   │   └── page.tsx
-    │   ├── actions.ts
+    │   │   └── page.tsx            <-- sign in page
+    │   ├── actions.ts              
     │   ├── global.css
     │   └── layout.tsx
     ├── components/
     │   ├── ui/
-    │   │   └── {rest of files from ui are custom components}
-    │   └── {rest of file in components come from shadcn/ui}
+    │   │   └── {custom components}
+    │   └── {shadcn/ui components}
     ├── lib/
     │   └── hooks
     ├── public
@@ -51,11 +51,11 @@
     ├── .env.example
     ├── .env
     ├── .gitignore
-    ├── Dockerfile
+    ├── Dockerfile                  <-- dockerfile that creates a react build
     ├── README.md
-    ├── auth.ts
-    ├── docker-compose.yaml
-    ├── dockerpush.sh
+    ├── auth.ts                     <-- authjs config file
+    ├── docker-compose.yaml         <-- compose file that configures docker build
+    ├── dockerpush.sh               <-- bash script that builds a docker image and pushes to image repo
     ├── middleware.ts
     ├── next-env.d.ts
     ├── next.config.js
@@ -69,7 +69,7 @@
 
 Next.js API routes allow you to build APIs directly within your Next.js application. They are server-side functions that can receive HTTP requests and return responses. You can use them to handle tasks like interacting with a database, handling form submissions, or even building a full-fledged API. They are created by adding JavaScript files in the app/api directory of your Next.js project.
 
-In this project, three main endpoints are built using api routes to handle auth, chating, and pulling avlaible model tags.
+In this project, three main endpoints are built using api routes to handle auth, chat, and pulling available model tags.
 
 ### auth
 
@@ -173,6 +173,8 @@ docker push $registry/$username/$project/$serviceName
 bash dockerpush.sh
 ```
 
-## Resourses
+## Recourses
+- [Next.js](https://nextjs.org)
 
 ## Known Issues
+- Sometimes the page does not refresh when `start a new chat` is clicked

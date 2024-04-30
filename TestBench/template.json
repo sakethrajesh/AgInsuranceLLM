@@ -1,20 +1,22 @@
 [
     {
-        "Question": "what is instagram?",
-        "Answer": "Instagram is a photo and video-sharing social networking service owned by Facebook, Inc. It was created by Kevin Systrom and Mike Krieger, and launched in October 2010 exclusively on iOS.",
-        "model": "gpt-3.5-turbo",
-        "rank": 0
-    },
-    {
-        "Question": "what is instagram?",
-        "Answer": "Instagram is a photo and video-sharing social networking service owned by Facebook, Inc. It was created by Kevin Systrom and Mike Krieger, and launched in October 2010 exclusively on iOS.",
-        "model": "gpt-3.5-turbo",
-        "rank": 0
-    },
-    {
-        "Question": "what is instagram?",
-        "Answer": "Instagram is a photo and video-sharing social networking service owned by Facebook, Inc. It was created by Kevin Systrom and Mike Krieger, and launched in October 2010 exclusively on iOS.",
-        "model": "gpt-3.5-turbo",
-        "rank": 0
+        "question": "What is Instagram?",
+        "answers": [
+            {
+                "text": "Instagram is a photo and video-sharing social networking service owned by Facebook, Inc. It was created by Kevin Systrom and Mike Krieger, and launched in October 2010 exclusively on iOS.",
+                "model": "gpt-3.5-turbo",
+                "rank": 0
+            },
+            {
+                "text": "Instagram is a platform where users can share images and videos, follow other users and interact with their content. It also offers features like Stories, IGTV for longer videos, and Shopping for businesses.",
+                "model": "gpt-3.5-turbo",
+                "rank": 1
+            },
+            {
+                "text": "Instagram is a popular social media app that allows for photo and video sharing, live streaming, and exploring content from a global community of creators.",
+                "model": "gpt-3.5-turbo",
+                "rank": 2
+            }
+        ]
     }
 ]
