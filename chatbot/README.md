@@ -14,6 +14,54 @@
 
 ## File Structure
 ```
+.
+└── chatbot/
+    ├── app/
+    │   ├── (chat)/
+    │   │   ├── chat/
+    │   │   │   └── [id]/
+    │   │   │       └── page.tsx
+    │   │   ├── layout.tsx
+    │   │   └── page.tsx
+    │   ├── api/
+    │   │   ├── auth/
+    │   │   │   └── [...nextauth]/
+    │   │   │       └── route.ts
+    │   │   ├── chat/
+    │   │   │   └── route.ts
+    │   │   └── tags/
+    │   │       └── route.ts
+    │   ├── share/
+    │   │   └── [id]/
+    │   │       └── page.tsx
+    │   ├── sign-in/
+    │   │   └── page.tsx
+    │   ├── actions.ts
+    │   ├── global.css
+    │   └── layout.tsx
+    ├── components/
+    │   ├── ui/
+    │   │   └── {rest of files from ui are custom components}
+    │   └── {rest of file in components come from shadcn/ui}
+    ├── lib/
+    │   └── hooks
+    ├── public
+    ├── .dockerignore
+    ├── .env.example
+    ├── .env
+    ├── .gitignore
+    ├── Dockerfile
+    ├── README.md
+    ├── auth.ts
+    ├── docker-compose.yaml
+    ├── dockerpush.sh
+    ├── middleware.ts
+    ├── next-env.d.ts
+    ├── next.config.js
+    ├── package.json
+    ├── postcss.config.js
+    ├── tailwind.config.js
+    └── tsconfig.json
 ```
 
 ## Nextjs API
