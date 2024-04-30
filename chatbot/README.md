@@ -10,7 +10,8 @@
 6. [Pushing to Container Registry](#pushing-to-container-registry)
    - [What is happening under the hood?](#what-is-happening-under-the-hood)
    - [To execute the push to the container registry](#to-execute-the-push-to-the-container-registry)
-7. [Known Issues](#known-issues)
+7. [Resourses](#resourses)
+8. [Known Issues](#known-issues)
 
 ## File Structure
 ```
@@ -171,5 +172,7 @@ docker push $registry/$username/$project/$serviceName
 ```bash
 bash dockerpush.sh
 ```
+
+## Resourses
 
 ## Known Issues
